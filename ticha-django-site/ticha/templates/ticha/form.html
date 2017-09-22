@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Contact Us" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-7 col-md-9 col-sm 12">
+      <script src="http://max.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+      <script src="http://max.jotfor.ms/static/jotform.forms.js?3.2.3740" type="text/javascript"></script>
+      <script type="text/javascript">
+        JotForm.init(function(){
+           $('input_16').hint('ex: myname@example.com');
+        });
+      </script>
+      <link href="http://max.jotfor.ms/static/formCss.css?3.2.3740" rel="stylesheet" type="text/css" />
+      <link type="text/css" rel="stylesheet" href="http://max.jotfor.ms/css/styles/nova.css?3.2.3740" />
+      <link type="text/css" media="print" rel="stylesheet" href="http://max.jotfor.ms/css/printForm.css?3.2.3740" />
+      <style type="text/css">
+        .form-label-left{
+        width:150px !important;
+        }
+        .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+        }
+        .form-label-right{
+        width:150px !important;
+        }
+        .form-all{
+        width:590px;
+        color:Black !important;
+        font-family:'Lucida Grande',' Lucida Sans Unicode',' Lucida Sans',' Verdana',' Tahoma',' sans-serif';
+        font-size:14px;
+        }
+      </style>
+      <form class="jotform-form" action="http://submit.jotform.us/submit/42635318129152/" method="post" name="form_42635318129152" id="42635318129152" accept-charset="utf-8">
+        <input type="hidden" name="formID" value="42635318129152" />
+        <div class="form-all">
+          <ul class="form-section">
+            <li id="cid_18" class="form-input-wide" data-type="control_head">
+              <div class="form-header-group">
+                <div class="header-text httal htvam">
+                  <h2 id="header_18" class="form-header">
+                    {% trans "Contact Us" %}
+                  </h2>
+                  <div id="subHeader_18" class="form-subHeader">
+                    {% trans "To receive email updates about Ticha, or to communicate a comment or suggestion, please use the form below." %}
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="form-line" data-type="control_fullname" id="id_15">
+              <label class="form-label form-label-left form-label-auto" id="label_15" for="input_15">{% trans "Name" %}</label>
+              <div id="cid_15" class="form-input">
+                <span class="form-sub-label-container">
+                <input class="form-textbox" type="text" size="10" name="q15_name[first]" id="first_15" />
+                <label class="form-sub-label" for="first_15" id="sublabel_first">{% trans "First Name" %}</label>
+                </span>
+                <span class="form-sub-label-container">
+                <input class="form-textbox" type="text" size="15" name="q15_name[last]" id="last_15" />
+                <label class="form-sub-label" for="last_15" id="sublabel_last">{% trans "Last Name" %}</label>
+                </span>
+              </div>
+            </li>
+            <li class="form-line" data-type="control_email" id="id_16">
+              <label class="form-label form-label-left form-label-auto" id="label_16" for="input_16">{% trans "E-mail" %}</label>
+              <div id="cid_16" class="form-input">
+                <input type="email" class=" form-textbox validate[Email]" id="input_16" name="q16_email16" size="32" value="" />
+              </div>
+            </li>
+            <li class="form-line" data-type="control_textarea" id="id_8">
+              <label class="form-label form-label-left form-label-auto" id="label_8" for="input_8">{% trans "Comments:" %}</label>
+              <div id="cid_8" class="form-input">
+                <textarea id="input_8" class="form-textarea" name="q8_comments" cols="40" rows="10"></textarea>
+              </div>
+            </li>
+            <li class="form-line" data-type="control_captcha" id="id_9">
+              <label class="form-label form-label-left form-label-auto" id="label_9" for="input_9">
+              {% trans "Type the characters you see here:" %}
+              <span class="form-required">
+              *
+              </span>
+              </label>
+              <div id="cid_9" class="form-input">
+                <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+                <div id="recaptcha_input_9">
+                </div>
+                <script type="text/javascript">
+                  var rc_script_tag = document.createElement('script'),
+                  rc_init_func = function()
+                  {
+                  Recaptcha.create("6Ld9UAgAAAAAAMon8zjt30tEZiGQZ4IIuWXLt1ky", "recaptcha_input_9", {
+                  theme: "clean",
+                  callback: function()
+                  {
+                  $("recaptcha_response_field").addClassName("validate[required]");
+                  JotForm.validator()
+                  }
+                  });
+                  }
+                  rc_script_tag.src = "http://www.google.com/recaptcha/api/js/recaptcha_ajax.js";
+                  rc_script_tag.type = 'text/javascript';
+                  rc_script_tag.onload = function()
+                  {
+                  rc_init_func.call();
+                  };
+                  rc_script_tag.onreadystatechange = function()
+                  {
+                  if (rc_script_tag.readyState == 'loaded' || rc_script_tag.readyState == 'complete')
+                  {
+                  rc_init_func.call();
+                  }
+                  };
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(rc_script_tag);
+                </script>
+              </div>
+            </li>
+            <li class="form-line" data-type="control_button" id="id_7">
+              <div id="cid_7" class="form-input-wide">
+                <div style="margin-left:156px" class="form-buttons-wrapper">
+                  <button id="input_7" type="submit" class="form-submit-button">
+                  {% trans "Contact Us" %}
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li style="display:none">
+              Should be Empty:
+              <input type="text" name="website" value="" />
+            </li>
+          </ul>
+        </div>
+        <input type="hidden" id="simple_spc" name="simple_spc" value="42635318129152" />
+        <script type="text/javascript">
+          document.getElementById("si" + "mple" + "_spc").value = "42635318129152-42635318129152";
+        </script>
+      </form>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1542703115945912&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <p></p>
+      <br />
+      <h3>{% trans "Follow us on Facebook" %}</h3>
+      <br />
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1542703115945912&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <div class="fb-follow" data-href="https://www.facebook.com/TichaColonialZapotecTextExplorer" data-height="300" data-colorscheme="light" data-layout="standard" data-show-faces="false"></div>
+      <br />
+      <br />
+      <br />
+      <div class="fb-activity" data-app-id="1542703115945912" data-site="http://ds.haverford.edu/ticha" data-action="likes, recommends, comments" data-width="300" data-height="300" data-colorscheme="light" data-header="true"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "About the Team" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-11 col-centered" style="margin-bottom: 4em">
+      <h1 class="text-center" style="margin-bottom: 0">{% trans "The Team" %}</h1>
+      <p class="pageDesc">{% trans "An interdisciplinary team brings their diverse skill set to an archival corpus" %}</p>
+    </div>
+    <div class="col-lg-11 col-centered">
+      <div class="teamContributor">
+        <div class="row col-lg-12 col-centered">
+          <div class="teamName">Brook Danielle Lillehaugen <a href="http://brooklillehaugen.weebly.com/" target="_blank">&#9658</a></div>
+          <div class="teamNameSub">{% trans "Linguist" %}&#8211; {% trans "Assistant Professor, Haverford College" %}</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><img width="300" height="300" class = "img-responsive" src="{% static 'zapotexts/img/Brook-AGN-e1381593195217-150x150.jpg' %}" alt="Brook Danielle Lillehaugen"></div>
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+            <p>{% trans "Brook Danielle Lillehaugen is Assistant Professor of linguistics at Haverford College, with joint appointments at Bryn Mawr and Swarthmore Colleges. She received her Ph.D. in linguistics from the University of California, Los Angeles in 2006 and has been working on colonial and modern Valley Zapotec since 1999. She is co-author of <em>Cali Chiu? A Course on Tlacolula Valley Zapotec</em> (Munro, Lillehaugen, and Lopez 2007) and publishes on the grammar of Zapotec in both its modern and colonial forms. In collaboration with other linguists, the Living Tongues Institute, and native Zapotec speakers, she is developing online" %} <a href="http://talkingdictionary.swarthmore.edu/zapotecs/">{% trans "Talking Dictionaries" %}</a> {% trans "for Valley Zapotec language varieties.  She received a NEH Summer Stipend in 2014 to translate the Zapotec language portions of" %} <a href="{% url 'arte_original' %}">{% trans "Cordova's Arte" %}</a> {% trans "and in August 2015 will begin a project translating a corpus of Colonial Valley Zapotec last wills and testaments supported by fellowships from the ACLS and the NEH." %}</p>
+          </div>
+        </div>
+      </div>
+      <div class="teamContributor">
+        <div class="row col-lg-12 col-centered">
+          <div class="teamName">George Aaron Broadwell <a href="http://www.albany.edu/anthro/broadwell.php" target="_blank">&#9658</a></div>
+          <div class="teamNameSub">{% trans "Linguist" %}&#8211; {% trans "Assistant Professor, Haverford College" %}</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><img width="300" height="300" class = "img-responsive" src="{% static 'zapotexts/img/Broadwell-e1381601388848-150x150.jpg' %}" alt="George Aaron Broadwell"></div>
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+            <p>{% trans "George Aaron Broadwell is Professor in the Department of Anthropology and the Program in Linguistics and Cognitive Science at the University at Albany, State University of New York. His research focuses on the documentation of Native American languages, particularly in the southeastern United States and Oaxaca, Mexico. He has worked with Zapotec languages since 1989, with research on three modern varieties (Santa Ana del Valle, San Dionisio Ocotepec, and Macuiltianguis) as well as Colonial Valley Zapotec materials. He is the author of numerous publications on Zapotec and also author/editor of <em>A Choctaw Reference Grammar; The origin of the sun and moon: A Copala Triqui legend; and Nana naguan&#8217; rihaan nij sii chihaan&#8217;: Words of counsel for the Triqui people." %}</em></p>
+          </div>
+        </div>
+      </div>
+      <div class="teamContributor">
+        <div class="row col-lg-12 col-centered">
+          <div class="teamName">Michel R. Oudijk <a href="http://mroudyk.weebly.com/index.html" target="_blank">&#9658</a></div>
+          <div class="teamNameSub">{% trans "Ethnohistorian, Universidad Nacional Autónoma de México" %}</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><img width="300" height="300" class = "img-responsive" src="{% static 'zapotexts/img/Michel-AGN-e1381593013492-150x150.jpg' %}" alt="Michel R. Oudijk"></div>
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+            <p>{% trans "Michel R. Oudijk is an historian/philologist whose main interest is Zapotec historiography and its relationship to present day communities. Since 1992 he has worked in three of the four main Zapotec regions and is renowned for his analysis of pictographic and alphabetic documents alike, relating historical information to present day landscapes and oral tradition. His work on the indigenous participation in the &#8220;Spanish&#8221; conquest of Mexico has opened up a whole new field of study called the <em> New Conquest History</em>. In 2000 he received his Ph.D. at Leiden University, after which he worked for a year in the National Archives of the Indies in Seville, Spain. From there he became full professor at the University of Copenhagen, Denmark, and since 2004 he is a researcher at the Institute of Philological Studies at the Universidad Nacional Autónoma de México (the National Autonomous University of Mexico). He has published seven books and over 40 articles and chapters in journals and volumes all over the world, and is a well-known speaker at international academic meetings and in local indigenous communities events." %}</p>
+          </div>
+        </div>
+      </div>
+      <div class="teamContributor">
+        <div class="row col-lg-12 col-centered">
+          <div class="teamName">Laurie Allen</div>
+          <div class="teamNameSub">{% trans "Assistant Director of Digital Scholarship, University of Pennsylvania Libraries" %}</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><img width="300" height="300" class = "img-responsive" src="{% static 'zapotexts/img/laurie-150x150.jpg' %}" alt="Laurie Allen"></div>
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+            <p>{% trans "Laurie Allen is Assitant Director of Digital Scholarship at the University of Pennsylvania. She earned a Bachelor&#8217;s Degree from Bard College and an MS in Library and Information Science from Simmons College. She worked for 6 years at the Social Science Data and Research &amp; Instructional Services Department at the University of Pennsylvania before joining the Haverford College Libraries in 2008.  Since 2011, Allen has led a team of students and staff within the Haverford Library as Coordinator for Digital Scholarship &amp; Research Services. The" %} <a href="http://library.haverford.edu/services/digital-scholarship/projects/">{% trans "Digital Scholarship Group" %}</a> {% trans "supports faculty and student research projects with technical and infrastructural support. Allen and her team support several Drupal sites, databases, and mapping projects including The Global Terrorism Research Project and others. Allen has experience developing and training in Drupal, XML and TEI, and XSLT." %}</p>
+          </div>
+        </div>
+      </div>
+      <div class="teamContributor">
+        <div class="row col-lg-12 col-centered">
+          <div class="teamName">Mike Zarafonetis</div>
+          <div class="teamNameSub">{% trans "Coordinator for Digital Scholarship and Services at Magill Library, Haverford College" %}</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><img width="300" height="300" class = "img-responsive" src="{% static 'zapotexts/img/mike.jpg' %}" alt="Mike Zarafonetis"></div>
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+            <p>{% trans "Mike Zarafonetis is Coordinator for Digital Scholarship and Services for Haverford College Libraries. He earned a Bachelor's degree in Computer Science from Kalamazoo College and a PhD in History from Auburn University. He designed and developed web exhibits at the Hagley Museum and Library in Wilmington, Delaware before coming to Haverford. Since 2011, Mike has supported faculty, staff, and students in the planning, design, and development of digital scholarship projects. These projects incorporate techniques like GIS mapping, data visualization, and text encoding and analysis. In addition to course support and exhibit design, Mike has developed curriculum for the" %} <a href="//ds.haverford.edu/dsfellows">{% trans "Digital Scholarship Fellows" %}</a> {% trans "program at Haverford, and teaches in the Museum Studies graduate program at the University of Delaware." %}</p>
+          </div>
+        </div>
+      </div>
+      <hr class="fancy" style="margin-bottom:2em">
+      <div class="teamCurrent">{% trans "Current Student Research Assistants" %}</div>
+      <div class="teamContributor">
+        <div class="row col-lg-12 col-centered">
+          <div class="teamName">May Helena Plumb</div>
+          <div class="teamNameSub">(Haverford College &#8217;16): {% trans "Summer 2013-Present." %}</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><img width="300" height="300" src="{% static 'zapotexts/img/may_headshot.jpg' %}" alt="May Helena Plumb" class="img-responsive"></div>
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+            <p>{% trans "May Helena Plumb is a linguistics graduate student at the University of Texas at Austin. She received her B.A. in linguistics from Haverford College in 2016, where she wrote a thesis on conjunction in Colonial Valley Zapotec. As part of Ticha, she has worked on many projects, including the digitization of Zapotec manuscripts and the transcription and XML-encoding of Cordova's <cite>Arte</cite>" %}</p>
+          </div>
+        </div>
+      </div>
+      <div class="teamContributor">
+        <div class="row col-lg-12 col-centered">
+          <div class="teamName">Ian Fisher</div>
+          <div class="teamNameSub">(Haverford College &#8217;19): {% trans "Summer 2016-Present." %}</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><img width="300" height="300" src="{% static 'zapotexts/img/ian.jpg' %}" alt="Ian Fisher" class="img-responsive"></div>
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+            <p>{% trans "Fisher is a linguistics and computer science major at Haverford College. He works on the front-end and back-end code for the Ticha website." %}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

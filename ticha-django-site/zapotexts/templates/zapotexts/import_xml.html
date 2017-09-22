@@ -1,0 +1,21 @@
+{% extends 'admin/base_site.html' %}
+
+{% load staticfiles %}
+
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'admin/css/forms.css' %}">
+<link rel="stylesheet" href="{% static 'admin/css/widgets.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+  <h1>Import an XML Transcription</h1>
+  <form enctype="multipart/form-data" method="post" action="">
+    {% csrf_token %}
+    <table>
+      {{ form.as_table }}
+    </table>
+    <input type="submit" value="Submit" />
+  </form>
+</div>
+{% endblock %}

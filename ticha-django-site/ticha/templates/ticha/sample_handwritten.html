@@ -1,0 +1,230 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "Sample Handwritten Manuscript" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1 class = "text-center">{% trans "Sample Manuscript" %}</h1>
+  <br>
+  <div class="row text-center">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tabbable">
+      <ul id="tabs" class="nav nav-pills" data-tabs="tabs">
+        <li class="pills tabs-small active"><a data-toggle="tab" href="#tab1-slug">{% trans "Metadata" %}</a></li>
+        <li role="presentation" class="dropdown">
+          <a class="pills tabs-small" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          {% trans "Page Images" %}<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="pills tabs-small "><a data-toggle="tab" href="#tab2-slug">{% trans "Zapotec Page Image" %}</a></li>
+            <li class="pills tabs-small "><a data-toggle="tab" href="#tab3-slug">{% trans "Spanish Page Image" %}</a></li>
+          </ul>
+        </li>
+        <li role="presentation" class="dropdown">
+          <a class="pills tabs-small" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          {% trans "Transcriptions" %}<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="pills tabs-small "><a data-toggle="tab" href="#tab4-slug">{% trans "Transcription of Zapotec" %}</a></li>
+            <li class="pills tabs-small "><a data-toggle="tab" href="#tab5-slug">{% trans "Transcription of Spanish" %}</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="tab-content text-left">
+        <div id="tab1-slug" class="tab-pane active">
+          <h3>{% trans "Bill of sale from Tlacochahuaya" %}, 1675</h3>
+          <h4>{% trans "Archive:" %}</h4>
+          <a href="http://www.archivohistorico.oaxaca.gob.mx/">Archivo General del Poder Ejecutivo del Estado de Oaxaca</a>, Oaxaca City, Mexico
+          <h4>{% trans "Collection:" %}</h4>
+          Alcaldias Mayores
+          <h4>{% trans "Call Number:" %}</h4>
+          Legajo 42, Exp 10, 1732
+          <h4>{% trans "Pages:" %}</h4>
+          {% trans "4r (8r for Spanish Translation)" %}
+          <h4>{% trans "Year:" %}</h4>
+          1675
+          <h4>{% trans "Date:" %}</h4>
+          {% trans "March 14" %}
+          <h4>{% trans "Primary Parties" %}</h4>
+          Pedro Andres ({% trans "seller" %}), Gregorio Mendoza ({% trans "buyer" %})
+          <h4>{% trans "Witnesses:" %}</h4>
+          Domingo Ramirez Bernabe
+          <h4>{% trans "Scribe:" %}</h4>
+          Juan Garcia
+          <h4><a href="{% static 'zapotexts/img/Ticha_permissions_from_AGEO.pdf' %}" target="_blank">{% trans "Published with permission" %}</a></h4>
+        </div>
+        <div id="tab2-slug" class="tab-pane">
+          <a href="http://ds-omeka.haverford.edu/tichadocpics/Ticha_oaxaca_documents_web_all/AGEO_AM_Leg_42_Exp_10_04r_0_web.jpg"> <img class="img-responsive" height="75%" src="http://ds-omeka.haverford.edu/tichadocpics/Ticha_oaxaca_documents_web_all/AGEO_AM_Leg_42_Exp_10_04r_0_web.jpg" /></a>
+        </div>
+        <div id="tab3-slug" class="tab-pane">
+          <a href="http://ds-omeka.haverford.edu/tichadocpics/Ticha_oaxaca_documents_web_all/AGEO_AM_Leg_42_Exp_10_08r_0_web.jpg"><img class="img-responsive" src="http://ds-omeka.haverford.edu/tichadocpics/Ticha_oaxaca_documents_web_all/AGEO_AM_Leg_42_Exp_10_08r_0_web.jpg" /></a>
+        </div>
+        <div id="tab4-slug" class="tab-pane">
+          <p>escritura de venta<br/>
+            Na pedro andres xoana hualachij toarini lao queche<br/>
+            suani Ana chij Jueues a 14 de marso De 1675 Años<br/>
+            cicanali rotia tubi cuela yo solar nina xana cruz xa##<br/>
+            ye naca ni qui tubi medio cica nali cuca chahui con<br/>
+            sier tu lu que la nala ya lubi xosecu xanaya ma tias<br/>
+            de susa<sup>ro</sup> tin la yo ni Da i<sup>ri</sup>ci ger go<sup>ri</sup>omontu sa roni Chanij<br/>
+            topa peso tomin nali riso lo cubi xebea tubi cueela<br/>
+            yo roa ne sa yo nise yoo da sance bas tian ria pini se<sup>na</sup> ro#<br/>
+            rillã ne cubi cha cuye Jule bea roa bichaga bisaa<br/>
+            geronimo rramires naca cale bixo paya ga xitu ninila<br/>
+            yoce tu bicue la yoo naca cale bigache ya ga laca roa <sup>naca hua chij xibi</sup><br/>
+            nesa yo Ana rosa na na ya la yo niri Raca xini ger<br/>
+            goriomen tusa raca xiqui chani sua cacu tini suacacuee<br/>
+            xilla niLa yu niri hua<sup>na</sup> na yo bini chela naa yaca tico<br/>
+            cetaya la yo rice tubi liasa sa xinia saxiaga ya ya<br/>
+            cuti cu Cuani ni ticha xitini la yo niri quela ni layo<br/>
+            niri besala chij go tuxoce a xanayui petro nilla de aqui<br/>
+            no pene ni testa men tu pe nicha nina la yo ni ri cani<br/>
+            xilla la curiluxe ticha escritura de venta ni ri Dai<br/>
+            Cayye Ana Chij Juesues a 14 de marso 1675 años<br/>
+            Domingo rami<br/>
+            resber nabe testigo<br/>
+            Luna Jhuan<br/>
+            Garsia escri<br/>
+          </p>
+        </div>
+        <div id="tab5-slug" class="tab-pane">
+          <p>Yo Pedro Andres Principal y natural de este pueb<sup>o</sup> de Tlacochahuaya<br/>
+            Oy Jueves a catorze de Marzo de mill seis sientos y setenta<br/>
+            y sinco a[ños] como es verdad q vendo un pedaso de tierra<br/>
+            Solar de esta aonde esta la Cruz de vajo de la piedra a #ies<br/>
+            todo el medio, hasí es Verdad q sehiso el concierto ante mi<br/>
+            Padre Mathias de sosa y Vendo esta tierra, y la compra<br/>
+            Gregorio de Mendosa quatro p<sup>s</sup>. enrr[eales] efectubos  se empiesa<br/>
+            a meder un pedaso de tierra en la orilla del camino de<br/>
+            que va a S<sup>n</sup>. Sebastian y tiene por el lado del oriente<br/>
+            veinte medidas en donde linda con Gernonimo ramieres son<br/>
+            Veinte y seis <sup>de ancho</sup> medidas y otro pedaso dl tierra son veinte y<br/>
+            siete medidas tambien a la orilla del camino hagora dejo<br/>
+            esta tierra que la tome Gregorio de Mendoza para que<br/>
+            Sean sus bienes y pueda venderlos y hacerlo que legareciere<br/>
+            de esta tierra que yo no se la pidire nunca ni mis hijos ni<br/>
+            mis netos impidan esta venta por que esta tierra medio mi<br/>
+            abuela lixitima Petronila de Aquino que me la dejo ensu<br/>
+            testam<sup>to</sup>. hasi Otorgo esta Escrip<sup>a</sup>. de Venta oy Jueves a<br/>
+            catorce de Marzo de mill seiscientos y setenta y sinco a[ños] =<br/>
+            Domingo Garcia = testigo = Ante mi = Juan Garcia<br/>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of first column -->
+    <div class = "visible-xs">
+      <br>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  tabbable">
+      <ul id="tabs" class="nav nav-pills" data-tabs="tabs">
+        <li class="pills tabs-small "><a data-toggle="tab" href="#tab6-slug">{% trans "Metadata" %}</a></li>
+        <li role="presentation" class="dropdown">
+          <a class="pills tabs-small active" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          {% trans "Page Images" %}<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="pills tabs-small "><a data-toggle="tab" href="#tab7-slug">{% trans "Zapotec Page Image" %}</a></li>
+            <li class="pills tabs-small "><a data-toggle="tab" href="#tab8-slug">{% trans "Spanish Page Image" %}</a></li>
+          </ul>
+        </li>
+        <li role="presentation" class="dropdown">
+        <li role="presentation" class="dropdown">
+          <a class="pills tabs-small" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          {% trans "Transcriptions" %}<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="pills tabs-small "><a data-toggle="tab" href="#tab9-slug">{% trans "Transcription of Zapotec" %}</a></li>
+            <li class="pills tabs-small "><a data-toggle="tab" href="#tab10-slug">{% trans "Transcription of Spanish" %}</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="tab-content text-left">
+        <div id="tab6-slug" class="tab-pane">
+          <h3>{% trans "Bill of sale from Tlacochahuaya" %}, 1675</h3>
+          <h4>{% trans "Archive:" %}</h4>
+          <a href="http://www.archivohistorico.oaxaca.gob.mx">Archivo General del Poder Ejecutivo del Estado de Oaxaca</a>, Oaxaca City, Mexico
+          <h4>{% trans "Collection:" %}</h4>
+          Alcaldias Mayores
+          <h4>{% trans "Call Number:" %}</h4>
+          Legajo 42, Exp 10, 1732
+          <h4>{% trans "Pages:" %}</h4>
+          {% trans "4r (8r for Spanish Translation)" %}
+          <h4>{% trans "Year:" %}</h4>
+          1675
+          <h4>{% trans "Date:" %}</h4>
+          {% trans "March 14" %}
+          <h4>{% trans "Primary Parties" %}</h4>
+          Pedro Andres ({% trans "seller" %}), Gregorio Mendoza ({% trans "buyer" %})
+          <h4>{% trans "Witnesses:" %}</h4>
+          Domingo Ramirez Bernabe
+          <h4>{% trans "Scribe:" %}</h4>
+          Juan Garcia
+          <h4><a href="{% static 'zapotexts/img/Ticha_permissions_from_AGEO.pdf' %}" target="_blank">{% trans "Published with permission" %}</a></h4>
+        </div>
+        <div id="tab7-slug" class="tab-pane active">
+          <a href="http://ds-omeka.haverford.edu/tichadocpics/Ticha_oaxaca_documents_web_all/AGEO_AM_Leg_42_Exp_10_04r_0_web.jpg"><img class="img-responsive" src="http://ds-omeka.haverford.edu/tichadocpics/Ticha_oaxaca_documents_web_all/AGEO_AM_Leg_42_Exp_10_04r_0_web.jpg" /></a>
+        </div>
+        <div id="tab8-slug" class="tab-pane">
+          <a href="http://ds-omeka.haverford.edu/tichadocpics/Ticha_oaxaca_documents_web_all/AGEO_AM_Leg_42_Exp_10_08r_0_web.jpg">
+          <img class="img-responsive" src="http://ds-omeka.haverford.edu/tichadocpics/Ticha_oaxaca_documents_web_all/AGEO_AM_Leg_42_Exp_10_08r_0_web.jpg" /></a>
+        </div>
+        <div id="tab9-slug" class="tab-pane">
+          <p>escritura de venta<br/>
+            Na pedro andres xoana hualachij toarini lao queche<br/>
+            suani Ana chij Jueues a 14 de marso De 1675 Años<br/>
+            cicanali rotia tubi cuela yo solar nina xana cruz xa##<br/>
+            ye naca ni qui tubi medio cica nali cuca chahui con<br/>
+            sier tu lu que la nala ya lubi xosecu xanaya ma tias<br/>
+            de susa<sup>ro</sup> tin la yo ni Da i<sup>ri</sup>ci ger go<sup>ri</sup>omontu sa roni Chanij<br/>
+            topa peso tomin nali riso lo cubi xebea tubi cueela<br/>
+            yo roa ne sa yo nise yoo da sance bas tian ria pini se<sup>na</sup> ro#<br/>
+            rillã ne cubi cha cuye Jule bea roa bichaga bisaa<br/>
+            geronimo rramires naca cale bixo paya ga xitu ninila<br/>
+            yoce tu bicue la yoo naca cale bigache ya ga laca roa <sup>naca hua chij xibi</sup><br/>
+            nesa yo Ana rosa na na ya la yo niri Raca xini ger<br/>
+            goriomen tusa raca xiqui chani sua cacu tini suacacuee<br/>
+            xilla niLa yu niri hua<sup>na</sup> na yo bini chela naa yaca tico<br/>
+            cetaya la yo rice tubi liasa sa xinia saxiaga ya ya<br/>
+            cuti cu Cuani ni ticha xitini la yo niri quela ni layo<br/>
+            niri besala chij go tuxoce a xanayui petro nilla de aqui<br/>
+            no pene ni testa men tu pe nicha nina la yo ni ri cani<br/>
+            xilla la curiluxe ticha escritura de venta ni ri Dai<br/>
+            Cayye Ana Chij Juesues a 14 de marso 1675 años<br/>
+            Domingo rami<br/>
+            resber nabe testigo<br/>
+            Luna Jhuan<br/>
+            Garsia escri<br/>
+          </p>
+        </div>
+        <div id="tab10-slug" class="tab-pane">
+          <p>Yo Pedro Andres Principal y natural de este pueb<sup>o</sup> de Tlacochahuaya<br/>
+            Oy Jueves a catorze de Marzo de mill seis sientos y setenta<br/>
+            y sinco a[ños] como es verdad q vendo un pedaso de tierra<br/>
+            Solar de esta aonde esta la Cruz de vajo de la piedra a #ies<br/>
+            todo el medio, hasí es Verdad q sehiso el concierto ante mi<br/>
+            Padre Mathias de sosa y Vendo esta tierra, y la compra<br/>
+            Gregorio de Mendosa quatro p<sup>s</sup>. enrr[eales] efectubos  se empiesa<br/>
+            a meder un pedaso de tierra en la orilla del camino de<br/>
+            que va a S<sup>n</sup>. Sebastian y tiene por el lado del oriente<br/>
+            veinte medidas en donde linda con Gernonimo ramieres son<br/>
+            Veinte y seis <sup>de ancho</sup> medidas y otro pedaso dl tierra son veinte y<br/>
+            siete medidas tambien a la orilla del camino hagora dejo<br/>
+            esta tierra que la tome Gregorio de Mendoza para que<br/>
+            Sean sus bienes y pueda venderlos y hacerlo que legareciere<br/>
+            de esta tierra que yo no se la pidire nunca ni mis hijos ni<br/>
+            mis netos impidan esta venta por que esta tierra medio mi<br/>
+            abuela lixitima Petronila de Aquino que me la dejo ensu<br/>
+            testam<sup>to</sup>. hasi Otorgo esta Escrip<sup>a</sup>. de Venta oy Jueves a<br/>
+            catorce de Marzo de mill seiscientos y setenta y sinco a[ños] =<br/>
+            Domingo Garcia = testigo = Ante mi = Juan Garcia<br/>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+{% endblock %}

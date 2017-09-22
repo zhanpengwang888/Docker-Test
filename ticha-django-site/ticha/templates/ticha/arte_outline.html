@@ -1,0 +1,3070 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Arte Outline" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class = "text-center">{% trans "Outline of" %} Arte en lengua zapoteca</h1>
+      <br>
+    </div>
+  </div>
+  <div class="index">
+    <ul>
+      <li>
+        <a href="{% url 'zapotexts:page_detail' 'arte' 0 'original' %}">
+        1 [Front matter]
+        </a>
+        <button data-toggle="collapse" data-target="#section1">
+        <b class="caret"></b>
+        </button>
+      </li>
+      <ul id="section1" class="collapse in">
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 0 'original' %}">
+          1.1 [Cover of book and preliminary pages]
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 1 'original' %}">
+          1.2 [Title Page]
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 1 'original' %}">
+          1.3 [Licencias]
+          </a>
+          <button data-toggle="collapse" data-target="#section1_3">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section1_3" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 2 'original' %}">
+            1.3.1  Licencia del muy 
+            excellente &#383;e&#241;or 
+            Vi&#383;orey [Don Martin Enriquez].
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 4 'original' %}">
+            1.3.2 Licencia del se&#241;or Obispo de Antequera [Don Fray Bernardo de Alburquerque]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 5 'original' %}">
+            1.3.3 Licencia del se&#241;or Obispo de Antequera [Don Fray Bernardo de Alburquerque]
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 6 'original' %}">
+          1.4 Aprovacion de los examinadores [Fray Juan Berriz y Fray Juan de Villalobos]
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 7 'original' %}">
+          1.5 [Dedicacion]
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 10 'original' %}">
+          Prologo al lector
+          </a>
+        </li>
+      </ul>
+      <li>
+        <a href="{% url 'zapotexts:page_detail' 'arte' 12 'original' %}">
+        2 El Arte zapoteca
+        </a>
+        <button data-toggle="collapse" data-target="#section2">
+        <b class="caret"></b>
+        </button>
+      </li>
+      <ul id="section2" class="collapse in">
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 12 'original' %}">
+          2.1 [Introducci&#243;n]
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 13 'original' %}">
+          2.2 Declinaci&#243;n
+          </a>
+          <button data-toggle="collapse" data-target="#section2_2">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section2_2" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 13 'original' %}">
+            2.2.1 [Nominativo]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 13 'original' %}">
+            2.2.2 Genitivo
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 14 'original' %}">
+            2.2.3 Dativo
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 14 'original' %}">
+            2.2.4 Acusativo
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 14 'original' %}">
+            2.2.5 Vocativo
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 14 'original' %}">
+            2.2.6 Ablativo
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 15 'original' %}">
+            2.2.7 Efectivo
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 15 'original' %}">
+            2.2.8 Plural
+            </a>
+          </li>
+          <ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 15 'original' %}">
+              2.2.8.1 Nominativo
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 16 'original' %}">
+              2.2.8.2 Genitivo
+              </a>
+            </li>
+          </ul>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 16 'original' %}">
+            2.2.9 Ablativo Absoluto
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 16 'original' %}">
+          2.3. Nombres
+          </a>
+          <button data-toggle="collapse" data-target="#section2_3">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section2_3" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 17 'original' %}">
+            2.3.1 [Nombres proprios]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 17 'original' %}">
+            2.3.2 Nombres apellativos o comunes
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 18 'original' %}">
+            2.3.3 Nombres patronimicos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 18 'original' %}">
+            2.3.4 Nombres posessivos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 19 'original' %}">
+            2.3.5 Nombres de nominativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 19 'original' %}">
+            2.3.6. Nombres diminutivos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 19 'original' %}">
+            2.3.7 Nombres comparativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 20 'original' %}">
+            2.3.8 Nombres superlativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 20 'original' %}">
+            2.3.9 Nombres verbales <em>in bilis</em>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 21 'original' %}">
+            2.3.10 Nombres verbales en or
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 23 'original' %}">
+            2.3.11 Adverbiales Nombres
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 23 'original' %}">
+            2.3.12 Nombres verbales en io, vra, on, ento etc.
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 26 'original' %}">
+            2.3.13 Nombres de los acabados en ero
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 27 'original' %}">
+            2.3.14 Nombres acabados en oso
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 28 'original' %}">
+            2.3.15 Nombres como de infinitivo
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 30 'original' %}">
+            2.3.16 Nombres derivativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 30 'original' %}">
+            2.3.17 Nombres relativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 31 'original' %}">
+            2.3.18 Nombres instrumentales o 
+            effectivos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 31 'original' %}">
+            2.3.19 Nombres proprios de cosas
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 32 'original' %}">
+            2.3.20 Nombres que significan lugar a donde
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 33 'original' %}">
+            2.3.21 Nombres adjectivos
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 35 'original' %}">
+          2.4 Quis <em>vel</em> qui
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 37 'original' %}">
+          2.5 Pronombres
+          </a>
+          <button data-toggle="collapse" data-target="#section2_5">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section2_5" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 38 'original' %}">
+            2.5.1 [Primera declinaci&#243;n]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 39 'original' %}">
+            2.5.2 [Segunda declinaci&#243;n]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 41 'original' %}">
+            2.5.3 Tercera declinaci&#243;n
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 42 'original' %}">
+            2.5.4 Declaraci&#243;n acerca de los pronombres
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 43 'original' %}">
+          2.6 Verbos
+          </a>
+          <button data-toggle="collapse" data-target="#section2_6">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section2_6" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 43 'original' %}">
+            2.6.1 [Introducci&#243;n]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 48 'original' %}">
+            2.6.2 Voz del Plural
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 49 'original' %}">
+            2.6.3 Sum Est Fui
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 53 'original' %}">
+            2.6.4 Verbos Activos
+            </a>
+            <button data-toggle="collapse" data-target="#section2_6_4">
+            <b class="caret"></b>
+            </button>
+          </li>
+          <ul id="section2_6_4" class="collapse in">
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 53 'original' %}">
+              2.6.4.1 La primera 
+              conjugacion
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 55 'original' %}">
+              2.6.4.2  2. Conjugaci&#243;n
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 55 'original' %}">
+              2.6.4.3  3. Conjugaci&#243;n
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 56 'original' %}">
+              2.6.4.4  4. Conjugaci&#243;n
+              </a>
+            </li>
+          </ul>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 56 'original' %}">
+            2.6.5 Verbos Activos Intransitivos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 57 'original' %}">
+            2.6.6 Verbos Pasivos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 58 'original' %}">
+            2.6.7 De Verbis Neutris
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 59 'original' %}">
+            2.6.8 Verbos Comunes
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 60 'original' %}">
+            2.6.9 Verbos Regulares y irregulares
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 62 'original' %}">
+            2.6.10 Verbos Impersonales
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 62 'original' %}">
+            2.6.11 Verbos Deffectivos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 63 'original' %}">
+            2.6.12 Verbos Reciprocos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 64 'original' %}">
+            2.6.13 Verbos Reyterativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 65 'original' %}">
+            2.6.14 Verbos Compulsivos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 66 'original' %}">
+            2.6.15 Verbos Frecuentativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 67 'original' %}">
+            2.6.16 Verbos Reverenciales
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 68 'original' %}">
+            2.6.17 Verbos Simples
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 69 'original' %}">
+            2.6.18 Verbos Compuestos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 74 'original' %}">
+            2.6.19 El verbotonia
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 77 'original' %}">
+            2.6.20 Del verbotacaynaca
+            </a>
+            <button data-toggle="collapse" data-target="#section2_6_20">
+            <b class="caret"></b>
+            </button>
+          </li>
+          <ul id="section2_6_20" class="collapse in">
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 77 'original' %}">
+              2.6.20.1 [El verbotaca]
+              </a>
+              <button data-toggle="collapse" data-target="#section2_6_20_1">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_6_20_1" class="collapse in">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 80 'original' %}">
+                Del adjectivo naca
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 81 'original' %}">
+                Los significados y vozes que tiene un verbo
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 81 'original' %}">
+                [Introducci&#243;n]
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 82 'original' %}">
+                Verbos de to
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 84 'original' %}">
+                Verbos de ta
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 85 'original' %}">
+                Las mutaciones de letras y sillabas
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 90 'original' %}">
+                Diphtongos y letras duplicadas
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 91 'original' %}">
+                Letras que se semejan
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 92 'original' %}">
+                Duplicacion de letras
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 93 'original' %}">
+                Notable curioso
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 93 'original' %}">
+          2.7 Materia de los participios
+          </a>
+          <button data-toggle="collapse" data-target="#section2_7">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section2_7" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 93 'original' %}">
+            2.7.1 [Introducci&#243;n]
+            </a>
+            <button data-toggle="collapse" data-target="#section2_7_1">
+            <b class="caret"></b>
+            </button>
+          </li>
+          <ul id="section2_7_1" class="collapse in">
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 93 'original' %}">
+              M A T E R I A  de los participios
+              </a>
+            </li>
+          </ul>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 94 'original' %}">
+            2.7.2 Participios de presente
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 96 'original' %}">
+            2.7.3 Participios de preterito
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 97 'original' %}">
+            2.7.4 Participios de futuro en rus
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 98 'original' %}">
+            2.7.5 Participios de futuro en dus
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 99 'original' %}">
+          2.8 Materia de las preposiciones
+          </a>
+          <button data-toggle="collapse" data-target="#section2_8">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section2_8" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 99 'original' %}">
+            2.8.1 [Introducci&#243;n]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 99 'original' %}">
+            2.8.2 Preposiciones del genetivo
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 99 'original' %}">
+            2.8.3 Las preposiciones de acusativo
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 101 'original' %}">
+            2.8.4 Preposiciones de ablativo
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 102 'original' %}">
+            2.8.5 Preposiciones de acusativo o ablativo
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 103 'original' %}">
+            2.8.6 Preposiciones inseparables
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 103 'original' %}">
+          2.9 Los adverbios
+          </a>
+          <button data-toggle="collapse" data-target="#section2_9">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section2_9" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 103 'original' %}">
+            2.9.1 [Adverbios modales]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 104 'original' %}">
+            2.9.2 Adverbios numerals
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 105 'original' %}">
+            2.9.3 Adverbios temporales
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 105 'original' %}">
+            2.9.4 Locales
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 106 'original' %}">
+            2.9.5 Negativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 106 'original' %}">
+            2.9.6 Affirmativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 106 'original' %}">
+            2.9.7 Demonstrativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 106 'original' %}">
+            2.9.8 Optativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 106 'original' %}">
+            2.9.9 Ordinativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 106 'original' %}">
+            2.9.10 Interrogativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 106 'original' %}">
+            2.9.11 Dubitativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 106 'original' %}">
+            2.9.12 Vocativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 107 'original' %}">
+            2.9.13 Discretivos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 107 'original' %}">
+            2.9.14 Congregativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 107 'original' %}">
+            2.9.15 Ivrativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 107 'original' %}">
+            2.9.16 Hortativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 107 'original' %}">
+            2.9.17 Intenssivos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 107 'original' %}">
+            2.9.18 Remissivos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 107 'original' %}">
+            2.9.19 Diminutivos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 108 'original' %}">
+            2.9.20 Comparativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 108 'original' %}">
+            2.9.21 Superlativos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 108 'original' %}">
+            2.9.22 Similitudinis
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 108 'original' %}">
+            2.9.23 Quantitatis
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 108 'original' %}">
+            2.9.24 Qualitatis
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 108 'original' %}">
+          2.10 Las interjectiones
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 110 'original' %}">
+          2.11 Las conjunctiones
+          </a>
+          <button data-toggle="collapse" data-target="#section2_11">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section2_11" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 110 'original' %}">
+            2.11.1 [Introducci&#243;n]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 110 'original' %}">
+            2.11.2 Copulativas
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 111 'original' %}">
+            2.11.3 Disjunctivas
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 111 'original' %}">
+            2.11.4 Causales
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 111 'original' %}">
+            2.11.5 Colectivas
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 111 'original' %}">
+            2.11.6 Adversativas
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 111 'original' %}">
+            2.11.7 Aprovativas
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 111 'original' %}">
+            2.11.8 Comparativas
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 112 'original' %}">
+          2.12 Addictiones o exposiciones
+          </a>
+          <button data-toggle="collapse" data-target="#section2_12">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section2_12" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 112 'original' %}">
+            2.12.1 [Introducci&#243;n]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 112 'original' %}">
+            2.12.2 Ca 1
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 113 'original' %}">
+            2.12.3 Cachee 2
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 113 'original' %}">
+            2.12.4 Cala 3
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 114 'original' %}">
+            2.12.5 Cani, canici 4
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 114 'original' %}">
+            2.12.6 Cati 5
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 114 'original' %}">
+            2.12.7 Catiiti 6
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 115 'original' %}">
+            2.12.8 Cazaca 7
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 115 'original' %}">
+            2.12.9 Cazoba <em>vel</em> ca&#231;oba 8
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 115 'original' %}">
+            2.12.10 &#199;a 9
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 116 'original' %}">
+            2.12.11 Ce 10
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 116 'original' %}">
+            2.12.12 Ci 11
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 117 'original' %}">
+            2.12.13 Cica 12
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 117 'original' %}">
+            2.12.14 &#199;o,&#199;oo 13
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 118 'original' %}">
+            2.12.15 Co 14
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 118 'original' %}">
+            2.12.16 Cola 15
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 119 'original' %}">
+            2.12.17 Colaala 16
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 119 'original' %}">
+            2.12.18 Coopa <em>vel</em> cooba 17
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 119 'original' %}">
+            2.12.19 Chiba 18
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 120 'original' %}">
+            2.12.20 Chichi 19
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 120 'original' %}">
+            2.12.21 Gaa 20
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 120 'original' %}">
+            2.12.22 Gene <em>vel</em> xene 21
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 121 'original' %}">
+            2.12.23 Hua, huaya, hue, hueyo 22
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 121 'original' %}">
+            2.12.24 Yaca 23
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 122 'original' %}">
+            2.12.25 Yele 24
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 122 'original' %}">
+            2.12.26 La 25
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 123 'original' %}">
+            2.12.27 Laapenilo 26
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 123 'original' %}">
+            2.12.28 Lene 27
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 123 'original' %}">
+            2.12.29 le, ly 28
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 124 'original' %}">
+            2.12.30 Lii 29
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 124 'original' %}">
+            2.12.31 Lipi 30
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 125 'original' %}">
+            2.12.32 Na 31
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 125 'original' %}">
+            2.12.33 Nene 32
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 125 'original' %}">
+            2.12.34 Ny 33
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 126 'original' %}">
+            2.12.35 Niaca 34
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 126 'original' %}">
+            2.12.36 Niyele <em>vel</em> niele 35
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 126 'original' %}">
+            2.12.37 No 36
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 127 'original' %}">
+            2.12.38 Pe 37
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 127 'original' %}">
+            2.12.39 Paa 38
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 128 'original' %}">
+            2.12.40 Pea 39
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 128 'original' %}">
+            2.12.41 Qua 40
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 128 'original' %}">
+            2.12.42 Que 41
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 129 'original' %}">
+            2.12.43 Queya 42
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 129 'original' %}">
+            2.12.44 Quela 43
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 130 'original' %}">
+            2.12.45 Qui 44
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 130 'original' %}">
+            2.12.46 Quiaca 45
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 130 'original' %}">
+            2.12.47 Quiciquici 46
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 131 'original' %}">
+            2.12.48 Quizaca 47
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 131 'original' %}">
+            2.12.49 Ta, tha, yra, porta 48
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 131 'original' %}">
+            2.12.50 Tebela 49
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 132 'original' %}">
+            2.12.51 Teni
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 132 'original' %}">
+            2.12.52 Tete 50
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 132 'original' %}">
+            2.12.53 Ty 51
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 133 'original' %}">
+            2.12.54 Tii, Tiya, Tiiga, Catiica 52
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 133 'original' %}">
+            2.12.55 Tini <em>vel</em> teni 53
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 134 'original' %}">
+            2.12.56 Tipa 54
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 134 'original' %}">
+            2.12.57 To, tho, ro 55
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 135 'original' %}">
+            2.12.58 Toto 56
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 135 'original' %}">
+            2.12.59 Toxo 57
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 135 'original' %}">
+            2.12.60 Tu 58
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 135 'original' %}">
+            2.12.61 Vuiiti, vueete, vueti 59
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 136 'original' %}">
+            2.12.62 Xa, xe 60
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 136 'original' %}">
+            2.12.63 Xaca, coxaca 61
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 136 'original' %}">
+            2.12.64 Xaya 62
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 137 'original' %}">
+            2.12.65 Xata 63
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 137 'original' %}">
+            2.12.66 Xe <em>vel</em> xee 64
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 137 'original' %}">
+            2.12.67 Xene <em>vel</em> xeni 65
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 137 'original' %}">
+            2.12.68 Xexe 66
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 138 'original' %}">
+            2.12.69 Xihui 67
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 138 'original' %}">
+            2.12.70 Xillaa 68
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 138 'original' %}">
+            2.12.71 Xoo 69
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 139 'original' %}">
+            2.12.72 Za, ze, zo 70
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 140 'original' %}">
+          2.13 Algunas particularidades
+          </a>
+          <button data-toggle="collapse" data-target="#section2_13">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section2_13" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 140 'original' %}">
+            2.13.1 Verbos 71
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 140 'original' %}">
+            2.13.2 Verbos y adjectivos 72
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 141 'original' %}">
+            2.13.3 Adjectivos 73
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 141 'original' %}">
+            2.13.4 Verbos preteritos 74
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 141 'original' %}">
+            2.13.5 Verbos 75
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 142 'original' %}">
+            2.13.6 Duplicacion de verbos 76
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 142 'original' %}">
+            2.13.7 Verbos 77
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 142 'original' %}">
+            2.13.8 Modo de hablar [1] 78
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 143 'original' %}">
+            2.13.9 Modo de hablar [2] 79
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 143 'original' %}">
+            2.13.10 Verbos passivos 80
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 144 'original' %}">
+            2.13.11 La diferencia de hablar de cada pueblo 81
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 145 'original' %}">
+            2.13.12 Los acentos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 146 'original' %}">
+            2.13.13 La causa de las distinctas pronunciaciones 83
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 147 'original' %}">
+            2.13.14 Modos de hablar de los indios
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 149 'original' %}">
+          2.14 Conjugaciones
+          </a>
+          <button data-toggle="collapse" data-target="#section2_14">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section2_14" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 149 'original' %}">
+            2.14.1 [Introducci&#243;n]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 150 'original' %}">
+            2.14.2 Taca
+            </a>
+            <button data-toggle="collapse" data-target="#section2_14_2">
+            <b class="caret"></b>
+            </button>
+          </li>
+          <ul id="section2_14_2" class="collapse">
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 150 'original' %}">
+              2.14.2.1 Indicativo modo
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_2_1">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_2_1" class="collapse in">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 150 'original' %}">
+                Tempore presenti
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 151 'original' %}">
+                Preterito imperfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 151 'original' %}">
+                Preterito perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 152 'original' %}">
+                Pluscuam perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 152 'original' %}">
+                Futuro imperfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 152 'original' %}">
+                Futuro perfecto
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 152 'original' %}">
+              2.14.2.2 Imperativo modo
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 153 'original' %}">
+              2.14.2.3 Optativo modo
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_2_3">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_2_3" class="collapse in">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 153 'original' %}">
+                2.14.2.3.1 Presente
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 153 'original' %}">
+                2.14.2.3.2 Preterito imperfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 154 'original' %}">
+                2.14.2.3.3 Preterito perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 155 'original' %}">
+                2.14.2.3.4 Pluscuam perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 155 'original' %}">
+                2.14.2.3.5 Futuro
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 155 'original' %}">
+              2.14.2.4 Subjunctivo modo
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_2_4">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_2_4" class="collapse in">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 155 'original' %}">
+                2.14.2.4.1 Presente
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 156 'original' %}">
+                2.14.2.4.2 Preterito imperfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 156 'original' %}">
+                2.14.2.4.3 Preterito perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 156 'original' %}">
+                2.14.2.4.4 Pluscuam perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 157 'original' %}">
+                2.14.2.4.5 futuro
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 157 'original' %}">
+              2.14.2.5 Infinitivo modo
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_2_5">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_2_5" class="collapse in">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 157 'original' %}">
+                2.14.2.5.1 Presente
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 157 'original' %}">
+                2.14.2.5.2 Presente
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 158 'original' %}">
+              2.14.2.6 Participios
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 158 'original' %}">
+              2.14.2.7 Verbos impersonales
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 158 'original' %}">
+              2.14.2.8 Gerundios
+              </a>
+            </li>
+          </ul>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 158 'original' %}">
+            2.14.3 Verbo de la primera conjugacion [ta]
+            </a>
+            <button data-toggle="collapse" data-target="#section2_14_3">
+            <b class="caret"></b>
+            </button>
+          </li>
+          <ul id="section2_14_3" class="collapse">
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 158 'original' %}">
+              2.14.3.1 Un verbo regular [Tanaya]
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_3_1">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_3_1" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 158 'original' %}">
+                2.14.3.1.1 Indicativo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_3_1_1">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_3_1_1" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 158 'original' %}">
+                  2.14.3.1.1.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 159 'original' %}">
+                  2.14.3.1.1.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 159 'original' %}">
+                  2.14.3.1.1.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 159 'original' %}">
+                  2.14.3.1.1.4 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 160 'original' %}">
+                  2.14.3.1.1.5 Futuro imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 160 'original' %}">
+                  2.14.3.1.1.6 Futuro perfecto
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 160 'original' %}">
+                2.14.3.1.2 Imperativo modo
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 160 'original' %}">
+                2.14.3.1.3 Optativo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_3_1_3">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_3_1_3" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 160 'original' %}">
+                  2.14.3.1.3.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 161 'original' %}">
+                  2.14.3.1.3.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 161 'original' %}">
+                  2.14.3.1.3.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 162 'original' %}">
+                  2.14.3.1.3.4 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 162 'original' %}">
+                  2.14.3.1.3.5 Futuro
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 163 'original' %}">
+                2.14.3.1.4 Subjunctivo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_3_1_4">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_3_1_4" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 163 'original' %}">
+                  2.14.3.1.4.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 163 'original' %}">
+                  2.14.3.1.4.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 163 'original' %}">
+                  2.14.3.1.4.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 164 'original' %}">
+                  2.14.3.1.4.4 Preterito pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 164 'original' %}">
+                  2.14.3.1.4.5 Futuro
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 164 'original' %}">
+                2.14.3.1.5 Infinitivo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_3_1_5">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_3_1_5" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 164 'original' %}">
+                  2.14.3.1.5.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 164 'original' %}">
+                  2.14.3.1.5.2 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 165 'original' %}">
+                  2.14.3.1.5.3 Futuro
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 165 'original' %}">
+                2.14.3.1.6 Gerundios
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_3_1_6">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_3_1_6" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 165 'original' %}">
+                  2.14.3.1.6.1 El de genetivo
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 165 'original' %}">
+                  2.14.3.1.6.2 Gerundio de ablative
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 166 'original' %}">
+                  2.14.3.1.6.3 Gerundio de acusativo
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 167 'original' %}">
+                2.14.3.1.7 Participios
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_3_1_7">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_3_1_7" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 167 'original' %}">
+                  2.14.3.1.7.1 Activa
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 167 'original' %}">
+                  2.14.3.1.7.2 Passiva
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 167 'original' %}">
+                  2.14.3.1.7.3 Supinos
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 167 'original' %}">
+                  2.14.3.1.7.4 del preterito de la boz passiva
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 167 'original' %}">
+                  2.14.3.1.7.5 de futuro en dus
+                  </a>
+                </li>
+              </ul>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 168 'original' %}">
+              2.14.3.2 Otro verbo deta, irregular [tagoa]
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_3_2">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_3_2" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 168 'original' %}">
+                2.14.3.2.1 Indicativo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_3_2_1">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_3_2_1" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 168 'original' %}">
+                  2.14.3.2.1.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 168 'original' %}">
+                  2.14.3.2.1.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 168 'original' %}">
+                  2.14.3.2.1.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 168 'original' %}">
+                  2.14.3.2.1.4 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 169 'original' %}">
+                  2.14.3.2.1.5 Futuro imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 169 'original' %}">
+                  2.14.3.2.1.6 Futuro perfecto
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 169 'original' %}">
+                2.14.3.2.2 Imperativo modo
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 169 'original' %}">
+                2.14.3.2.3 Optativo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_3_2_3">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_3_2_3" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 169 'original' %}">
+                  2.14.3.2.3.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 170 'original' %}">
+                  2.14.3.2.3.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 170 'original' %}">
+                  2.14.3.2.3.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 171 'original' %}">
+                  2.14.3.2.3.4 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 171 'original' %}">
+                  2.14.3.2.3.5 Futuro
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 171 'original' %}">
+                2.14.3.2.4 Subjunctivo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_3_2_4">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_3_2_4" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 171 'original' %}">
+                  2.14.3.2.4.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 172 'original' %}">
+                  2.14.3.2.4.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 172 'original' %}">
+                  2.14.3.2.4.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 172 'original' %}">
+                  2.14.3.2.4.4 Preterito pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 172 'original' %}">
+                  2.14.3.2.4.5 Futuro
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 173 'original' %}">
+                2.14.3.2.5 Infinitivo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_3_2_5">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_3_2_5" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 173 'original' %}">
+                  2.14.3.2.5.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 173 'original' %}">
+                  2.14.3.2.5.2 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 174 'original' %}">
+                  2.14.3.2.5.3 Futuro
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 174 'original' %}">
+                2.14.3.2.6 Gerundios
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_3_2_6">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_3_2_6" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 174 'original' %}">
+                  2.14.3.2.6.1 El de genetivo
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 174 'original' %}">
+                  2.14.3.2.6.2 Gerundio del ablative
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 175 'original' %}">
+                  2.14.3.2.6.3 Gerundio del acusative
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 176 'original' %}">
+                2.14.3.2.7 Participios
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_3_2_7">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_3_2_7" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 176 'original' %}">
+                  2.14.3.2.7.1 De activa
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 176 'original' %}">
+                  2.14.3.2.7.2 Participios de futuro en rus
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 176 'original' %}">
+                  2.14.3.2.7.3 Supinos
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 176 'original' %}">
+                  2.14.3.2.7.4 Participios de passive
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 177 'original' %}">
+                  2.14.3.2.7.5 Participios de futuro en dus
+                  </a>
+                </li>
+              </ul>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 177 'original' %}">
+              2.14.3.3 Verbos detaque mudan preteritos y plurales
+              </a>
+            </li>
+          </ul>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 177 'original' %}">
+            2.14.4 Un verbo de la segunda conjugacion [te] [techelaya]
+            </a>
+            <button data-toggle="collapse" data-target="#section2_14_4">
+            <b class="caret"></b>
+            </button>
+          </li>
+          <ul id="section2_14_4" class="collapse">
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 177 'original' %}">
+              2.14.4.1 Indicativo [modo]
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_4_1">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_4_1" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 177 'original' %}">
+                2.14.4.1.1 Presente
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 177 'original' %}">
+                2.14.4.1.2 Preterito imperfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 178 'original' %}">
+                2.14.4.1.3 Preterito perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 178 'original' %}">
+                2.14.4.1.4 Pluscuam perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 178 'original' %}">
+                2.14.4.1.5 Futuro imperfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 178 'original' %}">
+                2.14.4.1.6 Futuro perfecto
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 179 'original' %}">
+              2.14.4.2 Imperativo [modo]
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 179 'original' %}">
+              2.14.4.3 Optativo modo
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_4_3">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_4_3" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 179 'original' %}">
+                2.14.4.3.1 Presente
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 179 'original' %}">
+                2.14.4.3.2 Preterito imperfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 179 'original' %}">
+                2.14.4.3.3 Preterito perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 180 'original' %}">
+                2.14.4.3.4 Preterito pluscuam perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 180 'original' %}">
+                2.14.4.3.5 Futuro
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 180 'original' %}">
+              2.14.4.4 Subjunctivo modo
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_4_4">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_4_4" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 180 'original' %}">
+                2.14.4.4.1 Presente
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 181 'original' %}">
+                2.14.4.4.2 Preterito imperfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 181 'original' %}">
+                2.14.4.4.3 Preterito perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 181 'original' %}">
+                2.14.4.4.4 Pluscuam perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 182 'original' %}">
+                Futuro
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 182 'original' %}">
+              2.14.4.5 Infinitivo modo
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_4_5">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_4_5" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 182 'original' %}">
+                Presente
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 183 'original' %}">
+                Pluscuam perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 183 'original' %}">
+                Futuro
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 183 'original' %}">
+              2.14.4.6 Gerundios
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_4_6">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_4_6" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 183 'original' %}">
+                2.14.4.6.1 de genetivo
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 184 'original' %}">
+                2.14.4.6.2 Gerundio de ablativo
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 184 'original' %}">
+                2.14.4.6.3 Gerundio de acusativo
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 185 'original' %}">
+              2.14.4.7 Participios
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_4_7">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_4_7" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 185 'original' %}">
+                2.14.4.7.1 de activa
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 185 'original' %}">
+                2.14.4.7.2 Participio de preterito
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 185 'original' %}">
+                2.14.4.7.3 Supinos
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 185 'original' %}">
+                2.14.4.7.4 Participios de passiva presente
+                </a>
+              </li>
+            </ul>
+          </ul>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 186 'original' %}">
+            2.14.5 La tercera conjugacion ti
+            </a>
+            <button data-toggle="collapse" data-target="#section2_14_5">
+            <b class="caret"></b>
+            </button>
+          </li>
+          <ul id="section2_14_5" class="collapse">
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 186 'original' %}">
+              2.14.5.1 Un verb activo de la tercera conjugacion [tigu&#237;b&#237;a]
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_5_1">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_5_1" class="collapse in">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 186 'original' %}">
+                2.14.5.1.1 Indicativo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_5_1_1">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_5_1_1" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 186 'original' %}">
+                  2.14.5.1.1.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 186 'original' %}">
+                  2.14.5.1.1.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 187 'original' %}">
+                  2.14.5.1.1.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 187 'original' %}">
+                  2.14.5.1.1.4 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 187 'original' %}">
+                  2.14.5.1.1.5 Futuro imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 187 'original' %}">
+                  2.14.5.1.1.6 Futuro perfecto
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 188 'original' %}">
+                2.14.5.1.2 Imperativo modo
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 188 'original' %}">
+                2.14.5.1.3 Optativo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_5_1_3">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_5_1_3" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 188 'original' %}">
+                  2.14.5.1.3.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 188 'original' %}">
+                  2.14.5.1.3.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 188 'original' %}">
+                  2.14.5.1.3.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 189 'original' %}">
+                  2.14.5.1.3.4 Plusquam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 189 'original' %}">
+                  2.14.5.1.3.5 Futuro
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 189 'original' %}">
+                2.14.5.1.4 Subjunctivo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_5_1_4">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_5_1_4" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 189 'original' %}">
+                  2.14.5.1.4.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 189 'original' %}">
+                  2.14.5.1.4.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 190 'original' %}">
+                  2.14.5.1.4.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 190 'original' %}">
+                  2.14.5.1.4.4 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 190 'original' %}">
+                  2.14.5.1.4.5 Futuro
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 190 'original' %}">
+                2.14.5.1.5 Infinitivo modo
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 190 'original' %}">
+                2.14.5.1.6 Los gerundios y los participios
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 191 'original' %}">
+              2.14.5.2 Verbos detique mudan
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 191 'original' %}">
+              2.14.5.3 El verbo passivo tit&#237;bia
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_5_3">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_5_3" class="collapse in">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 192 'original' %}">
+                2.14.5.3.1 Indicativo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_5_3_1">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_5_3_1" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 192 'original' %}">
+                  2.14.5.3.1.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 192 'original' %}">
+                  2.14.5.3.1.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 192 'original' %}">
+                  2.14.5.3.1.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 192 'original' %}">
+                  2.14.5.3.1.4 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 192 'original' %}">
+                  2.14.5.3.1.5 Futuro imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 192 'original' %}">
+                  2.14.5.3.1.6 Futuro perfecto
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 193 'original' %}">
+                2.14.5.3.2 Imperativo modo
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 193 'original' %}">
+                2.14.5.3.3 Optativo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_5_3_3">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_5_3_3" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 193 'original' %}">
+                  2.14.5.3.3.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 193 'original' %}">
+                  2.14.5.3.3.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 193 'original' %}">
+                  2.14.5.3.3.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 193 'original' %}">
+                  2.14.5.3.3.4 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 194 'original' %}">
+                  2.14.5.3.3.5 Futuro
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 194 'original' %}">
+                2.14.5.3.4 Subjunctivo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_5_3_4">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_5_3_4" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 194 'original' %}">
+                  2.14.5.3.4.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 194 'original' %}">
+                  2.14.5.3.4.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 194 'original' %}">
+                  2.14.5.3.4.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 194 'original' %}">
+                  2.14.5.3.4.4 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 195 'original' %}">
+                  2.14.5.3.4.5 Futuro
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 195 'original' %}">
+                2.14.5.3.5 Infinitivo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_5_3_5">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_5_3_5" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 195 'original' %}">
+                  2.14.5.3.5.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 195 'original' %}">
+                  2.14.5.3.5.2 Pluscuam perfecto
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 195 'original' %}">
+                2.14.5.3.6 Gerundios
+                </a>
+              </li>
+            </ul>
+          </ul>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 196 'original' %}">
+            2.14.6 La quarta conjugacione [to]
+            </a>
+            <button data-toggle="collapse" data-target="#section2_14_6">
+            <b class="caret"></b>
+            </button>
+          </li>
+          <ul id="section2_14_6" class="collapse">
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 196 'original' %}">
+              2.14.6.1 Tonaya
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_6_1">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_6_1" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 196 'original' %}">
+                2.14.6.1.1 Indicativo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_6_1_1">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_6_1_1" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 196 'original' %}">
+                  2.14.6.1.1.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 196 'original' %}">
+                  2.14.6.1.1.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 196 'original' %}">
+                  2.14.6.1.1.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 197 'original' %}">
+                  2.14.6.1.1.4 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 197 'original' %}">
+                  2.14.6.1.1.5 Futuro imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 197 'original' %}">
+                  2.14.6.1.1.6 Futuro perfecto
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 197 'original' %}">
+                2.14.6.1.2 Imperativo modo
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 198 'original' %}">
+                2.14.6.1.3 Optativo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_6_1_3">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_6_1_3" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 198 'original' %}">
+                  2.14.6.1.3.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 198 'original' %}">
+                  2.14.6.1.3.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 198 'original' %}">
+                  2.14.6.1.3.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 198 'original' %}">
+                  2.14.6.1.3.4 Pluscuam perfecto
+                  </a>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 199 'original' %}">
+                  2.14.6.1.3.5 Futuro
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 199 'original' %}">
+                2.14.6.1.4 Subjunctivo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_6_1_4">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_6_1_4" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 199 'original' %}">
+                  2.14.6.1.4.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 199 'original' %}">
+                  2.14.6.1.4.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 199 'original' %}">
+                  2.14.6.1.4.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 199 'original' %}">
+                  2.14.6.1.4.4 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 200 'original' %}">
+                  2.14.6.1.4.5 Futuro
+                  </a>
+                </li>
+              </ul>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 200 'original' %}">
+                2.14.6.1.5 Infinitivo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_6_1_5">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_6_1_5" class="collapse">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 200 'original' %}">
+                  2.14.6.1.5.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 200 'original' %}">
+                  2.14.6.1.5.2 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 200 'original' %}">
+                  2.14.6.1.5.3 Futuro
+                  </a>
+                </li>
+              </ul>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 200 'original' %}">
+              2.14.6.2 Un verbo regular [toc&#233;tea]
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_6_2">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_6_2" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 200 'original' %}">
+                2.14.6.2.1 Indicativo modo
+                </a>
+                <button data-toggle="collapse" data-target="#section2_14_6_2_1">
+                <b class="caret"></b>
+                </button>
+              </li>
+              <ul id="section2_14_6_2_1" class="collapse in">
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 200 'original' %}">
+                  2.14.6.2.1.1 Presente
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 200 'original' %}">
+                  2.14.6.2.1.2 Preterito imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 200 'original' %}">
+                  2.14.6.2.1.3 Preterito perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 201 'original' %}">
+                  2.14.6.2.1.4 Pluscuam perfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 201 'original' %}">
+                  2.14.6.2.1.5 Futuro imperfecto
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'zapotexts:page_detail' 'arte' 201 'original' %}">
+                  2.14.6.2.1.6 Futuro perfecto
+                  </a>
+                </li>
+              </ul>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 201 'original' %}">
+              2.14.6.2.2 Imperativo modo
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 201 'original' %}">
+              2.14.6.2.3 Optativo modo
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_6_2_3">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_6_2_3" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 201 'original' %}">
+                2.14.6.2.3.1 Presente
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 202 'original' %}">
+                2.14.6.2.3.2 Preterito imperfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 202 'original' %}">
+                2.14.6.2.3.3 Preterito perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 202 'original' %}">
+                2.14.6.2.3.4 Pluscuam perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 203 'original' %}">
+                2.14.6.2.3.5 Futuro
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 203 'original' %}">
+              2.14.6.2.4 Subjunctivo modo
+              </a>
+              <button data-toggle="collapse" data-target="#section2_14_6_2_4">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section2_14_6_2_4" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 203 'original' %}">
+                2.14.6.2.4.1 Presente
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 203 'original' %}">
+                2.14.6.2.4.2 Preterito imperfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 203 'original' %}">
+                2.14.6.2.4.3 Preterito perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 203 'original' %}">
+                2.14.6.2.4.4 Pluscuam perfecto
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 204 'original' %}">
+                2.14.6.2.4.5 Futuro
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 204 'original' %}">
+              2.14.6.2.5 Infinitivo
+              </a>
+            </li>
+          </ul>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 205 'original' %}">
+            2.14.6.3 Verbos detoirregulares
+            </a>
+          </li>
+        </ul>
+      </ul>
+      <li>
+        <a href="{% url 'zapotexts:page_detail' 'arte' 206 'original' %}">
+        3 Modos de Contar
+        </a>
+        <button data-toggle="collapse" data-target="#section3">
+        <b class="caret"></b>
+        </button>
+      </li>
+      <ul id="section3" class="collapse in">
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 206 'original' %}">
+          3.1 [Introducci&#243;n]
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 208 'original' %}">
+          3.2 La quenta comun
+          </a>
+          <button data-toggle="collapse" data-target="#section3_2">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section3_2" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 208 'original' %}">
+            3.2.1 List of numbers
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 221 'original' %}">
+            3.2.2 Analysis
+            </a>
+            <button data-toggle="collapse" data-target="#section3_2_2">
+            <b class="caret"></b>
+            </button>
+          </li>
+          <ul id="section3_2_2" class="collapse in">
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 221 'original' %}">
+              3.2.2.1 Base 20
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 221 'original' %}">
+              3.2.2.2 Two sets of numbers
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 221 'original' %}">
+              3.2.2.3 Tense
+              </a>
+              <button data-toggle="collapse" data-target="#section3_2_2_3">
+              <b class="caret"></b>
+              </button>
+            </li>
+            <ul id="section3_2_2_3" class="collapse">
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 221 'original' %}">
+                3.2.2.3.1 [Introducci&#243;n]
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 222 'original' %}">
+                3.2.2.3.2 De presente
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 222 'original' %}">
+                3.2.2.3.3 De preterito
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'zapotexts:page_detail' 'arte' 222 'original' %}">
+                3.2.2.3.4 Para lo de futuro
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 222 'original' %}">
+          3.3 La quenta para contar a&#241;os
+          </a>
+          <button data-toggle="collapse" data-target="#section3_3">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section3_3" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 222 'original' %}">
+            3.3.1 [Introducci&#243;n]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 223 'original' %}">
+            3.3.2 Quenta de a&#241;os passados
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 224 'original' %}">
+            3.3.3 Quenta de los a&#241;os venideros
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 226 'original' %}">
+          3.4 Quenta de los meses
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 226 'original' %}">
+          3.5 Quenta de los d&#237;as
+          </a>
+          <button data-toggle="collapse" data-target="#section3_5">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section3_5" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 226 'original' %}">
+            3.5.1 [Introducci&#243;n]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 226 'original' %}">
+            3.5.2 Los dias passados
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 228 'original' %}">
+            3.5.3 Quenta de los d&#237;as venideros
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 229 'original' %}">
+            3.5.4 D&#237;as de la semana
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 230 'original' %}">
+            3.5.5 Las horas del d&#237;a
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 231 'original' %}">
+            3.5.6 Terminos de d&#237;as
+            </a>
+            <button data-toggle="collapse" data-target="#section3_5_6">
+            <b class="caret"></b>
+            </button>
+          </li>
+          <ul id="section3_5_6" class="collapse in">
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 231 'original' %}">
+              3.5.6.1 [Periods of more than one day]
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'zapotexts:page_detail' 'arte' 232 'original' %}">
+              3.5.6.2 D&#237;as [passados y futuros]
+              </a>
+            </li>
+          </ul>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 232 'original' %}">
+            3.5.7 Notable [1]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 232 'original' %}">
+            3.5.8 Notable [2]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 233 'original' %}">
+            3.5.9 Notable [3]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 234 'original' %}">
+            3.5.10 Notable [4]
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 234 'original' %}">
+            3.5.11 Notable [5]
+            </a>
+          </li>
+        </ul>
+      </ul>
+      <li>
+        <a href="{% url 'zapotexts:page_detail' 'arte' 237 'original' %}">
+        4 La edad y discurso de la vida del hombre
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'zapotexts:page_detail' 'arte' 237 'original' %}">
+        5 Miembros corporales
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'zapotexts:page_detail' 'arte' 241 'original' %}">
+        6 Kalendario antiguo
+        </a>
+        <button data-toggle="collapse" data-target="#section6">
+        <b class="caret"></b>
+        </button>
+      </li>
+      <ul id="section6" class="collapse in">
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 241 'original' %}">
+          6.1 [Introducci&#243;n]
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 244 'original' %}">
+          6.2 Los [65] d&#237;as del [primero] cocijo
+          </a>
+          <button data-toggle="collapse" data-target="#section6_2">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section6_2" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 244 'original' %}">
+            6.2.1 El primero cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 245 'original' %}">
+            6.2.2 El segundo cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 245 'original' %}">
+            6.2.3 El tercerococii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 246 'original' %}">
+            6.2.4 El quartococii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 246 'original' %}">
+            6.2.5 El quinto cocii
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 247 'original' %}">
+          6.3 Los 60 d&#237;as del segundo cocijo
+          </a>
+          <button data-toggle="collapse" data-target="#section6_3">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section6_3" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 247 'original' %}">
+            6.3.1 El primero cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 247 'original' %}">
+            6.3.2 El segundo cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 248 'original' %}">
+            6.3.3 El tercero cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 248 'original' %}">
+            6.3.4 El quarto cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 249 'original' %}">
+            6.3.5 El quinto cocii
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 249 'original' %}">
+          6.4 Los 65 d&#237;as del [tercero] cocijo
+          </a>
+          <button data-toggle="collapse" data-target="#section6_4">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section6_4" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 249 'original' %}">
+            6.4.1 El primero cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 250 'original' %}">
+            6.4.2 El segundo cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 250 'original' %}">
+            6.4.3 El tercero cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 251 'original' %}">
+            6.4.4 El quarto cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 251 'original' %}">
+            6.4.5 El quinto cocii
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 252 'original' %}">
+          6.5 El quarto cocijo principal
+          </a>
+          <button data-toggle="collapse" data-target="#section6_5">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section6_5" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 252 'original' %}">
+            6.5.1 El primero cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 253 'original' %}">
+            6.5.2 El segundo cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 253 'original' %}">
+            6.5.3 El tercero cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 254 'original' %}">
+            6.5.4 El quarto cocii
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 254 'original' %}">
+            6.5.5 El quinto cocii
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 255 'original' %}">
+          6.6 Nombres
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 255 'original' %}">
+          6.7 Notable [otros nombres]
+          </a>
+          <button data-toggle="collapse" data-target="#section6_7">
+          <b class="caret"></b>
+          </button>
+        </li>
+        <ul id="section6_7" class="collapse">
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 255 'original' %}">
+            6.7.1 A los hijos
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'zapotexts:page_detail' 'arte' 255 'original' %}">
+            6.7.2 A las hijas
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 256 'original' %}">
+          6.8 Notable [otros nombres]
+          </a>
+        </li>
+      </ul>
+      <li>
+        <a href="{% url 'zapotexts:page_detail' 'arte' 256 'original' %}">
+        7 Cosas Notables
+        </a>
+        <button data-toggle="collapse" data-target="#section7">
+        <b class="caret"></b>
+        </button>
+      </li>
+      <ul id="section7" class="collapse in">
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 256 'original' %}">
+          7.1 Los agueros y algunos ritos
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 259 'original' %}">
+          7.2 Para sortear los casamientos
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 260 'original' %}">
+          7.3 Por las causas siguientes se descasavan
+          </a>
+        </li>
+      </ul>
+      <li>
+        <a href="{% url 'zapotexts:page_detail' 'arte' 262 'original' %}">
+        8 Back matter
+        </a>
+        <button data-toggle="collapse" data-target="#section8">
+        <b class="caret"></b>
+        </button>
+      </li>
+      <ul id="section8" class="collapse in">
+        <li>
+          <a href="{% url 'zapotexts:page_detail' 'arte' 0 'original' %}">
+          8.1 Erratas
+          </a>
+        </li>
+      </ul>
+    </ul>
+  </div>
+</div>
+<hr>
+{% endblock %}

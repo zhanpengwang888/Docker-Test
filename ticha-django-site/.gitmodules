@@ -1,0 +1,3 @@
+[submodule "zapotexts/ticha-magic"]
+	path = zapotexts/ticha_magic
+	url = https://github.com/HCDigitalScholarship/ticha-magic.git

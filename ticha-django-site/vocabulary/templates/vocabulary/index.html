@@ -1,0 +1,154 @@
+﻿{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% load i18n %}
+
+{% block title %}"{{ page.letter }}" Vocabulary{% endblock %}
+
+{% block extra-css %}
+<link href="{% static 'vocabulary/css/index.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block extra-js %}
+<script src="{% static 'vocabulary/js/index.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    {% if page.letter == 'A' %}
+    <h1 class="center">{% trans "Colonial Valley Zapotec to English Vocabulary" %}</h1>
+    <p>{% trans "This Vocabulary contains over 600 words and morphemes commonly found in the documents and some of their variant spellings. There are two main parts: the main dictionary (Zapotec to English) and the English index, which can be used to look up a word in the main section." %}</p>
+    <h3>{% trans "Looking up a headword" %}</h3>
+    <p>{% trans "If you know what the word might mean, but do not know what the Zapotec word might look like, the index will likely be the most useful place for you to look. Be sure to try looking under synonyms, as well." %}</p>
+    <p>{% trans "If you are trying to figure out what an unidentified Zapotec word might mean, recall that spelling can be quite variable. Here are some tips for finding a Zapotec word in the dictionary:" %}</p>
+    <ul>
+      <li>{% trans "Disregard any accent marks. For example, if you are looking for &lt;quéche&gt; try by looking under &lt;queche&gt;." %}</li>
+      <li>{% trans "If you don’t find the word spelled exactly as you found it in the text, trying changing the spelling in ways listed below. For example, if you are looking for &lt;aanna&gt; and do not find it there, try looking under &lt;ana&gt;." %}
+      <table>
+        <tr>
+          <td><em>{% trans "change" %}</em></td>
+          <td><em>{% trans "to" %}</em></td>
+        </tr>
+        <tr>
+          <td>{% trans "double consonants" %}</td>
+          <td>{% trans "single consonants" %}</td>
+        </tr>
+        <tr>
+          <td>{% trans "double vowels" %}</td>
+          <td>{% trans "single vowels" %}</td>
+        </tr>
+        <tr>
+          <td>&lt;ij&gt;</td>
+          <td>&lt;i&gt;</td>
+        </tr>
+      </table>
+      </li>
+      <li>{% trans "Disregard any &lt;h&gt; between two identical vowels. For example, if you are looking for &lt;anachihi&gt; and find nothing there, try looking under &lt;anachi&gt;." %}</li>
+      <li>{% trans "Keep in mind that the following letter (sequences) may be used interchangeably. If you expect your word to have one of these letters, try replacing it with the one (or ones) in bold, e.g. if you are looking for &lt;veni&gt; you might also look under &lt;peni&gt; and &lt;beni&gt;." %}
+        <ul>
+          <li><b>p, b</b>, u, v</li>
+          <li><b>t</b>, d</li>
+          <li><b>g, gu, c, q, qu</b></li>
+          <li><b>s, z, x</b>, c, ç</li>
+          <li><b>u, o</b></li>
+          <li><b>e, i</b></li>
+        </ul>
+      </li>
+    </ul>
+    <h3>{% trans "Abbreviations used in this dictionary" %}</h3>
+    <p>sp. var.     {% trans "spelling variant" %}</p>
+    <h3>{% trans "The structure of entries" %}</h3>
+    <p>{% trans "There are two types of entries. Main entries, like <b>anachi</b> and <b>beni</b> below, and cross references for spelling variants, like <b>anachihi</b> below. Cross-references always contain the headword and the cross reference to the main entry. Main entries minimally contain the headword and the definition. They many optionally contain other elements, such as notes on the composition of the word, a list of spelling variants, and sub-entries of words related to that headword. Below, three entries are broken down and their component parts are numbered. A key to these numbered parts follows directly below the sample entries." %}
+    <img class="img-responsive" src="{% static 'vocabulary/img/example_entry.png' %}">
+    <h3>{% trans "Key to identification of part of definitions" %}</h3>
+    <table>
+      <tr>
+        <td>1</td>
+        <td>{% trans "headword" %}</td>
+        <td>{% trans "Each definition starts with a headword." %}</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>{% trans "definition" %}</td>
+        <td>{% trans "The headword is followed by a definition. If there are multiple senses to a word, they are numbered." %}</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>{% trans "notes on morphological composition" %}</td>
+        <td>{% trans "The component parts of a word may be noted. For example <i>anachi</i> is made up of <i>ana</i> ‘now’ and <i>chi</i> ‘day’." %}</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>{% trans "spelling variants" %}</td>
+        <td>{% trans "Some possible spelling variants are listed." %}</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>{% trans "cross-reference from a spelling variant" %}</td>
+        <td>{% trans "Some spelling variants (sp. var.) are listed in the vocabulary with a cross reference to the main headword." %}</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>{% trans "sub-entry" %}</td>
+        <td>{% trans "Some subentries are listed under headwords. These can also be found as headwords with more information." %}</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>{% trans "example" %}</td>
+        <td>{% trans "Some entries have examples. The examples are introduced with a reference to the text from which they come, followed by the Zapotec examples in italics and the English translation in quotes."%}</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>{% trans "cross-reference" %}</td>
+        <td>{% trans "Some entries contain cross-references to other entries." %}</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>{% trans "modern cognate with audio" %}</td>
+        <td>{% trans "Some entries contain cognates with audio. Click on the blue play button to hear a native speaker pronounce the cognate in that modern Valley Zapotec variety. Click on the black arrow to jump to that entry in the corresponding Talking Dictionary." %}
+      </tr>
+    </table>
+    <h3>{% trans "Modern cognates with audio" %}</h3>
+    <p>{% trans "The modern cognates with audio come from four Talking Dictionaries of modern Valley Zapotec languages. These dictionaries are collaborations with native speakers and were made possible by Living Tongues Institute for Endangered Languages, K. David Harrison, and Jeremy Fahringer. We owe special thanks to Fahringer for enabling the mechanism whereby Ticha can interact with the Talking Dictionaries. The language varieties are listed below with links to the Talking Dictionaries and the names of the contributing speakers." %}</p>
+    <h3 class="language-subtitle">San Jerónimo Tlacochahuaya Zapotec</h3>
+    <p><a href="http://www.talkingdictionary.org/tlacochahuaya">http://www.talkingdictionary.org/tlacochahuaya</a></p>
+    <p>{% trans "<b>Speakers:</b> Moisés García Guzmán, Angélica Guzmán Martínez, Antonio García Cruz, María Mercedes Méndez Morales." %}</p>
+    <h3 class="language-subtitle">San Lucas Quiaviní Zapotec</h3>
+    <p><a href="http://www.talkingdictionary.org/sanlucasquiavini">http://www.talkingdictionary.org/sanlucasquiavini</a></href>
+    <p>{% trans "<b>Speakers:</b> Felipe H. Lopez and Victoria Lopez." %}</p>
+    <h3 class="language-subtitle">Teotitlán del Valle Zapotec</h3>
+    <p><a href="http://www.talkingdictionary.org/teotitlan">http://www.talkingdictionary.org/teotitlan</a></p>
+    <p>{% trans "<b>Speakers:</b> Camillo Alavéz Alavéz, Gario Angeles, Manuel Bazan Chávez, Froilán Carreño Gutiérrez, Natalia Carreño Hernandez, Janet Chávez Santiago, Federico Chávez Sosa, Elena García Jimenez, Noel Alejandro García Juárez, Silvia González Ruiz, Ambrocio Gutiérrez, Bibiana Gutiérrez, Zenón Pablo Gutiérrez, Erasto Gutiérrez López, Celso Gutiérrez Montaño, Jorge David Hernández Sosa, Edison Hipólito de los Ángeles, Camelia Lazo Chávez, Teresa Martínez Chavez, Adrián Martínez Mendoza, Leonardo Martínez Sosa, Miguel Ángel Mendoza Bautista, Rocío Mendoza Bazán, Manuel de Jesús Mendoza Chávez, Teresa Manuela Mendoza Ruíz, Miros Laba, Cristina Ruiz, Rosa Ruiz González, Francisco Ruiz Gutiérrez, Mariano Sosa Martinez" %}</p>
+    <h3 class="language-subtitle">Tlacolula de Matamoros Zapotec</h3>
+    <p><a href="http://www.talkingdictionary.org/tlacolula">http://www.talkingdictionary.org/tlacolula</a></p>
+    <p>{% trans "<b>Speakers:</b> Roberto Antonio Ruiz, and Josefina Antonio Ruiz." %}</p>
+    <h3>How to cite this vocabulary</h3>
+    <p>Lillehaugen, Brook Danielle, George Aaron Broadwell, Michel R. Oudijk, Laurie Allen, May Helena Plumb, and Mike Zarafonetis. 2017. "Colonial Valley Zapotec to English Vocabulary." Ticha: a digital text explorer for Colonial Zapotec, first edition. Online: <a href="https://ticha.haverford.edu/en/vocabulary">https://ticha.haverford.edu/en/vocabulary</a></p>
+    {% endif %}
+  </div>
+  <div class="row">
+    <p>This dictionary was last updated at {{ dct.last_updated }}</p>
+    <h1 class="center">{{ page.letter }}</h1>
+    <form action="{% url 'zapotexts:search' %}" method="get">
+      <input type="text" name="q">
+      <input class="button" type="submit" value="{% trans "Search" %}">
+    </form>
+    {% autoescape off %}
+    <ul class="pagination">
+      {% for p in pages %}
+      <li><a href="{{ p.get_absolute_url }}">{{ p.letter }}</a></li>
+      {% endfor %}
+      <li><a href="{% url 'vocabulary:reverse_index' %}">Reverse Index</a></li>
+    </ul>
+    {{ page.contents }}
+    {% endautoescape %}
+    <ul class="pagination">
+      {% for p in pages %}
+      <li><a href="{{ p.get_absolute_url }}">{{ p.letter }}</a></li>
+      {% endfor %}
+      <li><a href="{% url 'vocabulary:reverse_index' %}">Reverse Index</a></li>
+    </ul>
+  </div>
+</div>
+{% endblock %}

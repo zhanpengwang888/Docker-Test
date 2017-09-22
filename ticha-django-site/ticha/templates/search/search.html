@@ -1,0 +1,40 @@
+<!-- This is the template for the search page. It is rendered by CustomSearchView, and corresponds to the URL 'zapotexts:search' -->
+
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block extra-css %}
+<link rel="stylesheet" href="{% static 'zapotexts/css/search_style.css'%}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  {% if query %}
+  <h3>Search Results For "{{ query }}"</h3>
+  {% for result in object_list %}
+  <p>
+    {% if result.object.title %}
+    Matched manuscript <a href="{{ result.object.get_absolute_url }}">{{ result.object.title }}</a>
+    {% elif result.object.word %}
+    Matched word <a href="{{ result.object.get_absolute_url }}">{{ result.object.word }}</a>
+    {% elif result.object.page_id %}
+    Found on <a href="{{ result.object.get_absolute_url }}">page {{ result.object.page_id }}</a> of {{ result.object.man.title }}
+    {% endif %}
+  </p>
+  {% empty %}
+  <p>No results found.</p>
+  {% endfor %}
+  {% if page.has_previous or page.has_next %}
+  <div>
+    {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
+    |
+    {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next &raquo;{% if page.has_next %}</a>{% endif %}
+  </div>
+  {% endif %}
+  {% else %}
+  {# Show some example queries to run, maybe query syntax, something else? #}
+  {% endif %}
+</div>
+<br>
+{% endblock %}

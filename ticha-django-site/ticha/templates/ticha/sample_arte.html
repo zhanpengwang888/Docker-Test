@@ -1,0 +1,500 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "Sample Arte Pages" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+<h1 class = "text-center">{% trans "Arte Sample Page" %}</h1>
+<br>
+<div class="row text-center">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <br>
+    <img src="{% static 'zapotexts/img/102r.png' %}" class="img-responsive" alt="page 102r"/>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tabbable">
+    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+      <li class="tabs active"><a data-toggle="tab" href="#tab1-slug">{% trans "Transcription" %}</a></li>
+      <li class="tabs "><a data-toggle="tab" href="#tab2-slug">{% trans "Modern Spanish" %}</a></li>
+      <li class="tabs "><a data-toggle="tab" href="#tab3-slug">{% trans "English" %}</a></li>
+    </ul>
+    <div class="tab-content text-left">
+      <div id="tab1-slug" class="tab-pane active">
+        <div class="text-center">DE CONTAR             <span class="span-right">102</span></div>
+        <br />
+        <div>
+          ¶Ciẽto y treíta yocho.
+          <div class="popover-markup inline">
+            <mark class="trigger inline">Cëgaayo, cécaa caachelǎlle <br />bichõna</mark>
+            <div class="content hide inline">
+              <p style="text-align: left"><em>
+                <button type="button" id="close" class="close"> X </button>
+                This phrase is an abbreviation for two separate phrases, the expansions of which are shown below in [1a]                            and [1b]. The variant word is shown in blue.</em>
+              </p>
+              <p style="text-align: left"><strong><em>[1a] <span style="color: #0000ff">Cě-gaayo</span> caache-lǎlle bi-chõna</em></strong></p>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>Cě-gaayo</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>caache-lǎlle</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i> bi-chõna</i></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">DEF-five</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">and-three</div>
+              </div>
+              <p style="text-align: left"> &#8216;another five (until) 7&#215;20 and 3&#8242; = 138</p>
+              <hr />
+              <p style="text-align: left"><strong><em>[1b] <span style="color: #0000ff">cé-caa</span> caache-lǎlle bi-chõna</em></strong></p>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-lg-4"><i>cé-caa</i></div>
+                <div class="col-md-4 col-sm-4 col-lg-4"><i>caache-lǎlle</i></div>
+                <div class="col-md-4 col-sm-4 col-lg-4"><i> bi-chõna</i></div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-lg-4">DEF-five(S)</div>
+                <div class="col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+                <div class="col-md-4 col-sm-4 col-lg-4">and-three</div>
+              </div>
+              <p style="text-align: left">&#8216;another five (until) 7&#215;20 and 3 [=138]&#8216;</p>
+              <p style="text-align: left">Grammatical note: The following schema represents the expression of this value, beginning in the center with <i>caache-lǎlle </i>&#8216;seven twenties&#8217;, which is 140.  The next calculation incorporates the first word in the phrase, <i>Cě-gaayo </i>&#8216;another five&#8217;.  When applied to 140, this means &#8216;another five will be 140&#8242; or &#8216;five shy of 140&#8242;, thus resulting in 135.  The final calculation is complete with the last word, <i>bi-chõna </i>&#8216;and three&#8217;; adding three to 135 results in 138.</p>
+              <p style="text-align: left">Grammatical note: [7x20 is 140; 5 shy of 140 is 135; plus three more is 138; =138]</p>
+              <p style="text-align: left">In sum: [7x20 is 140; 5 shy of 140 is 135; plus three more is 138; <b>=138</b>]</p>
+              <table border="1" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td valign="top"><i>Cě-gaayo</i></td>
+                    <td valign="top"><i>caache-lǎlle</i></td>
+                    <td valign="top"><i>bi-chõna</i></td>
+                  </tr>
+                  <tr>
+                    <td valign="top">DEF-five</td>
+                    <td valign="top">seven-twenty</td>
+                    <td valign="top">and-three</td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><b> </b></td>
+                    <td valign="top">
+                      <p align="center"><b>140</b></p>
+                    </td>
+                    <td valign="top"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" valign="top" width="168">
+                      <p align="center"><b>135</b></p>
+                    </td>
+                    <td valign="top"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" valign="top">
+                      <p align="center"><b>138</b></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <address>See also: <a href="http://ds.haverford.edu/wp/ticha/bibliography/" target="">Munro &amp; Sonnenschein</a>.</address>
+            </div>
+          </div>
+          .l.
+          <div class="popover-markup inline">
+            <mark class="trigger">cëtǒpacäca, qzǎha, chäacaachelälle</mark>
+            <div class="content hide">
+              <button type="button" id="close" class="close"> X </button>
+              <p style="text-align: left"><em>This phrase is an abbreviation for three separate phrases, the expansions of which are shown below in [1a], [1b], and [1c]. The variant word is shown in blue.</em></p>
+              <p style="text-align: left"><em><strong>[1a] cëtǒpa <span style="color: #0000ff">cäca</span> caachelälle</strong></em></p>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>cëtǒpa</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>cäca</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>caachelälle</i></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">DEF-two</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">IRR-be</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+              </div>
+              <p style="text-align: left"> &#8216;two more (until) will be 7&#215;20&#8242;=138</p>
+              <hr />
+              <p style="text-align: left"><em><strong>[1b] cëtǒpa <span style="color: #0000ff">q[ui]zǎha</span> caachelälle</strong></em></p>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>cëtǒpa</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>q[ui]zǎha</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>caachelälle</i></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">DEF-two</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">IRR-walk</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+              </div>
+              <p style="text-align: left"> &#8216;two more (until) on the way to 7&#215;20&#8242;=138</p>
+              <hr />
+              <p style="text-align: left"><em><strong>[1c] cëtǒpa <span style="color: #0000ff">chäa</span> caachelälle</strong></em></p>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>cëtǒpa</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>chäa</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>caachelälle</i></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">DEF-two</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">IRR-will fill up</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+              </div>
+              <p style="text-align: left"> &#8216;two more (until) will fill up 7&#215;20&#8242;=138</p>
+              <hr />
+            </div>
+          </div>
+          &nbsp;&nbsp; <span class="span-right">138</span><br>
+          <div>¶Ciẽto y treynta y nueue. <em>Cěgaayo</em>, <em>cëcaa caache</em><br>
+            <em>lǎllebitäpa</em>. l. <em>cětǒbi caachelälle</em>. l. <em>cětôbi cǎca</em>,</p>
+          </div>
+          <p><em>chäa, quizäha, caacheläle</em>. <span class="span-right">139</span><br>
+            ¶Ciento y quarenta. <em>Caachelǎlle</em>.&nbsp;&nbsp;&nbsp; <span class="span-right">140</span>
+          </p>
+          <div>¶Ciento y quarẽta y vno. <em>Caachelällebitöbi.</em> <span class="span-right">141</span></div>
+          <div>¶Ciénto y quarenta y dos. <em>Caachelállebitöpa</em>.&nbsp; <span class="span-right">142</span></div>
+          <div>¶Ciéto y quarẽta y tres. <em>Caachelällebichǒna</em>. l. <em>caa </em></div>
+          <div><em>chelǎllebicǎyo</em>, &amp;c. vtſu. haſta ciẽto y cĩquẽta.&nbsp; <span class="span-right">143</span></div>
+          <div>¶Ciento y cinquenta. <em>Caachelällebichij</em>.&nbsp;&nbsp;&nbsp; <span class="span-right">150</span></div>
+          <div>¶Ciento y cinquenta y vno. <em>Caachelällebichijbi</em>-</div>
+          <div><em>tôbi</em>. <span class="span-right">151</span></div>
+          <div>¶Ciento y cinquenta y dos. <em>Caachelällebichijbi </em></div>
+          <div><em>tǒpa</em>.&nbsp;&nbsp;&nbsp; <span class="span-right">152</span></div>
+          <div>¶Ciento y cinquenta y tres. <em>Caachelällebichijbi</em></div>
+          <div><em>chǒna</em>. l. <em>caachelǎlle bichijño</em>. <span class="span-right">153</span></div>
+          <div>¶Ciento y cinquenta y quatro. <em>Cächelälle bichij</em></div>
+          <div><em>bitäpa</em>. l. <em>cächelällebichijtäa</em>.&nbsp;&nbsp; <span class="span-right">154</span></div>
+          <div>¶Ciẽto ycinquéta ycinco. <em>Cëcaa</em>, <em>cëgaayo xônolǎl</em>-</div>
+          <div><em> le</em>. l. <em>cëcaayo cǎca</em>, <em>quizäha</em>, <em>chäa</em>, <em>xǒnolälle</em>. <span class="span-right">155</span></div>
+          <div>¶Ciẽto ycinquéta y ſeys. <em>Cěgaayo</em>, <em>cěcaaxoonoläl</em></div>
+          <div><em>lebitǒbi</em>. l. <em>cětápacǎca</em>, <em>q̃zäha</em>, <em>chǎa</em>, <em>xǒonolǎlle</em>.<span class="span-right">156</span></div>
+          <div>¶Ciẽto ycinquẽtayſiete. <em>Cěcaa</em>, <em>cěgaayo xǒnolälle </em></div>
+          <div><em>bitôpa</em>. l. <em>cěchônacǎca</em>, <em>chǎa</em>, <em>qzahaxǒonolälle</em>. <span class="span-right">157</span></div>
+          <div>¶Ciẽtoycĩquẽ.yocho. <em>Cěcaa</em>, <em>cěgaayoxônolállebi</em></div>
+          <div><em>chôna</em>. l. <em>cětôpa</em>, <em>cäca</em>, <em>chǎa qzǎhaxôonolälle</em>.&nbsp;&nbsp; <span class="span-right">158</span></div>
+          <div>¶Ciento y cinquẽta y nueue. <em>Cěcaa</em>, <em>cěgaayo xǒno</em></div>
+          <div style="text-align: left">&nbsp;&nbsp;&nbsp;<em> lálle</em></div>
+        </div>
+      </div>
+      <!--End of first tab -->
+      <div id="tab2-slug" class="tab-pane">
+        <div class="text-center">DE CONTAR                  <span class="span-right">102</span></div>
+        <br /
+        <div>
+          <p>Ciento treinta y ocho.
+          <div class="popover-markup inline">
+            <mark class="trigger inline">Cëgaayo, cécaa caachelǎlle bichõna</mark>
+            <div class="content hide inline">
+              <p style="text-align: left"><em>
+                <button type="button" id="close" class="close"> X </button>
+                This phrase is an abbreviation for two separate phrases, the expansions of which are shown below in [1a]                            and [1b]. The variant word is shown in blue.</em>
+              </p>
+              <p style="text-align: left"><strong><em>[1a] <span style="color: #0000ff">Cě-gaayo</span> caache-lǎlle bi-chõna</em></strong></p>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>Cě-gaayo</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>caache-lǎlle</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i> bi-chõna</i></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">DEF-five</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">and-three</div>
+              </div>
+              <p style="text-align: left"> &#8216;another five (until) 7&#215;20 and 3&#8242; = 138</p>
+              <hr />
+              <p style="text-align: left"><strong><em>[1b] <span style="color: #0000ff">cé-caa</span> caache-lǎlle bi-chõna</em></strong></p>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-lg-4"><i>cé-caa</i></div>
+                <div class="col-md-4 col-sm-4 col-lg-4"><i>caache-lǎlle</i></div>
+                <div class="col-md-4 col-sm-4 col-lg-4"><i> bi-chõna</i></div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-lg-4">DEF-five(S)</div>
+                <div class="col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+                <div class="col-md-4 col-sm-4 col-lg-4">and-three</div>
+              </div>
+              <p style="text-align: left">&#8216;another five (until) 7&#215;20 and 3 [=138]&#8216;</p>
+              <p style="text-align: left">Grammatical note: The following schema represents the expression of this value, beginning in the center with <i>caache-lǎlle </i>&#8216;seven twenties&#8217;, which is 140.  The next calculation incorporates the first word in the phrase, <i>Cě-gaayo </i>&#8216;another five&#8217;.  When applied to 140, this means &#8216;another five will be 140&#8242; or &#8216;five shy of 140&#8242;, thus resulting in 135.  The final calculation is complete with the last word, <i>bi-chõna </i>&#8216;and three&#8217;; adding three to 135 results in 138.</p>
+              <p style="text-align: left">Grammatical note: [7x20 is 140; 5 shy of 140 is 135; plus three more is 138; =138]</p>
+              <p style="text-align: left">In sum: [7x20 is 140; 5 shy of 140 is 135; plus three more is 138; <b>=138</b>]</p>
+              <table border="1" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td valign="top"><i>Cě-gaayo</i></td>
+                    <td valign="top"><i>caache-lǎlle</i></td>
+                    <td valign="top"><i>bi-chõna</i></td>
+                  </tr>
+                  <tr>
+                    <td valign="top">DEF-five</td>
+                    <td valign="top">seven-twenty</td>
+                    <td valign="top">and-three</td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><b> </b></td>
+                    <td valign="top">
+                      <p align="center"><b>140</b></p>
+                    </td>
+                    <td valign="top"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" valign="top" width="168">
+                      <p align="center"><b>135</b></p>
+                    </td>
+                    <td valign="top"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" valign="top">
+                      <p align="center"><b>138</b></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <address>See also: <a href="http://ds.haverford.edu/wp/ticha/bibliography/" target="">Munro &amp; Sonnenschein</a>.</address>
+            </div>
+          </div>
+          l.
+          <div class="popover-markup inline">
+            <mark class="trigger">cëtǒpacäca, qzǎha, chäacaachelälle</mark>
+            <div class="content hide">
+              <button type="button" id="close" class="close"> X </button>
+              <p style="text-align: left"><em>This phrase is an abbreviation for three separate phrases, the expansions of which are shown below in [1a], [1b], and [1c]. The variant word is shown in blue.</em></p>
+              <p style="text-align: left"><em><strong>[1a] cëtǒpa <span style="color: #0000ff">cäca</span> caachelälle</strong></em></p>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>cëtǒpa</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>cäca</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>caachelälle</i></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">DEF-two</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">IRR-be</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+              </div>
+              <p style="text-align: left"> &#8216;two more (until) will be 7&#215;20&#8242;=138</p>
+              <hr />
+              <p style="text-align: left"><em><strong>[1b] cëtǒpa <span style="color: #0000ff">q[ui]zǎha</span> caachelälle</strong></em></p>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>cëtǒpa</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>q[ui]zǎha</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>caachelälle</i></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">DEF-two</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">IRR-walk</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+              </div>
+              <p style="text-align: left"> &#8216;two more (until) on the way to 7&#215;20&#8242;=138</p>
+              <hr />
+              <p style="text-align: left"><em><strong>[1c] cëtǒpa <span style="color: #0000ff">chäa</span> caachelälle</strong></em></p>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>cëtǒpa</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>chäa</i></div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>caachelälle</i></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">DEF-two</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">IRR-will fill up</div>
+                <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+              </div>
+              <p style="text-align: left"> &#8216;two more (until) will fill up 7&#215;20&#8242;=138</p>
+              <hr />
+            </div>
+          </div>
+          &nbsp;&nbsp; <span class="span-right">138</span>
+          </p>
+          <div>Ciento treinta y nueve. <em>Cěgaayo cëcaa caache lǎl lebitäpa l&nbsp;</em></div>
+          <div><em>cětǒbi caacheläl le l cětôbi cǎca chäa quizäha caacheläle</em>. <span class="span-right">139</span></div>
+          <div>Ciento cuarenta. <em>Caachelǎl le</em>. <span class="span-right">140</span></div>
+          <div>Ciento cuarenta y uno. <em>Caacheläl lebitöbi</em>. <span class="span-right">141</span></div>
+          <div>Ciento cuarenta y dos. <em>Caachelál lebitöpa</em>. <span class="span-right">142</span></div>
+          <div>Ciento cuarenta y tres. <em>Caacheläl lebichǒna l caa chelǎl&nbsp;</em></div>
+          <div><em>lebicǎyo</em>, &amp;c. vt.su . hasta ciento cincuenta. <span class="span-right">143</span></div>
+          <div>Ciento cincuenta. <em>Caacheläl lebichij</em>. <span class="span-right">150</span></div>
+          <div>Ciento cincuenta y uno. <em>Caacheläl lebichijbi tôbi</em>. <span class="span-right">151</span></div>
+          <div>Cinto cincuenta y dos. <em>Caacheläl lebichijbi tǒpa</em>. <span class="span-right">152</span></div>
+          <div>Ciento cincuenta y tres. <em>Caacheläl lebichijbi chǒna l caachelǎl le</em></div>
+          <div><em>bichijño</em>. <span class="span-right">153</span></div>
+          <div>Ciento cincuenta y cuatro. <em>Cächelälle bichij bitäpa l cächeläl&nbsp;</em></div>
+          <div><em>lebichijtäa</em>. <span class="span-right">154</span></div>
+          <div>Ciento cincuenta y cinco. <em>Cëcaa,cëgaayo xônolǎt le l cëcaayo&nbsp;</em></div>
+          <div><em>cǎca quizäha chäa xǒnoläl le</em>. <span class="span-right">155</span></div>
+          <div>Ciento cincuenta y seis. <em>Cěgaayo cěcaaxoonoläl lebitǒbi l&nbsp;</em></div>
+          <div><em>cětápacǎca qzäha chǎa xǒonolǎlle</em>. <span class="span-right">156</span></div>
+          <div>Ciento cincuenta y siete. <em>Cěcaa cěgaayo xǒnolälle bitôpa l&nbsp;</em></div>
+          <div><em>cěchônacǎca chǎa qzahaxǒonolälle</em>. <span class="span-right">157</span></div>
+          <div>Ciento cincuenta y ocho.<em> Cěcaa cěgaayoxônolál lebi chôna l&nbsp;</em></div>
+          <div><em>cětôpa cäca chǎa qzǎhaxôonoläl le.</em> <span class="span-right">158</span></div>
+          <div>Ciento cincuenta y nueve. <em>Cěcaa cěgaayo xǒno lál le</em>.</div>
+          <p></p>
+        </div>
+        <!-- End of second tab -->
+        <div id="tab3-slug" class="tab-pane">
+          <div class="text-center">COUNTING             <span class="span-right">102</span></div>
+          <br />
+          <div>
+            <p>One hundred and thirty-eight.
+            <div class="popover-markup inline">
+              <mark class="trigger inline">Cëgaayo, cécaa caachelǎlle bichõna</mark>
+              <div class="content hide inline">
+                <p style="text-align: left"><em>
+                  <button type="button" id="close" class="close"> X </button>
+                  This phrase is an abbreviation for two separate phrases, the expansions of which are shown below in [1a]                            and [1b]. The variant word is shown in blue.</em>
+                </p>
+                <p style="text-align: left"><strong><em>[1a] <span style="color: #0000ff">Cě-gaayo</span> caache-lǎlle bi-chõna</em></strong></p>
+                <div class="row">
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>Cě-gaayo</i></div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>caache-lǎlle</i></div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i> bi-chõna</i></div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">DEF-five</div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">and-three</div>
+                </div>
+                <p style="text-align: left"> &#8216;another five (until) 7&#215;20 and 3&#8242; = 138</p>
+                <hr />
+                <p style="text-align: left"><strong><em>[1b] <span style="color: #0000ff">cé-caa</span> caache-lǎlle bi-chõna</em></strong></p>
+                <div class="row">
+                  <div class="col-md-4 col-sm-4 col-lg-4"><i>cé-caa</i></div>
+                  <div class="col-md-4 col-sm-4 col-lg-4"><i>caache-lǎlle</i></div>
+                  <div class="col-md-4 col-sm-4 col-lg-4"><i> bi-chõna</i></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 col-sm-4 col-lg-4">DEF-five(S)</div>
+                  <div class="col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+                  <div class="col-md-4 col-sm-4 col-lg-4">and-three</div>
+                </div>
+                <p style="text-align: left">&#8216;another five (until) 7&#215;20 and 3 [=138]&#8216;</p>
+                <p style="text-align: left">Grammatical note: The following schema represents the expression of this value, beginning in the center with <i>caache-lǎlle </i>&#8216;seven twenties&#8217;, which is 140.  The next calculation incorporates the first word in the phrase, <i>Cě-gaayo </i>&#8216;another five&#8217;.  When applied to 140, this means &#8216;another five will be 140&#8242; or &#8216;five shy of 140&#8242;, thus resulting in 135.  The final calculation is complete with the last word, <i>bi-chõna </i>&#8216;and three&#8217;; adding three to 135 results in 138.</p>
+                <p style="text-align: left">Grammatical note: [7x20 is 140; 5 shy of 140 is 135; plus three more is 138; =138]</p>
+                <p style="text-align: left">In sum: [7x20 is 140; 5 shy of 140 is 135; plus three more is 138; <b>=138</b>]</p>
+                <table border="1" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td valign="top"><i>Cě-gaayo</i></td>
+                      <td valign="top"><i>caache-lǎlle</i></td>
+                      <td valign="top"><i>bi-chõna</i></td>
+                    </tr>
+                    <tr>
+                      <td valign="top">DEF-five</td>
+                      <td valign="top">seven-twenty</td>
+                      <td valign="top">and-three</td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><b> </b></td>
+                      <td valign="top">
+                        <p align="center"><b>140</b></p>
+                      </td>
+                      <td valign="top"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" valign="top" width="168">
+                        <p align="center"><b>135</b></p>
+                      </td>
+                      <td valign="top"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3" valign="top">
+                        <p align="center"><b>138</b></p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <address>See also: <a href="http://ds.haverford.edu/wp/ticha/bibliography/" target="">Munro &amp; Sonnenschein</a>.</address>
+              </div>
+            </div>
+            l.
+            <div class="popover-markup inline">
+              <mark class="trigger">cëtǒpacäca, qzǎha, chäacaachelälle</mark>
+              <div class="content hide">
+                <button type="button" id="close" class="close"> X </button>
+                <p style="text-align: left"><em>This phrase is an abbreviation for three separate phrases, the expansions of which are shown below in [1a], [1b], and [1c]. The variant word is shown in blue.</em></p>
+                <p style="text-align: left"><em><strong>[1a] cëtǒpa <span style="color: #0000ff">cäca</span> caachelälle</strong></em></p>
+                <div class="row">
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>cëtǒpa</i></div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>cäca</i></div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>caachelälle</i></div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">DEF-two</div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">IRR-be</div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+                </div>
+                <p style="text-align: left"> &#8216;two more (until) will be 7&#215;20&#8242;=138</p>
+                <hr />
+                <p style="text-align: left"><em><strong>[1b] cëtǒpa <span style="color: #0000ff">q[ui]zǎha</span> caachelälle</strong></em></p>
+                <div class="row">
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>cëtǒpa</i></div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>q[ui]zǎha</i></div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>caachelälle</i></div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">DEF-two</div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">IRR-walk</div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+                </div>
+                <p style="text-align: left"> &#8216;two more (until) on the way to 7&#215;20&#8242;=138</p>
+                <hr />
+                <p style="text-align: left"><em><strong>[1c] cëtǒpa <span style="color: #0000ff">chäa</span> caachelälle</strong></em></p>
+                <div class="row">
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>cëtǒpa</i></div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>chäa</i></div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4"><i>caachelälle</i></div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">DEF-two</div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">IRR-will fill up</div>
+                  <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">seven-twenty</div>
+                </div>
+                <p style="text-align: left"> &#8216;two more (until) will fill up 7&#215;20&#8242;=138</p>
+                <hr />
+              </div>
+            </div>
+            &nbsp;&nbsp; <span class="span-right">138</span><br>
+            </p>
+          </div>
+          <div>One hundred and thirty-nine. <em>Cěgaayo cëcaa caache lǎl </em></div>
+          <div><em>lebitäpa l cětǒbi caacheläl le l cětôbi cǎca chäa quizäha caacheläle</em>.&nbsp;<span class="span-right">139</span></div>
+          <div>One hundred and forty. <em>Caachelǎl le</em>. <span class="span-right">140</span></div>
+          <div>One hundred and forty-one. <em>Caacheläl lebitöbi</em>. <span class="span-right">141</span></div>
+          <div>One hundred and forty-two. <em>Caachelál lebitöpa</em>. <span class="span-right">142</span></div>
+          <div>One hundred and forty-three. <em>Caacheläl lebichǒna l caa chelǎl </em></div>
+          <div><em>lebicǎyo</em>, &amp;c. vt.su. until one hundred and fifty. <span class="span-right">143</span></div>
+          <div>One hundred and fifty. <em>Caacheläl lebichij</em>. <span class="span-right">150</span></div>
+          <div>One hundred and fifty-one. <em>Caacheläl lebichijbi tôbi</em>. <span class="span-right">151</span></div>
+          <div>One hundred and fifty-two. <em>Caacheläl lebichijbi tǒpa</em>. <span class="span-right">152<span class="span-right">
+          </div>
+          <div>One hundred and fifty-three. <em>Caacheläl lebichijbi chǒna l </em><br>
+            <em>caachelǎl le bichijño</em>. <span class="span-right">153</span>
+          </div>
+          <div>One hundred and fifty-four. <em>Cächelälle bichij bitäpa l cächeläl </em><br>
+            <em>lebichijtäa</em>. <span class="span-right">154</span>
+          </div>
+          <div>One hundred and fifty-five. <em>Cëcaa,cëgaayo xônolǎt le l cëcaayo </em><br>
+            <em>cǎca quizäha chäa xǒnoläl le</em>. <span class="span-right">155</span>
+          </div>
+          <div>One hundred and fifty-six. <em>Cěgaayo cěcaaxoonoläl lebitǒbi l </em><br>
+            <em>cětápacǎca qzäha chǎa xǒonolǎlle</em>. <span class="span-right">156</span>
+          </div>
+          <div>One hundred and fifty-seven. <em>Cěcaa cěgaayo xǒnolälle bitôpa l </em><br>
+            <em>cěchônacǎca chǎa qzahaxǒonolälle</em>. <span class="span-right">157</span>
+          </div>
+          <div>One hundred and fifty-eight. <em>Cěcaa cěgaayoxônolál lebi chôna l </em><br>
+            <em>cětôpa cäca chǎa qzǎhaxôonoläl le</em>. <span class="span-right">158</span>
+          </div>
+          <div>One hundred and fifty-nine. <em>Cěcaa cěgaayo xǒno lál le</em>.</div>
+          <p></p>
+        </div>
+        <!-- End of third tab -->
+      </div>
+      <!-- End of tabbable content -->
+    </div>
+    <!-- End of row -->
+  </div>
+</div>
+<br>
+<hr>
+{% endblock %}
+
+{% block extra-js %}
+<script src="{% static 'zapotexts/js/popovers.js' %}"></script>
+<script>initPopovers();</script>
+{% endblock %}

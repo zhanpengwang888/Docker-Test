@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container">
+  <div class="handwritten container-fluid">
+    <div class="row">
+      <div id="openseadragon-wrap" class="col-xs-12 col-sm-8 col-md-8">
+        <div id="openseadragon1">
+          <div id="dropdown-placeholder"> </div>
+        </div>
+      </div>
+      <div class="item-metadata col-xs-12 col-sm-4 col-md-4 tabbable">
+        <ul class="nav nav-pills" role="tablist">
+          <li role="presentation" class="pills tabs-small active"><a href="#metadata" aria-controls="home" role="tab" data-toggle="tab">{% trans "Metadata" %}</a></li>
+          <li role="presentation" class="pills tabs-small"><a href="#transcription" aria-controls="profile" role="tab" data-toggle="tab">{% trans "Transcription" %}</a></li>
+          <li role="presentation" class="pills tabs-small"><a href="#interlinear" aria-controls="profile" role="tab" data-toggle="tab">{% trans "Interlinear Analysis" %}</a></li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="metadata">
+            <br>
+            {% if man.title %}
+            <p>
+            <span class="meta-title">{% trans "Title" %}</span>
+              {{ man.title }} <a href="http://ticha.haverford.edu/images/pdf/{{ man.slug }}.pdf" target="_blank">[PDF]</a>
+            </p>
+            {% endif %}
+            {% if man.percent_needs_review %}
+            <p>
+            <span class="meta-title">{% trans "Percent Needs Review" %}</span>
+              {{ man.percent_needs_review }}
+            </p>
+            {% endif %}
+            {% if man.scribe %}
+            <p>
+            <span class="meta-title">{% trans "Scribe" %}</span>
+              {{ man.scribe }}
+            </p>
+            {% endif %}
+            {% if man.document_type %}
+            <p>
+            <span class="meta-title">{% trans "Document Type" %}</span>
+              {{ man.document_type }}
+            </p>
+            {% endif %}
+            {% if man.material_type %}
+            <p>
+            <span class="meta-title">{% trans "Material Type" %}</span>
+              {{ man.material_type }}
+            </p>
+            {% endif %}
+            {% if man.requester_project %}
+            <p>
+            <span class="meta-title">{% trans "Requester/Project" %}</span>
+              {{ man.requester_project }}
+            </p>
+            {% endif %}
+            {% if man.archive %}
+            <p>
+            <span class="meta-title">{% trans "Archive" %}</span>
+              {{ man.archive }}
+            </p>
+            {% endif %}
+            {% if man.collection %}
+            <p>
+            <span class="meta-title">{% trans "Collection" %}</span>
+              {{ man.collection }}
+            </p>
+            {% endif %}
+            {% if man.call_number %}
+            <p>
+            <span class="meta-title">{% trans "Call Number" %}</span>
+              {{ man.call_number }}
+            </p>
+            {% endif %}
+            {% if man.acknowledgements %}
+            <p>
+            <span class="meta-title">{% trans "Acknowledgements" %}</span>
+              {{ man.acknowledgements }}
+            </p>
+            {% endif %}
+            {% if man.date_digitized %}
+            <p>
+            <span class="meta-title">{% trans "Date Digitized" %}</span>
+              {{ man.date_digitized }}
+            </p>
+            {% endif %}
+            {% if man.year %}
+            <p>
+            <span class="meta-title">{% trans "Year" %}</span>
+              {{ man.year }}
+            </p>
+            {% endif %}
+            {% if man.date %}
+            <p>
+            <span class="meta-title">{% trans "Date" %}</span>
+              {{ man.date }}
+            </p>
+            {% endif %}
+            {% if man.town_short %}
+            <p>
+            <span class="meta-title">{% trans "Town (Short)" %}</span>
+              {{ man.town_short }}
+            </p>
+            {% endif %}
+            {% if man.page %}
+            <p>
+            <span class="meta-title">{% trans "Page" %}</span>
+              {{ man.page }}
+            </p>
+            {% endif %}
+            {% if man.town_modern_official %}
+            <p>
+            <span class="meta-title">{% trans "Town (Modern Official)" %}</span>
+              {{ man.town_modern_official }}
+            </p>
+            {% endif %}
+            {% if man.primary_parties %}
+            <p>
+            <span class="meta-title">{% trans "Primary Parties" %}</span>
+              {{ man.primary_parties }}
+            </p>
+            {% endif %}
+            {% if man.witnesses %}
+            <p>
+            <span class="meta-title">{% trans "Witnesses" %}</span>
+              {{ man.witnesses }}
+            </p>
+            {% endif %}
+            {% if man.permission_file %}
+            <p>
+            <span class="meta-title">{% trans "Permission File" %}</span>
+              <a href="{{ man.permission_file }}" target="_blank">[PDF]</a>
+            </p>
+            {% endif %}
+            {% if man.has_translation %}
+            <p>
+            <span class="meta-title">{% trans "Translation" %}</span>
+              <a href="../{{ man.has_translation }}" target="_blank">Jump to translation</a>
+            </p>
+            {% endif %}
+          </div>
+          <div role="tabpanel" class="tab-pane" id="transcription">
+            {% if man.transcription %}
+              {% autoescape off %}
+            {{ man.transcription }}
+              {% endautoescape %}
+            {% else %}
+            <p>{% trans "This document is either not transcribed or the transcription is incomplete." %}</p>
+            <p>{% trans "To transcribe this document" %}, <a href="//ticha.haverford.edu/documents/items/show/{{ omeka_id }}" target="_blank">{% trans "click here" %}</a></p>
+            {% endif %}
+          </div>
+          <div role="tabpanel" class="tab-pane" id="interlinear">
+            {% if man.interlinear_analysis %}
+            {% autoescape off %}
+            {{ man.interlinear_analysis }}
+            {% endautoescape %}
+            {% else %}
+            <p>{% trans "This document does not currently have an interlinear analysis available." %}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<hr>
+{% endblock %}
+
+{% block extra-js %}
+<script src="{% static 'handwritten_texts/js/bower_components/openseadragon/built-openseadragon/openseadragon/openseadragon.min.js' %}"></script>
+<script src="{% static 'zapotexts/js/jquery-1.10.2.js' %}"></script>
+<script id="api_django" type="text/javascript" src="{% static 'handwritten_texts/js/api_django.js' %}" data-ticha-id="{{ man.slug }}" data-pages="{{ man.page }}"></script>
+{% endblock %}

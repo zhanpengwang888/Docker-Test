@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "Timeline" %}{% endblock %}
+
+{% block extra-css %}
+<link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <h1 class = "text-center">{% trans "Timeline of Colonial Valley Zapotec Documents" %}</h1>
+    <br>
+    <!-- BEGIN Timeline Embed -->
+    <div id="timeline-embed"></div>
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script type="text/javascript">
+      var timeline = new TL.Timeline('timeline-embed', "{% static 'zapotexts/json/timeline2.json' %}");
+      var timeline_config = {width:"100%", height:"100%"};
+    </script>
+    <!-- END Timeline Embed-->
+    <table style="width: 80%; font-size: 15px; align: center; margin: 3mm 10%;">
+      <tr>
+        <td style="text-align: center;"><img src="{% static 'zapotexts/img/timelinejs/thumbnails/testament.png' %}" width="20px" style="margin: 0 1mm;">{% trans "Zapotec Testament" %}</td>
+        <td style="text-align: center;"><img src="{% static 'zapotexts/img/timelinejs/thumbnails/billofsale.png' %}" width="20px" style="margin: 1mm;">{% trans "Zapotec Bill of Sale" %}</td>
+        <td style="text-align: center;"><img src="{% static 'zapotexts/img/timelinejs/thumbnails/translation.png' %}" width="20px" style="margin: 1mm;">{% trans "Contemporaneous Spanish Translation" %}</td>
+        <td style="text-align: center;"><img src="{% static 'zapotexts/img/timelinejs/thumbnails/other.png' %}" width="20px" style="margin: 1mm;">{% trans "Other" %}</td>
+      </tr>
+    </table>
+    <br>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% load i18n %}
+
+{% block title %}Reverse Index (Ticha Vocabulary){% endblock %}
+
+{% block extra-css %}
+<link href="{% static 'vocabulary/css/reverse_index.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <h1 class="center">Reverse Index</h1>
+    <p>This dictionary was last updated at {{ dct.last_updated }}</p>
+    <ul class="pagination">
+      {% for p in pages %}
+      <li><a href="{{ p.get_absolute_url }}">{{ p.letter }}</a></li>
+      {% endfor %}
+      <li><a href="{% url 'vocabulary:reverse_index' %}">Reverse Index</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    {% autoescape off %}
+    {{ dct.reverse_index }}
+    {% endautoescape %}
+    <ul class="pagination">
+      {% for p in pages %}
+      <li><a href="{{ p.get_absolute_url }}">{{ p.letter }}</a></li>
+      {% endfor %}
+      <li><a href="{% url 'vocabulary:reverse_index' %}">Reverse Index</a></li>
+    </ul>
+  </div>
+</div>
+{% endblock %}

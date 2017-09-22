@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}Arte en lengua zapoteca{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-11 col-centered" style="margin-bottom: 4em">
+      <h1 class="text-center" style="margin-bottom: 0">Arte en lengua zapoteca</h1>
+      <p class="pageDesc">{% trans "A 16th century grammar of Colonial Valley Zapotec by Friar Juan de Cordova." %}</p>
+    </div>
+    <div class="col-lg-11 col-centered">
+      <!--<div class="flex-rectangle"> </div>-->
+      <div style="width: 100%; height: 400px; overflow: hidden; position: relative;">
+        <img src="{% static 'zapotexts/img/titlepage.png' %}" style="position: absolute; width:100%">
+      </div>
+    </div>
+    <div class="row" style="margin-top: 2em">
+      <div class="col-lg-11 col-centered">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <h3 class="text-center">{% trans "About the" %} Arte en lengua zapoteca</h3>
+          <p>{% trans "The Arte is a grammar of Colonial Valley Zapotec published in 1578, a decade before the first grammar of English was published. It was written by Juan de Cordova, a Spanish priest in the Dominican order, although, like other Spanish clergy working with indigenous languages, Cordova relied on the help of native speakers of Zapotec. Unfortunately, little is known about these helpers, which means that we do not know precisely what variety of Zapotec the Arte records. Cordova wrote his Arte like a Latin grammar, making it difficult for modern readers to understand the structure of the text. In order to illuminate the content of the text, modern headings are given alongside Cordova's original section titles. Despite the Arte's shortcomings, it remains an important source for knowledge about Colonial Valley Zapotec." %}</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="col-lg-12">
+            <a href="{% url 'arte_outline' %}">
+              <div class="row arteCategory">
+                <div class="mainCategoryTitle">{% trans "Arte Outline" %}</div>
+                <div class="mainCategorySub">
+                  <p>{% trans "See how Friar Juan de Cordova organized his 16th century grammar of Colonial Valley Zapotec." %}</p>
+                </div>
+              </div>
+            </a>
+            <a href="{% url 'arte_original' %}">
+              <div class="row arteCategory">
+                <div class="mainCategoryTitle">{% trans "Original Transcription" %}</div>
+                <div class="mainCategorySub">
+                  <p>{% trans "Look at a full transcription of the Arte." %}</p>
+                </div>
+              </div>
+            </a>
+            <a href="{% url 'sample_arte' %}">
+              <div class="row arteCategory">
+                <div class="mainCategoryTitle">{% trans "Sample Pages" %}</div>
+                <div class="mainCategorySub">
+                  <p>{% trans "Examine pages from the Arte, complete with linguistic analysis and translations in English and modern Spanish." %}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

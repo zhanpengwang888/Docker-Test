@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "Handwritten Manuscripts" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-11 col-centered">
+      <div style="width: 100%; height: 400px; overflow: hidden; position: relative;">
+        <img src="{% static 'zapotexts/img/ageo.jpg' %}" style="position: absolute; width:100%">
+      </div>
+      <p class="videoSub text-center" style="margin-bottom: 2em">{% trans "Image published with permission from the Archivo General del Poder Ejecutivo de Oaxacan" %}</p>
+    </div>
+    <div class="col-lg-10 col-centered">
+      <h1 class="text-center">{% trans "Handwritten Manuscripts" %}</h1>
+      <p>{% trans "This area of the site is still in progress.  We have images of over 100 manuscripts of documents written in Colonial Valley Zapotec that we will be posting to this website over the next year.  For now, explore a" %} <a href="{% url 'sample_handwritten' %}">{% trans "sample manuscript from Tlacochahuaya" %}</a>, {% trans "presented with images of the original manuscript, contemporaneous Spanish translation, and transcriptions of each.  The first 28" %} <a href="{% url 'handwritten_texts:list' %}">{% trans "manuscripts" %}</a> {% trans "are available without transcriptions. As we transcribe and analyze these texts, they will be made available as well." %}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "Colonial Zapotec Texts" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-10 col-centered" style="margin-bottom: 4em">
+      <h1 class="text-center" style="margin-bottom: 1em">{% trans "Colonial Zapotec Texts" %}</h1>
+      <a href="{% url 'arte' %}">
+        <table class="textsCategory" style="width:100%">
+          <tr>
+            <th>
+              <img src="{% static 'zapotexts/img/arte16closeup.png' %}" alt="o woodcut" width="100%">
+            </th>
+            <td>
+              <div class="mainCategoryTitle">Arte en lengua zapoteca</div>
+              <p>{% trans "See how Friar Juan de Cordova organized his 16th century grammar of Colonial Valley Zapotec." %}</p>
+            </td>
+          </tr>
+        </table>
+      </a>
+      <a href="{% url 'zapotexts:page_detail' 'levanto' 0 'original' %}">
+        <table class="textsCategory" style="width:100%; text-align: right">
+          <tr>
+            <td>
+              <div class="mainCategoryTitle">{% trans "Cathecismo de la lengua zaapoteca" %}</div>
+            </td>
+            <th>
+              <img src="{% static 'zapotexts/img/printed_manuscripts/levanto/4.jpg' %}" alt="o woodcut" width="100%">
+            </th>
+          </tr>
+        </table>
+      </a>
+      <a href="{% url 'doctrina' %}">
+        <table class="textsCategory" style="width:100%">
+          <tr>
+            <th>
+              <img src="{% static 'zapotexts/img/feria.PNG' %}" alt="o woodcut" width="100%">
+            </th>
+            <td>
+              <div class="mainCategoryTitle">Doctrina christiana en lengua castellana y çapoteca</div>
+              <p>{% trans "Learn more about Pedro de Feria's 16th century bilingual doctrine of the Catholic Faith." %}</p>
+            </td>
+          </tr>
+        </table>
+      </a>
+      <a href="{% url 'zapotexts:page_detail' 'levanto' 0 'original' %}">
+        <table class="textsCategory" style="width:100%; text-align: right">
+          <tr>
+            <td>
+              <div class="mainCategoryTitle">{% trans "Levanto's Arte" %}</div>
+            </td>
+            <th>
+              <img src="{% static 'zapotexts/img/printed_manuscripts/levanto-arte/3.jpg' %}" alt="o woodcut" width="100%">
+            </th>
+          </tr>
+        </table>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

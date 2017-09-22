@@ -1,0 +1,8 @@
+{% extends 'admin/index.html' %}
+
+{% block content %}
+<p>
+  <a href="{% url 'zapotexts:import_xml' %}">Click here to import XML</a>
+</p>
+{{ block.super }}
+{% endblock %}

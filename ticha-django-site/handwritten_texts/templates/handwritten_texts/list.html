@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "Available Manuscripts" %}{% endblock %}
+
+{% block extra-css %}
+<link href='https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css' rel='stylesheet' type='text/css'>
+{% endblock %}
+{% block content %}
+<div class="container">
+  <h1 class="text-center">{% trans "Available Handwritten Manuscripts" %}</h1>
+  <br>
+  <table id="myTable" class="display" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th>{% trans "Name of Document" %}</th>
+        <th>{% trans "Year" %}</th>
+        <th>{% trans "Town" %}</th>
+        <th>{% trans "Archive" %}</th>
+        <th>{% trans "Type of Document" %}</th>
+        <th>{% trans "Language" %}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for doc in object_list %}
+      <tr class="even" role="row">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == 'es' %}
+          <td class="sorting_1">
+            {% if doc.slug %}
+              <a href="{% url 'handwritten_texts:detail' doc.slug %}" class="man-list">{{ doc.título }}</a>
+            {% else %}
+              {{ doc.título }}
+            {% endif %}
+          </td>
+          <td>{{ doc.year }}</td>
+          <td>{{ doc.pueblo }}</td>
+          <td>{{ doc.archivo }}</td>
+          <td>{{ doc.tipo_del_documento }}</td>
+          <td>{{ doc.idioma }}</td>
+        {% else %}
+          <td class="sorting_1">
+            {% if doc.slug %}
+              <a href="{% url 'handwritten_texts:detail' doc.slug %}" class="man-list">{{ doc.title }}</a>
+            {% else %}
+              {{ doc.title }}
+            {% endif %}
+          </td>
+          <td>{{ doc.year }}</td>
+          <td>{{ doc.town_short }}</td>
+          <td>{{ doc.archive }}</td>
+          <td>{{ doc.document_type }}</td>
+          <td>{{ doc.language }}</td>
+        {% endif %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<br>
+<hr>
+{% endblock %}
+{% block extra-js %}
+<script type="text/javascript" src="{% static 'zapotexts/js/dataTables.min.js' %}"></script>
+<!-- Depending on the language, DataTables needs to be configured differently to get the proper translation -->
+{% get_current_language as LANG_CODE %}
+{% if LANG_CODE == 'es' %}
+<script type="text/javascript" src="{% static 'zapotexts/js/data_table_es.js' %}"></script>
+{% else %}
+<script type="text/javascript" src="{% static 'zapotexts/js/data_table.js' %}"></script>
+{% endif %}
+{% endblock %}

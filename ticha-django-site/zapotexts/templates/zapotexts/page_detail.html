@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{{ page }}{% endblock %}
+
+{% block extra-css %}
+  <link rel="stylesheet" href="{% static 'zapotexts/css/page_detail_style.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row text-center">
+    <div class="btn-group" role="group" style="text-align: center;" aria-label="...">
+      <a href="{% url 'zapotexts:page_detail' doc_slug 0 mode %}" class="btn btn-primary" title="{% trans "First" %}"><span class="glyphicon glyphicon-step-backward"></span></a>
+      <a href="{% url 'zapotexts:page_detail' doc_slug prev_page mode %}" class="btn btn-primary {% if prev_page == '9999' %}disabled{% endif %}" title="{% trans "Previous" %}"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a href="download" target="_blank" class="btn btn-primary" title="{% trans "Download" %}"><span class="glyphicon glyphicon-download-alt"></span></a>
+      <a href="{% url 'zapotexts:page_detail' doc_slug next_page mode %}" class="btn btn-primary {% if next_page == '9999' %}disabled{% endif %}" title="{% trans "Next" %}"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      <a href="{% url 'zapotexts:page_detail' doc_slug last_page mode %}" class="btn btn-primary" title="{% trans "Last" %}"><span class="glyphicon glyphicon-step-forward"></span></a>
+    </div>
+  </div>
+  <div class="row text-center">
+    <br>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <br>
+      <img class="img-responsive" src="{% static img_url %}">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tabbable">
+      <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="tabs {% if mode == 'original' %}active{% endif %}">
+        <a href="{% url 'zapotexts:page_detail' doc_slug page.linear_page_number 'original' %}">{% trans "Transcription" %}</a>
+        </li>
+        <li class="tabs {% if mode == 'regular' %}active{% endif %}">
+        <a href="{% url 'zapotexts:page_detail' doc_slug page.linear_page_number 'regular' %}">{% trans "Modern Spanish" %}</a>
+        </li>
+        <!--<li class="tabs {% if mode == 'workshop' %}active{% endif %}">
+        <a href="{% url 'zapotexts:page_detail' doc_slug page.linear_page_number 'workshop' %}">{% trans "Workshop Notes" %}</a>
+        </li>-->
+<!--  **ENGLISH TAB DISABLED UNTIL WE HAVE ENGLISH TRANSLATION FOR THE TEXTS
+        <li class="tabs {% if mode == 'english' %}active{% endif %}">
+          <a href="{% url 'zapotexts:page_detail' doc_slug page.linear_page_number 'english' %}">{% trans "English" %}</a>
+        </li>
+-->
+      </ul>
+      <div class="tab-content text-left">
+        <div id="tab1-slug" class="tab-pane {% if mode == 'original' %}active{% endif %}">
+          {% autoescape off %}
+          {{ page.transcription }}
+          {% endautoescape %}
+        </div>
+        <div id="tab2-slug" class="tab-pane {% if mode == 'regular' %}active{% endif %}">
+          {% autoescape off %}
+          {{ page.transcription_regular }}
+          {% endautoescape %}
+        </div>
+        <!--
+        <div id="tab2-slug" class="tab-pane {% if mode == 'workshop' %}active{% endif %}">
+          {% autoescape off %}
+          {{ page.workshop_notes }}
+          {% endautoescape %}
+        </div>
+        <div id="tab3-slug" class="tab-pane {% if mode == 'english' %}active{% endif %}"></div>
+        -->
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row text-center">
+    <div class="btn-group" role="group" style="text-align: center;" aria-label="...">
+      <a href="{% url 'zapotexts:page_detail' doc_slug 0 mode %}" class="btn btn-primary" title="{% trans "First" %}"><span class="glyphicon glyphicon-step-backward"></span></a>
+      <a href="{% url 'zapotexts:page_detail' doc_slug prev_page mode %}" class="btn btn-primary {% if prev_page == '9999' %}disabled{% endif %}" title="{% trans "Previous" %}"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a href="{% url 'zapotexts:page_detail' doc_slug next_page mode %}" class="btn btn-primary {% if next_page == '9999' %}disabled{% endif %}" title="{% trans "Next" %}"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      <a href="{% url 'zapotexts:page_detail' doc_slug last_page mode %}" class="btn btn-primary" title="{% trans "Last" %}"><span class="glyphicon glyphicon-step-forward"></span></a>
+    </div>
+  </div>
+  <br>
+  <div class="row text-center" style="text-align: justify">
+    {% autoescape off %}
+    {{ page.man.citation }}
+    {% endautoescape %}
+  </div>
+</div>
+<br>
+{% endblock %}

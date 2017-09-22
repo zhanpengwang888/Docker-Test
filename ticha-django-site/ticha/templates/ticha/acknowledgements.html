@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "Acknowledgements" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-11 col-centered" style="margin-bottom: 4em">
+      <h1 class="text-center" style="margin-bottom: 1em">{% trans "Acknowledgements" %}</h1>
+      <h4>{% trans "We are grateful for support from the following institutions and agencies:" %}</h4>
+      <ul class="acknowledge-list">
+        <li class="acknowledge">American Council of Learned Societies </li>
+        <ul class="acknowledge-list">
+          <li class="acknowledge">Lillehaugen 2015-2016 Fellowship </li>
+        </ul>
+        <li class="acknowledge">American Philosophical Society </li>
+        <ul class="acknowledge-list">
+          <li class="acknowledge">Lillehaugen 2015 Franklin Research Grant </li>
+        </ul>
+        <li class="acknowledge">Center for Peace and Global Citizenship {% trans "at" %} Haverford College</li>
+        <li class="acknowledge">Haverford College</li>
+        <li class="acknowledge">Hurford Center for the Arts and Humanities {% trans "at" %} Haverford College</li>
+        <li class="acknowledge">Magill Library {% trans "at" %} Haverford College </li>
+        <li class="acknowledge">
+          National Endowment for the Humanities*
+          <ul class="acknowledge-list">
+            <li class="acknowledge">Lillehaugen 2014 {% trans "NEH Summer Stipend" %}</li>
+            <li class="acknowledge">Lillehaugen 2015-2016 {% trans "NEH Fellowship for College Teachers and Independent Scholars" %}</li>
+          </ul>
+        <li class="acknowledge">Tri-Co Digital Humanities </li>
+        </li>
+      </ul>
+      <div class="thxFootnote">*{% trans "All opinions, findings, conclusions, or recommendations expressed in this project do not necessarily represent those of the National Endowment for the Humanities." %}</div>
+      <div class="thxCategory">
+        <h4>{% trans "We owe our thanks to the following groups and individuals for their advice and contributions:" %}</h4>
+      </div>
+      <ul class="acknowledge-list-block">
+        <li class="acknowledge-block">Carolyn Jane Anderson</li>
+        <li class="acknowledge-block">Roberto Antonio Ruiz</li>
+        <li class="acknowledge-block">Josefina Antonio Ruiz</li>
+        <li class="acknowledge-block">Dan Berger-Lenehan</li>
+        <li class="acknowledge-block">Flora Berklein</li>
+        <li class="acknowledge-block">Jacob Collard</li>
+        <li class="acknowledge-block">Bety Cruz</li>
+        <li class="acknowledge-block">Hilaria Cruz</li>
+        <li class="acknowledge-block">Uliana Cruz</li>
+        <li class="acknowledge-block">Alex Delgado</li>
+        <li class="acknowledge-block">Christina Esposito</li>
+        <li class="acknowledge-block">Anneke Heher</li>
+	<li class="acknowledge-block">Ian Fisher</li>
+        <li class="acknowledge-block">Xochitl Flores-Marcial</li>
+        <li class="acknowledge-block">John Foreman</li>
+	<li class="acknowledge-block">Andrew Janco</li>
+        <li class="acknowledge-block">Victoria Kranz</li>
+        <li class="acknowledge-block">Lorenzo Tlacaelel Lambertino</li>
+        <li class="acknowledge-block">Debbie Leter</li>
+        <li class="acknowledge-block">Audrey Lin</li>
+	<li class="acknowledge-block">Felipe López Hernandez</li>
+        <li class="acknowledge-block">Mike Galant</li>
+        <li class="acknowledge-block">Isabel Gross</li>
+        <li class="acknowledge-block">Marita Martín</li>
+        <li class="acknowledge-block">Luisa Martínez</li>
+        <li class="acknowledge-block">Olivia Martínez</li>
+        <li class="acknowledge-block">Mercedes Montes de Oca</li>
+        <li class="acknowledge-block">Julie Morgenlender</li>
+        <li class="acknowledge-block">Pamela Munro</li>
+        <li class="acknowledge-block">Thomas Smith Stark</li>
+        <li class="acknowledge-block">Kevin Terraciano</li>
+        <li class="acknowledge-block">Maria Ornelas</li>
+        <li class="acknowledge-block">Rosa María Rojas Torres</li>
+        <li class="acknowledge-block">Diana Schwartz</li>
+        <li class="acknowledge-block">Aaron H. Sonnenschein</li>
+        <li class="acknowledge-block">Lisa Sousa</li>
+        <li class="acknowledge-block">Enrique Valdivia</li>
+        <li class="acknowledge-block">Rachel Elizabeth Weissler</li>
+        <li class="acknowledge-block">Seminario de zapoteco colonial {% trans "at the UNAM in Mexico City (led by Smith Stark)" %}</li>
+        <li class="acknowledge-block">{% trans "UCLA Zapotexts research group (led by Munro and Terraciano)" %}</li>
+      </ul>
+      <hr class="fancy" >
+      <div class="thxFootnote" style="text-align: center;">
+        <p>{% trans "This work and its by products are licensed under a" %} Creative Commons Attribution-ShareAlike (<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>) license. </p>
+        <p>{% trans "All errors are, of course, our own.  (If you note an error, please consider" %} <a href="{% url 'form' %}">{% trans "dropping us a line" %}</a>.)</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

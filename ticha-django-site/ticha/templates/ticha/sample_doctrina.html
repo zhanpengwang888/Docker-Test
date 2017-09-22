@@ -1,0 +1,380 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "Sample Doctrina Pages" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class = "text-center">
+    <h1 style="margin-bottom: 0">{% trans "Doctrina sample page" %}</h1>
+    <p class="pageDesc">
+      {% trans "Document:" %} <a target="_blank" href="https://archive.org/stream/doctrinachristia00feri#page/n0/mode/1up">Doctrina christiana en lengua castellana y çapoteca</a>.  {% trans "Page:" %} <a target="_blank" href="https://archive.org/stream/doctrinachristia00feri#page/n215/mode/1up">104v</a>.<br/>
+      {% trans "Year: 1567.  Publication Information: Mexico City, En casa de Pedro Ocharte." %}
+    </p>
+  </div>
+  <hr class = "fancy">
+  <br>
+  <div class="row text-center">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <img class="img-responsive" style = "margin: auto;" src="{% static 'zapotexts/img/feriasample104v.jpg' %}">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tabbable">
+      <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="tabs active"><a data-toggle="tab" href="#tab1-slug">{% trans "Transcription and Linguistic Analysis" %}</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="tab1-slug" class="tab-pane active">
+          <div class="row">
+          </div>
+          <div class="row red-outline">
+            <div class="col-md-5 col-sm-6 col-xs-6 text-left">
+              ¶Siguſſe el ſe-<br/>
+              gundo ſacramento.<br/>
+              El ſegũdo <br/>
+              es la Confirmaciõ.<br/>
+              QUando el obiſ-<br/>
+              po cõfirma a al<br/>
+              guno, dos cosas ſe <br/>
+              hazen. La vna es, q̃<br/>
+              le vnge con un liquor <br/>
+              muy preciado, compueſto<br/>
+              de dos liquores, q̃ ſon bal<br/>
+              ſamo y azeyte: lo otro es,<br/>
+              q̃ le haze la ſeñal dela cruz <br/>
+              X enla frente.<br/>
+              ¶Entrambas eſtas dos<br/>
+              coſas ſignifican la milicia <br/>
+              chriſtiana, a que esta obli-<br/>
+              gado, y ſubjecto todo hõ-<br/>
+              bre, que ha reſcebido el <br/>
+              ſctõ baptismo. Es ſeñala<br/>
+              do el chriſtiano en la frẽte<br/>
+              cõla señal de la cruz: X a<br/>
+              que entienda, y cognozca, <br/>
+              que no ha de esconder, ni ẽ<br/>
+              cubrir el ſer que tiene de chri<br/>
+              ſtiano,
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 text-left">
+              <em>
+              <div class="popover-markup inline">
+                <mark class="trigger inline">¶Cetanalaga co-<br/>
+                topa Sacramento.</mark>
+                <div class="content hide inline">
+                  <p style="text-align: left"><em>
+                    <button type="button" id="close" class="close"> X </button>
+                  <p></p>
+                  <b>¶Centanalaga co[topa</b>
+                  <table>
+                    <tr>
+                      <td style="padding: 0 3mm 0 0;">cetanalaga</td>
+                      <td style="padding: 0 3mm 0 0;">co-topa</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0 3mm 0 0;">follows</td>
+                      <td style="padding: 0 3mm 0 0;">PERF-two</td>
+                    </tr>
+                  </table>
+                  <b>Sacramento.</b>
+                  <table>
+                    <tr>
+                      <td style="padding: 0 3mm 0 0;">Sacramento</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0 3mm 0 0;">sacrament</td>
+                    </tr>
+                  </table>
+                  <em>‘Here follows the second sacrament.’<br/>
+                  Siguesse el segundo sacramento.</em>
+                </div>
+                <br/>
+              </div>
+              <div class="popover-markup inline">
+                <mark class="trigger inline">Cotopalaloo ſa-<br/>
+                cramento nàca quela hue-<br/>
+                caape a bixoce obispo.<br/></mark>
+                <div class="content hide inline">
+                  <p style="text-align: left"><em>
+                    <button type="button" id="close" class="close"> X </button>
+                  <p></p>
+                  <b>Cotopalaloo ſa[cramento</b>
+                  <table>
+                    <tr>
+                      <td style="padding: 0 3mm 0 0;">co-topa</td>
+                      <td style="padding: 0 3mm 0 0;">la</td>
+                      <td style="padding: 0 3mm 0 0;">loo</td>
+                      <td style="padding: 0 3mm 0 0;">sacrament</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0 3mm 0 0;">PERF-two</td>
+                      <td style="padding: 0 3mm 0 0;">?</td>
+                      <td style="padding: 0 3mm 0 0;">ASP</td>
+                      <td style="padding: 0 3mm 0 0;">sacrament</td>
+                    </tr>
+                  </table>
+                  <b>nàca quela hue[caape a</b>
+                  <table>
+                    <tr>
+                      <td style="padding: 0 3mm 0 0;">n-aca</td>
+                      <td style="padding: 0 3mm 0 0;">quela=huea-caapea</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0 3mm 0 0;">STA-be.able</td>
+                      <td style="padding: 0 3mm 0 0;">NOM=AGN-confirm</td>
+                    </tr>
+                  </table>
+                  <b>bixoce obispo.</b>
+                  <table>
+                    <tr>
+                      <td style="padding: 0 3mm 0 0;">bixoce</td>
+                      <td style="padding: 0 3mm 0 0;">obispo</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0 3mm 0 0;">father</td>
+                      <td style="padding: 0 3mm 0 0;">bishop</td>
+                    </tr>
+                  </table>
+                  <em>‘The second is confirmation.’<br/>
+                  El segundo es la confirmacion.</em>
+                </div>
+              </div>
+              <div class="popover-markup inline">
+                <mark class="trigger inline">CHi tocaa pea bixo-<br/>
+                ce coquî Obiſpo <br/>
+                tòtila beni, chicani to-<br/>
+                paloo taca: cotobiloo <br/>
+                tigàbini benî cani tobi <br/>
+                nocuana nachono tete, nino-<br/>
+                cha topa nocuana tobilâ azey-<br/>
+                te, cetobilâ balſamo, ticha caſti<br/>
+                lla. Cotopa loo tocaa bixoce O-<br/>
+                biſpo bennabi cruz X loo lo <br/>
+                cuaa benicani.<br/>
+                </mark>
+                <div class="content hide inline">
+                  <p style="text-align: left">
+                    <em>
+                      <button type="button" id="close" class="close"> X </button>
+                  <p></p>
+                  <b>CHi tocaa pea bixo[ce</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">chi</td><td style="padding: 0 3mm 0 0;">to-caapea</td><td style="padding: 0 3mm 0 0;">bixoce</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">when</td><td style="padding: 0 3mm 0 0;">HAB:CAUS-confirm</td><td style="padding: 0 3mm 0 0;">father</td>
+                  </tr>
+                  </table>
+                  <b>Coquî Obiſpo</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">coqui</td><td style="padding: 0 3mm 0 0;">Obispo</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">lord</td><td style="padding: 0 3mm 0 0;">bishop</td>
+                  </tr>
+                  </table>
+                  <b>tòtila beni, chicani to[paloo</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">toti=la</td><td style="padding: 0 3mm 0 0;">beni</td><td style="padding: 0 3mm 0 0;">chicani</td><td style="padding: 0 3mm 0 0;">topa-loo</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">some=indef</td><td style="padding: 0 3mm 0 0;">person</td><td style="padding: 0 3mm 0 0;">then</td><td style="padding: 0 3mm 0 0;">two-ASP</td>
+                  </tr>
+                  </table>
+                  <b>taca: cotobiloo</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">t-aca</td><td style="padding: 0 3mm 0 0;">co-tobi</td><td style="padding: 0 3mm 0 0;">loo</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">HAB-be</td><td style="padding: 0 3mm 0 0;">PERF-one</td><td style="padding: 0 3mm 0 0;">face</td>
+                  </tr>
+                  </table>
+                  <b>tigàbini benî cani tobi</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">ti-gbi=ni</td><td style="padding: 0 3mm 0 0;">beni</td><td style="padding: 0 3mm 0 0;">cani</td><td style="padding: 0 3mm 0 0;">tobi</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">HAB-anoint=3</td><td style="padding: 0 3mm 0 0;">give</td><td style="padding: 0 3mm 0 0;">this</td><td style="padding: 0 3mm 0 0;">one</td>
+                  </tr>
+                  </table>
+                  <b>nocuana nachono tete, nino[cha</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">nocuana</td><td style="padding: 0 3mm 0 0;">na-chono</td><td style="padding: 0 3mm 0 0;">tete</td><td style="padding: 0 3mm 0 0;">ninocha</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">herb</td><td style="padding: 0 3mm 0 0;">STA-be.valuable</td><td style="padding: 0 3mm 0 0;">very</td><td style="padding: 0 3mm 0 0;">?</td>
+                  </tr>
+                  </table>
+                  <b>topa nocuana tobilâ azey[te,</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">topa</td><td style="padding: 0 3mm 0 0;">nocuana</td><td style="padding: 0 3mm 0 0;">tobi=la</td><td style="padding: 0 3mm 0 0;">azeyte</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">two</td><td style="padding: 0 3mm 0 0;">herb</td><td style="padding: 0 3mm 0 0;">one=and</td><td style="padding: 0 3mm 0 0;">oil</td>
+                  </tr>
+                  </table>
+                  <b>cetobilâ balſamo, ticha caſti[lla.</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">ce-tobi=la</td><td style="padding: 0 3mm 0 0;">balsamo</td><td style="padding: 0 3mm 0 0;">ticha</td><td style="padding: 0 3mm 0 0;">castilla</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">again-one=and</td><td style="padding: 0 3mm 0 0;">?</td><td style="padding: 0 3mm 0 0;">ticha</td><td style="padding: 0 3mm 0 0;">Castillian</td>
+                  </tr>
+                  </table>
+                  <b>Cotopa loo tocaa bixoce O[biſpo</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">co-topa</td><td style="padding: 0 3mm 0 0;">loo</td><td style="padding: 0 3mm 0 0;">to-caa</td><td style="padding: 0 3mm 0 0;">bixoce</td><td style="padding: 0 3mm 0 0;">obispo</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">PERF-two</td><td style="padding: 0 3mm 0 0;">ASP</td><td style="padding: 0 3mm 0 0;">HAB:CAUS-take</td><td style="padding: 0 3mm 0 0;">father</td><td style="padding: 0 3mm 0 0;">bishop</td>
+                  </tr>
+                  </table>
+                  <b>bennabi cruz X loo lo[cuaa</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">bennabi cruz X</td><td style="padding: 0 3mm 0 0;">loo</td><td style="padding: 0 3mm 0 0;">locuaa</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">sign of the cross</td><td style="padding: 0 3mm 0 0;">ASP</td><td style="padding: 0 3mm 0 0;">forehead</td>
+                  </tr>
+                  </table>
+                  <b>benicani.</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">beni</td><td style="padding: 0 3mm 0 0;">cani</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">person</td><td style="padding: 0 3mm 0 0;">this</td>
+                  </tr>
+                  </table>
+                  <em>‘When the bishop confirms someone, two things happen. One is that he anoints him with a very precious liquor, composed of two liquors, which are balsam and oil: the other is that he makes the sign of the cross on the forehead.’<br/>
+                  Quando el obispo confirma a alguno, dos cosas se hazen. La una es, que le unge con un liquor muy preciado, compuesto de dos liquores, que son balsamo y azeyte: lo otro es que le haze la señal de la cruz X en la frente.</em>
+                  </em>
+                  </p>
+                </div>
+              </div>
+              <div class="popover-markup inline">
+                <mark class="trigger inline">  ¶Quitopa loo nitij tolo huini<br/>
+                quela coego chriſtiano, ni coca-<br/>
+                ñeni, ni pigabañe quitaalij be-<br/>
+                ni, chicoxijniquelacotobaniça,<br/>
+                oalijca ticàpea beni Chriſtiano<br/>
+                bennabi cruz X locuaani, nia-<br/>
+                ni quiyennini, cacapeani ticha<br/>
+                yanaquîñati, cocachinilooque’<br/>
+                la Chriſtiano xitenini,<br/>
+                </mark>
+                <div class="content hide inline">
+                  <p style="text-align: left">
+                    <em>
+                      <button type="button" id="close" class="close"> X </button>
+                  <p></p>
+                  <b>¶Quitopa loo nitij tolo huini</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">qui-topa</td><td style="padding: 0 3mm 0 0;">loo</td><td style="padding: 0 3mm 0 0;">nitij</td><td style="padding: 0 3mm 0 0;">to-lohui=ni</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">IRR-two</td><td style="padding: 0 3mm 0 0;">ASP</td><td style="padding: 0 3mm 0 0;">this</td><td style="padding: 0 3mm 0 0;">HAB:CAUS-?=3</td>
+                  </tr>
+                  </table>
+                  <b>quela coego chriſtiano, ni coca[ñeni,</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">quela=christiano</td><td style="padding: 0 3mm 0 0;">ni</td><td style="padding: 0 3mm 0 0;">co-cane=ni</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">NOM=Christian</td><td style="padding: 0 3mm 0 0;">that</td><td style="padding: 0 3mm 0 0;">PERF-?=3</td>
+                  </tr>
+                  </table>
+                  <b>ni pigabañe quitaalij be[ni,</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">ni</td><td style="padding: 0 3mm 0 0;">pi-gabane</td><td style="padding: 0 3mm 0 0;">qui-taa-lij</td><td style="padding: 0 3mm 0 0;">beni</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">REL</td><td style="padding: 0 3mm 0 0;">PERF-pertain</td><td style="padding: 0 3mm 0 0;">IRR-all-straight</td><td style="padding: 0 3mm 0 0;">person</td>
+                  </tr>
+                  </table>
+                  <b>chicoxijniquelacotobaniça,</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">chi</td><td style="padding: 0 3mm 0 0;">co-xij=ni</td><td style="padding: 0 3mm 0 0;">quelacotobaniça</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">when</td><td style="padding: 0 3mm 0 0;">ERF-receive=3</td><td style="padding: 0 3mm 0 0;">baptism</td>
+                  </tr>
+                  </table>
+                  <b>oalijca ticàpea beni Chriſtiano</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">oa-lij=ca</td><td style="padding: 0 3mm 0 0;">ti-capea</td><td style="padding: 0 3mm 0 0;">beni</td><td style="padding: 0 3mm 0 0;">Christiano</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">PERF-straight=EMPH</td><td style="padding: 0 3mm 0 0;">HAB-?</td><td style="padding: 0 3mm 0 0;">person</td><td style="padding: 0 3mm 0 0;">Christian</td>
+                  </tr>
+                  </table>
+                  <b>bennabi cruz X locuaani, nia[ni</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">bennabi cruz X</td><td style="padding: 0 3mm 0 0;">locuaa=ni</td><td style="padding: 0 3mm 0 0;">niani</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">sign of the cross X</td><td style="padding: 0 3mm 0 0;">forehead=3</td><td style="padding: 0 3mm 0 0;">for</td>
+                  </tr>
+                  </table>
+                  <b>quiyennini, cacapeani ticha</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">quiy-eeni=ni</td><td style="padding: 0 3mm 0 0;">cacapea=ni</td><td style="padding: 0 3mm 0 0;">ticha</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">IRR-understand=3</td><td style="padding: 0 3mm 0 0;">know=3</td><td style="padding: 0 3mm 0 0;">word</td>
+                  </tr>
+                  </table>
+                  <b>yanaquîñati, cocachinilooque[la</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">ya=na-quina=ti</td><td style="padding: 0 3mm 0 0;">co-cachi=ni</td><td style="padding: 0 3mm 0 0;">loo</td><td style="padding: 0 3mm 0 0;">quela</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">NEG=STA-be.necessary=NEG</td><td style="padding: 0 3mm 0 0;">IRR-be.burried=3</td><td style="padding: 0 3mm 0 0;">face</td><td style="padding: 0 3mm 0 0;">NOM</td>
+                  </tr>
+                  </table>
+                  <b>Chriſtiano xitenini,</b>
+                  <table>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">Christiano</td><td style="padding: 0 3mm 0 0;">xi-teni=ni</td>
+                  </tr>
+                  <tr>
+                  <td style="padding: 0 3mm 0 0;">Christian</td><td style="padding: 0 3mm 0 0;">POSS-possession=3</td>
+                  </tr>
+                  </table>
+                  <em>‘Both of these two things show the Christian army, to which all men who have received the holy baptism are obligated and subject. The Christian is shown on the forehead with the sign of the cross: X so that he understands and knows that he does not have to hide or cover the fact of being a Christian.’<br/>
+                  Entrambas estas dos cosas significan la milicia christiana, a que esta obligado, y subjecto todo hombre, que ha rescebido el sancto baptismo. Es señalado el christiano en la frente con la señal de la cruz: X para que entienda, y cognozca, que no ha de esconder, ni encubrir el ser que tiene de christiano.</em>
+                </div>
+              </div>
+              </em>
+              <div style="text-align:right;">chela</div>
+            </div>
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<hr>
+<hr>
+{% endblock %}

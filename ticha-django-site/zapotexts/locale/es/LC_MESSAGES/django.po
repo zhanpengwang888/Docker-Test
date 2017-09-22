@@ -1,0 +1,2187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-17 19:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: zapotexts/templates/404.html:7
+msgid "Sorry, that page was not found."
+msgstr ""
+
+#: zapotexts/templates/500.html:7
+msgid "Sorry, we experienced an internal server error (HTTP 500)."
+msgstr ""
+
+#: zapotexts/templates/admin/404.html:4 zapotexts/templates/admin/404.html:8
+#: zapotexts/templates/admin/dictionary/404.html:4
+#: zapotexts/templates/admin/dictionary/404.html:8
+msgid "Page not found"
+msgstr ""
+
+#: zapotexts/templates/admin/404.html:10
+#: zapotexts/templates/admin/dictionary/404.html:10
+msgid "We're sorry, but the requested page could not be found."
+msgstr ""
+
+#: zapotexts/templates/admin/500.html:6
+#: zapotexts/templates/admin/app_index.html:9
+#: zapotexts/templates/admin/auth/user/change_password.html:13
+#: zapotexts/templates/admin/base.html:56
+#: zapotexts/templates/admin/change_form.html:18
+#: zapotexts/templates/admin/change_list.html:40
+#: zapotexts/templates/admin/delete_confirmation.html:8
+#: zapotexts/templates/admin/delete_selected_confirmation.html:8
+#: zapotexts/templates/admin/dictionary/500.html:6
+#: zapotexts/templates/admin/dictionary/app_index.html:9
+#: zapotexts/templates/admin/dictionary/base.html:56
+#: zapotexts/templates/admin/dictionary/change_form.html:18
+#: zapotexts/templates/admin/dictionary/change_list.html:40
+#: zapotexts/templates/admin/dictionary/delete_confirmation.html:8
+#: zapotexts/templates/admin/dictionary/delete_selected_confirmation.html:8
+#: zapotexts/templates/admin/dictionary/invalid_setup.html:6
+#: zapotexts/templates/admin/dictionary/object_history.html:6
+#: zapotexts/templates/admin/invalid_setup.html:6
+#: zapotexts/templates/admin/object_history.html:6
+msgid "Home"
+msgstr ""
+
+#: zapotexts/templates/admin/500.html:7
+#: zapotexts/templates/admin/dictionary/500.html:7
+msgid "Server error"
+msgstr ""
+
+#: zapotexts/templates/admin/500.html:11
+#: zapotexts/templates/admin/dictionary/500.html:11
+msgid "Server error (500)"
+msgstr ""
+
+#: zapotexts/templates/admin/500.html:14
+#: zapotexts/templates/admin/dictionary/500.html:14
+msgid "Server Error <em>(500)</em>"
+msgstr ""
+
+#: zapotexts/templates/admin/500.html:15
+#: zapotexts/templates/admin/dictionary/500.html:15
+msgid ""
+"There's been an error. It's been reported to the site administrators via "
+"email and should be fixed shortly. Thanks for your patience."
+msgstr ""
+
+#: zapotexts/templates/admin/actions.html:4
+#: zapotexts/templates/admin/dictionary/actions.html:4
+msgid "Run the selected action"
+msgstr ""
+
+#: zapotexts/templates/admin/actions.html:4
+#: zapotexts/templates/admin/dictionary/actions.html:4
+msgid "Go"
+msgstr ""
+
+#: zapotexts/templates/admin/actions.html:11
+#: zapotexts/templates/admin/dictionary/actions.html:11
+msgid "Click here to select the objects across all pages"
+msgstr ""
+
+#: zapotexts/templates/admin/actions.html:11
+#: zapotexts/templates/admin/dictionary/actions.html:11
+#, python-format
+msgid "Select all %(total_count)s %(module_name)s"
+msgstr ""
+
+#: zapotexts/templates/admin/actions.html:13
+#: zapotexts/templates/admin/dictionary/actions.html:13
+#, fuzzy
+#| msgid "Collection:"
+msgid "Clear selection"
+msgstr "Colección:"
+
+#: zapotexts/templates/admin/auth/user/add_form.html:6
+msgid ""
+"First, enter a username and password. Then, you'll be able to edit more user "
+"options."
+msgstr ""
+
+#: zapotexts/templates/admin/auth/user/add_form.html:8
+msgid "Enter a username and password."
+msgstr ""
+
+#: zapotexts/templates/admin/auth/user/change_password.html:17
+#: zapotexts/templates/admin/auth/user/change_password.html:54
+#: zapotexts/templates/admin/base.html:44
+#: zapotexts/templates/admin/dictionary/base.html:44
+msgid "Change password"
+msgstr ""
+
+#: zapotexts/templates/admin/auth/user/change_password.html:27
+#: zapotexts/templates/admin/change_form.html:47
+#: zapotexts/templates/admin/change_list.html:67
+#: zapotexts/templates/admin/dictionary/change_form.html:47
+#: zapotexts/templates/admin/dictionary/change_list.html:67
+#: zapotexts/templates/admin/dictionary/login.html:21
+#: zapotexts/templates/admin/login.html:21
+msgid "Please correct the error below."
+msgstr ""
+
+#: zapotexts/templates/admin/auth/user/change_password.html:27
+#: zapotexts/templates/admin/change_form.html:47
+#: zapotexts/templates/admin/change_list.html:67
+#: zapotexts/templates/admin/dictionary/change_form.html:47
+#: zapotexts/templates/admin/dictionary/change_list.html:67
+#: zapotexts/templates/admin/dictionary/login.html:21
+#: zapotexts/templates/admin/login.html:21
+msgid "Please correct the errors below."
+msgstr ""
+
+#: zapotexts/templates/admin/auth/user/change_password.html:31
+#, python-format
+msgid "Enter a new password for the user <strong>%(username)s</strong>."
+msgstr ""
+
+#: zapotexts/templates/admin/base.html:30
+#: zapotexts/templates/admin/dictionary/base.html:30
+msgid "Welcome,"
+msgstr ""
+
+#: zapotexts/templates/admin/base.html:35
+#: zapotexts/templates/admin/dictionary/base.html:35
+msgid "View site"
+msgstr ""
+
+#: zapotexts/templates/admin/base.html:40
+#: zapotexts/templates/admin/dictionary/base.html:40
+#, fuzzy
+#| msgid "Document:"
+msgid "Documentation"
+msgstr "Documento:"
+
+#: zapotexts/templates/admin/base.html:46
+#: zapotexts/templates/admin/dictionary/base.html:46
+msgid "Log out"
+msgstr ""
+
+#: zapotexts/templates/admin/base_site.html:3
+#: zapotexts/templates/admin/dictionary/base_site.html:3
+msgid "Django site admin"
+msgstr ""
+
+#: zapotexts/templates/admin/base_site.html:6
+#: zapotexts/templates/admin/dictionary/base_site.html:6
+msgid "Django administration"
+msgstr ""
+
+#: zapotexts/templates/admin/change_form.html:21
+#: zapotexts/templates/admin/dictionary/change_form.html:21
+#: zapotexts/templates/admin/dictionary/index.html:30
+#: zapotexts/templates/admin/dictionary/related_widget_wrapper.html:16
+#: zapotexts/templates/admin/index.html:30
+#: zapotexts/templates/admin/related_widget_wrapper.html:16
+msgid "Add"
+msgstr ""
+
+#: zapotexts/templates/admin/change_form.html:33
+#: zapotexts/templates/admin/dictionary/change_form.html:33
+#: zapotexts/templates/admin/dictionary/object_history.html:10
+#: zapotexts/templates/admin/object_history.html:10
+msgid "History"
+msgstr ""
+
+#: zapotexts/templates/admin/change_form.html:35
+#: zapotexts/templates/admin/dictionary/change_form.html:35
+#: zapotexts/templates/admin/edit_inline/stacked.html:10
+#: zapotexts/templates/admin/edit_inline/tabular.html:33
+msgid "View on site"
+msgstr ""
+
+#: zapotexts/templates/admin/change_list.html:58
+#: zapotexts/templates/admin/dictionary/change_list.html:58
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: zapotexts/templates/admin/change_list.html:78
+#: zapotexts/templates/admin/dictionary/change_list.html:78
+msgid "Filter"
+msgstr ""
+
+#: zapotexts/templates/admin/change_list_results.html:17
+#: zapotexts/templates/admin/dictionary/change_list_results.html:17
+msgid "Remove from sorting"
+msgstr ""
+
+#: zapotexts/templates/admin/change_list_results.html:18
+#: zapotexts/templates/admin/dictionary/change_list_results.html:18
+#, python-format
+msgid "Sorting priority: %(priority_number)s"
+msgstr ""
+
+#: zapotexts/templates/admin/change_list_results.html:19
+#: zapotexts/templates/admin/dictionary/change_list_results.html:19
+msgid "Toggle sorting"
+msgstr ""
+
+#: zapotexts/templates/admin/delete_confirmation.html:12
+#: zapotexts/templates/admin/dictionary/delete_confirmation.html:12
+#: zapotexts/templates/admin/dictionary/related_widget_wrapper.html:23
+#: zapotexts/templates/admin/dictionary/submit_line.html:6
+#: zapotexts/templates/admin/related_widget_wrapper.html:23
+#: zapotexts/templates/admin/submit_line.html:6
+msgid "Delete"
+msgstr ""
+
+#: zapotexts/templates/admin/delete_confirmation.html:18
+#: zapotexts/templates/admin/dictionary/delete_confirmation.html:18
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr ""
+
+#: zapotexts/templates/admin/delete_confirmation.html:25
+#: zapotexts/templates/admin/dictionary/delete_confirmation.html:25
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
+"following protected related objects:"
+msgstr ""
+
+#: zapotexts/templates/admin/delete_confirmation.html:32
+#: zapotexts/templates/admin/dictionary/delete_confirmation.html:32
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+msgstr ""
+
+#: zapotexts/templates/admin/delete_confirmation.html:34
+#: zapotexts/templates/admin/delete_selected_confirmation.html:33
+#: zapotexts/templates/admin/dictionary/delete_confirmation.html:34
+#: zapotexts/templates/admin/dictionary/delete_selected_confirmation.html:33
+msgid "Objects"
+msgstr ""
+
+#: zapotexts/templates/admin/delete_confirmation.html:41
+#: zapotexts/templates/admin/delete_selected_confirmation.html:44
+#: zapotexts/templates/admin/dictionary/delete_confirmation.html:41
+#: zapotexts/templates/admin/dictionary/delete_selected_confirmation.html:44
+msgid "Yes, I'm sure"
+msgstr ""
+
+#: zapotexts/templates/admin/delete_confirmation.html:42
+#: zapotexts/templates/admin/delete_selected_confirmation.html:45
+#: zapotexts/templates/admin/dictionary/delete_confirmation.html:42
+#: zapotexts/templates/admin/dictionary/delete_selected_confirmation.html:45
+msgid "No, take me back"
+msgstr ""
+
+#: zapotexts/templates/admin/delete_selected_confirmation.html:11
+#: zapotexts/templates/admin/dictionary/delete_selected_confirmation.html:11
+msgid "Delete multiple objects"
+msgstr ""
+
+#: zapotexts/templates/admin/delete_selected_confirmation.html:17
+#: zapotexts/templates/admin/dictionary/delete_selected_confirmation.html:17
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+
+#: zapotexts/templates/admin/delete_selected_confirmation.html:24
+#: zapotexts/templates/admin/dictionary/delete_selected_confirmation.html:24
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+msgstr ""
+
+#: zapotexts/templates/admin/delete_selected_confirmation.html:31
+#: zapotexts/templates/admin/dictionary/delete_selected_confirmation.html:31
+#, python-format
+msgid ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/filter.html:2
+#: zapotexts/templates/admin/filter.html:2
+#, python-format
+msgid " By %(filter_title)s "
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/index.html:19
+#: zapotexts/templates/admin/index.html:19
+#, python-format
+msgid "Models in the %(name)s application"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/index.html:36
+#: zapotexts/templates/admin/dictionary/related_widget_wrapper.html:9
+#: zapotexts/templates/admin/edit_inline/stacked.html:8
+#: zapotexts/templates/admin/edit_inline/tabular.html:31
+#: zapotexts/templates/admin/index.html:36
+#: zapotexts/templates/admin/related_widget_wrapper.html:9
+msgid "Change"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/index.html:46
+#: zapotexts/templates/admin/index.html:46
+msgid "You don't have permission to edit anything."
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/index.html:54
+#: zapotexts/templates/admin/index.html:54
+msgid "Recent Actions"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/index.html:55
+#: zapotexts/templates/admin/index.html:55
+msgid "My Actions"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/index.html:59
+#: zapotexts/templates/admin/index.html:59
+msgid "None available"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/index.html:73
+#: zapotexts/templates/admin/index.html:73
+msgid "Unknown content"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/invalid_setup.html:12
+#: zapotexts/templates/admin/invalid_setup.html:12
+msgid ""
+"Something's wrong with your database installation. Make sure the appropriate "
+"database tables have been created, and make sure the database is readable by "
+"the appropriate user."
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/login.html:37
+#: zapotexts/templates/admin/login.html:37
+#, python-format
+msgid ""
+"You are authenticated as %(username)s, but are not authorized to access this "
+"page. Would you like to login to a different account?"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/login.html:57
+#: zapotexts/templates/admin/login.html:57
+msgid "Forgotten your password or username?"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/login.html:61
+#: zapotexts/templates/admin/login.html:61
+msgid "Log in"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/object_history.html:22
+#: zapotexts/templates/admin/object_history.html:22
+msgid "Date/time"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/object_history.html:23
+#: zapotexts/templates/admin/object_history.html:23
+msgid "User"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/object_history.html:24
+#: zapotexts/templates/admin/object_history.html:24
+msgid "Action"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/object_history.html:38
+#: zapotexts/templates/admin/object_history.html:38
+msgid ""
+"This object doesn't have a change history. It probably wasn't added via this "
+"admin site."
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/pagination.html:10
+#: zapotexts/templates/admin/dictionary/search_form.html:9
+#: zapotexts/templates/admin/pagination.html:10
+#: zapotexts/templates/admin/search_form.html:9
+msgid "Show all"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/pagination.html:11
+#: zapotexts/templates/admin/dictionary/submit_line.html:3
+#: zapotexts/templates/admin/pagination.html:11
+#: zapotexts/templates/admin/submit_line.html:3
+msgid "Save"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/popup_response.html:3
+#: zapotexts/templates/admin/popup_response.html:3
+msgid "Popup closing..."
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/related_widget_wrapper.html:8
+#: zapotexts/templates/admin/related_widget_wrapper.html:8
+#, python-format
+msgid "Change selected %(model)s"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/related_widget_wrapper.html:15
+#: zapotexts/templates/admin/related_widget_wrapper.html:15
+#, python-format
+msgid "Add another %(model)s"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/related_widget_wrapper.html:22
+#: zapotexts/templates/admin/related_widget_wrapper.html:22
+#, python-format
+msgid "Delete selected %(model)s"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/search_form.html:7
+#: zapotexts/templates/admin/search_form.html:7
+#: zapotexts/templates/base.html:98
+msgid "Search"
+msgstr "Buscar"
+
+#: zapotexts/templates/admin/dictionary/search_form.html:9
+#: zapotexts/templates/admin/search_form.html:9
+#, python-format
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: zapotexts/templates/admin/dictionary/search_form.html:9
+#: zapotexts/templates/admin/search_form.html:9
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/submit_line.html:8
+#: zapotexts/templates/admin/submit_line.html:8
+msgid "Save as new"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/submit_line.html:9
+#: zapotexts/templates/admin/submit_line.html:9
+msgid "Save and add another"
+msgstr ""
+
+#: zapotexts/templates/admin/dictionary/submit_line.html:10
+#: zapotexts/templates/admin/submit_line.html:10
+msgid "Save and continue editing"
+msgstr ""
+
+#: zapotexts/templates/admin/edit_inline/stacked.html:26
+#: zapotexts/templates/admin/edit_inline/tabular.html:80
+msgid "Remove"
+msgstr ""
+
+#: zapotexts/templates/admin/edit_inline/stacked.html:27
+#: zapotexts/templates/admin/edit_inline/tabular.html:79
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr ""
+
+#: zapotexts/templates/admin/edit_inline/tabular.html:17
+msgid "Delete?"
+msgstr ""
+
+#: zapotexts/templates/admin/includes/object_delete_summary.html:2
+msgid "Summary"
+msgstr ""
+
+#: zapotexts/templates/base.html:10
+msgid "Ticha"
+msgstr "Ticha"
+
+#: zapotexts/templates/base.html:41
+msgid "About"
+msgstr "Acerca del"
+
+#: zapotexts/templates/base.html:43
+msgid "The project"
+msgstr "Sobre el Projecto"
+
+#: zapotexts/templates/base.html:44
+msgid "The team"
+msgstr "El equipo"
+
+#: zapotexts/templates/base.html:45
+#: zapotexts/templates/zapotexts/acknowledgements.html:5
+#: zapotexts/templates/zapotexts/acknowledgements.html:10
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:83
+msgid "Acknowledgements"
+msgstr "Agradecimientos"
+
+#: zapotexts/templates/base.html:46
+msgid "Contact us"
+msgstr "Contacto"
+
+#: zapotexts/templates/base.html:50
+msgid "Colonial Zapotec"
+msgstr "Zapoteco colonial"
+
+#: zapotexts/templates/base.html:52
+#: zapotexts/templates/zapotexts/context.html:16
+msgid "Cultural context"
+msgstr "Contexto cultural"
+
+#: zapotexts/templates/base.html:53
+#: zapotexts/templates/zapotexts/linguistic.html:15
+msgid "Linguistic background"
+msgstr "Formación linguistica"
+
+#: zapotexts/templates/base.html:54
+#, fuzzy
+#| msgid "Talking Dictionaries"
+msgid "Dictionary"
+msgstr "Diccionario Parlante"
+
+#: zapotexts/templates/base.html:55
+#: zapotexts/templates/zapotexts/bibliography.html:5
+#: zapotexts/templates/zapotexts/bibliography.html:10
+msgid "Bibliography"
+msgstr "Bibliografía"
+
+#: zapotexts/templates/base.html:59 zapotexts/templates/base.html:61
+msgid "Explore texts"
+msgstr "Explora los textos"
+
+#: zapotexts/templates/base.html:64
+msgid "Outline"
+msgstr "Esquema"
+
+#: zapotexts/templates/base.html:66 zapotexts/templates/base.html:75
+msgid "Sample page"
+msgstr "El ejemplo de una página"
+
+#: zapotexts/templates/base.html:67
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:21
+#: zapotexts/templates/zapotexts/page_detail.html:27
+#: zapotexts/templates/zapotexts/sample_arte.html:17
+msgid "Transcription"
+msgstr "Transcripción"
+
+#: zapotexts/templates/base.html:68
+msgid "Regularized Spanish"
+msgstr "Español regularizado"
+
+#: zapotexts/templates/base.html:73 zapotexts/templates/zapotexts/feria.html:5
+#: zapotexts/templates/zapotexts/feria.html:15
+msgid "About Pedro de Feria"
+msgstr "Sobre Pedro de Feria"
+
+#: zapotexts/templates/base.html:77
+msgid "Handwritten texts"
+msgstr "Textos manoscritos"
+
+#: zapotexts/templates/base.html:78
+msgid "Available manuscripts"
+msgstr "Manuscritos disponibles"
+
+#: zapotexts/templates/base.html:79
+msgid "Sample manuscript"
+msgstr "Ejemplos de manuscritos"
+
+#: zapotexts/templates/base.html:80
+msgid "Timeline of handwritten texts"
+msgstr "Cronología de los documentos"
+
+#: zapotexts/templates/base.html:118
+msgid "How to cite"
+msgstr "Cómo citar"
+
+#: zapotexts/templates/zapotexts/about.html:5
+msgid "About the Project"
+msgstr "Sobre el Projecto"
+
+#: zapotexts/templates/zapotexts/about.html:16
+#, fuzzy
+#| msgid "The project"
+msgid "The Project"
+msgstr "Sobre el Projecto"
+
+#: zapotexts/templates/zapotexts/about.html:17
+msgid ""
+"<b>Ticha</b> is an online, digital explorer for a corpus of Colonial Zapotec "
+"texts. (The name <i>ticha</i> comes from the Colonial Valley Zapotec word "
+"for ‘word’, which also means ‘language’.) Zapotec is an indigenous language "
+"family of Mexico, has a long record of alphabetic texts, the earliest dated "
+"1565 (Oudijk 2008:230). Reading and interpreting these colonial documents "
+"can be extremely difficult because of the challenges of early Zapotec "
+"orthography, vocabulary, grammar, and printing conventions, yet the "
+"documents contain rich linguistic, historical, and anthropological "
+"information."
+msgstr ""
+"<b>Ticha</b> es un explorador digital para un grupo de textos escritos en el "
+"zapoteco colonial. El nombre <i>ticha</i> se deriva de la palabra del "
+"zapoteco colonial del valle para &lsquo;palabra&rsquo;, la cual también "
+"significa &lsquo;lenguaje&rsquo;. El zapoteco es una familia lingüística de "
+"México que tiene una larga historia de escritura alfabética de la cual el "
+"documento más antiguo tiene la fecha de 1565 (Oudijk 2008:230). Leer e "
+"interpretar estos documentos puede ser sumamente difícil por los retos de la "
+"ortografía antigua, vocabulario, gramática, y convenciones de imprenta, sin "
+"embargo los documentos contienen extensa información lingüística, histórica, "
+"y antropológica."
+
+#: zapotexts/templates/zapotexts/about.html:18
+msgid ""
+"While currently in a mock-up stage, Ticha will eventually allow a user to "
+"access and explore many interlinked layers of these texts, including images "
+"of the original documents, transcriptions, translations into English and "
+"modern Spanish, linguistic analysis (including morphological "
+"interlinearization), and commentary. Ticha is innovative in bringing "
+"together data analyzed in FLEx (Fieldworks Language Explorer, fieldworks.sil."
+"org) a system for lexical and grammatical analysis, with current TEI "
+"standards (Text Encoding Initiative, tei-c.org) for paleographic and "
+"translational representations of texts.  This tool will make Colonial "
+"Zapotec texts accessible to scholars in diverse fields (including "
+"linguistics, anthropology, and history),  Zapotec community members, and the "
+"general public."
+msgstr ""
+"Por ahora Ticha está en fase de prueba, pero eventualmente el sitio "
+"permitirá al usuario ver y explorar varias capas interconectadas de estos "
+"textos, incluyendo imágenes de los documentos originales, transcripciones, "
+"traducciones al inglés y al español moderno, análisis lingüístico incluyendo "
+"interlinearización morfológica, y comentarios. Ticha es innovador porque "
+"reúne información analizada en FLEx (Fieldworks Language Explorer, "
+"fieldworks.sil.org) el cual es un sistema para el análisis léxico y "
+"gramático, junto con los estándares actuales del TEI (Text Encoding "
+"Initiative, tei-c.org) para las representaciones paleográficas y de "
+"traducción de los textos. Esta herramienta permitirá la accesibilidad de los "
+"textos en zapoteco colonial para académicos en diversos campos (incluyendo "
+"la lingüística, antropología e historia), los miembros de la comunidad "
+"zapoteca y para el público en general."
+
+#: zapotexts/templates/zapotexts/about.html:26
+msgid "Professor"
+msgstr "Profesora"
+
+#: zapotexts/templates/zapotexts/about.html:26
+msgid "on the Ticha Project"
+msgstr "habla sobre el proyecto de Ticha"
+
+#: zapotexts/templates/zapotexts/about.html:26
+#: zapotexts/templates/zapotexts/about.html:34
+msgid "from"
+msgstr "desde"
+
+#: zapotexts/templates/zapotexts/about.html:26
+#: zapotexts/templates/zapotexts/about.html:34
+#: zapotexts/templates/zapotexts/about.html:38
+#: zapotexts/templates/zapotexts/about.html:42
+#: zapotexts/templates/zapotexts/about.html:46
+msgid "Haverford College Libraries"
+msgstr "las bibliotecas de Haverford College"
+
+#: zapotexts/templates/zapotexts/about.html:26
+#: zapotexts/templates/zapotexts/about.html:30
+#: zapotexts/templates/zapotexts/about.html:34
+#: zapotexts/templates/zapotexts/about.html:38
+#: zapotexts/templates/zapotexts/about.html:42
+#: zapotexts/templates/zapotexts/about.html:46
+msgid "on"
+msgstr "en"
+
+#: zapotexts/templates/zapotexts/about.html:30
+msgid "Swarthmore Class of 2014 on the Ticha Project"
+msgstr ""
+"Generación del 2014 de la Universidad Swarthmore habla sobre el proyecto de "
+"Ticha"
+
+#: zapotexts/templates/zapotexts/about.html:34
+msgid "on the Educational Value of Ticha"
+msgstr "habla sobre el valor educativo de Ticha"
+
+#: zapotexts/templates/zapotexts/about.html:38
+#: zapotexts/templates/zapotexts/about.html:42
+#: zapotexts/templates/zapotexts/about.html:46
+msgid "on the Ticha Project from"
+msgstr "habla sobre el proyecto desde"
+
+#: zapotexts/templates/zapotexts/acknowledgements.html:11
+msgid ""
+"We are grateful for support from the following institutions and agencies:"
+msgstr "Agradecemos el apoyo de las siguientes instituciones y agencias:"
+
+#: zapotexts/templates/zapotexts/acknowledgements.html:21
+#: zapotexts/templates/zapotexts/acknowledgements.html:23
+#: zapotexts/templates/zapotexts/acknowledgements.html:24
+msgid "at"
+msgstr "en"
+
+#: zapotexts/templates/zapotexts/acknowledgements.html:28
+msgid "NEH Summer Stipend"
+msgstr "Beca de Verano NEH"
+
+#: zapotexts/templates/zapotexts/acknowledgements.html:29
+msgid "NEH Fellowship for College Teachers and Independent Scholars"
+msgstr "Beca NEH para maestros de universidad y académicos independientes"
+
+#: zapotexts/templates/zapotexts/acknowledgements.html:34
+msgid ""
+"All opinions, findings, conclusions, or recommendations expressed in this "
+"project do not necessarily represent those of the National Endowment for the "
+"Humanities."
+msgstr ""
+"Todas las opiniones, resultados, conclusiones o recomendaciones expresadas "
+"en este proyecto no necesariamente representan los del National Endowment "
+"for the Humanities."
+
+#: zapotexts/templates/zapotexts/acknowledgements.html:36
+msgid ""
+"We owe our thanks to the following groups and individuals for their advice "
+"and contributions:"
+msgstr ""
+"Extendemos nuestro agradecimiento a los siguientes grupos e individuos por "
+"sus consejos y contribuciones:"
+
+#: zapotexts/templates/zapotexts/acknowledgements.html:77
+msgid "at the UNAM in Mexico City (led by Smith Stark)"
+msgstr "de la UNAM en la ciudad de México City (dirigida por Smith Stark)"
+
+#: zapotexts/templates/zapotexts/acknowledgements.html:78
+msgid "UCLA Zapotexts research group (led by Munro and Terraciano)"
+msgstr ""
+"el grupo de investigación Zapotextos de la UCLA en la ciudad de Los Angeles "
+"(dirigido por Munro and Terraciano)"
+
+#: zapotexts/templates/zapotexts/acknowledgements.html:82
+msgid "This work and its by products are licensed under a"
+msgstr ""
+"Este trabajo y aquellos relacionados a este trabajo están bajo licencia "
+"conocido en inglés como,"
+
+#: zapotexts/templates/zapotexts/acknowledgements.html:83
+msgid ""
+"All errors are, of course, our own.  (If you note an error, please consider"
+msgstr ""
+"Todos los errores, por supuesto, son nuestros. (Si notas un error por favor "
+"considera"
+
+#: zapotexts/templates/zapotexts/acknowledgements.html:83
+msgid "dropping us a line"
+msgstr "enviarnos un mensaje"
+
+#: zapotexts/templates/zapotexts/arte.html:11
+msgid ""
+"A 16th century grammar of Colonial Valley Zapotec by Friar Juan de Cordova."
+msgstr ""
+"Una gramática del zapoteco colonial del valle publicada en el siglo 16  por "
+"el fraile Juan de Córdova."
+
+#: zapotexts/templates/zapotexts/arte.html:22
+msgid "About the"
+msgstr "Acerca del"
+
+#: zapotexts/templates/zapotexts/arte.html:23
+msgid ""
+"The Arte is a grammar of Colonial Valley Zapotec published in 1578, a decade "
+"before the first grammar of English was published. It was written by Juan de "
+"Cordova, a Spanish priest in the Dominican order, although, like other "
+"Spanish clergy working with indigenous languages, Cordova relied on the help "
+"of native speakers of Zapotec. Unfortunately, little is known about these "
+"helpers, which means that we do not know precisely what variety of Zapotec "
+"the Arte records. Cordova wrote his Arte like a Latin grammar, making it "
+"difficult for modern readers to understand the structure of the text. In "
+"order to illuminate the content of the text, modern headings are given "
+"alongside Cordova's original section titles. Despite the Arte's "
+"shortcomings, it remains an important source for knowledge about Colonial "
+"Valley Zapotec."
+msgstr ""
+"El Arte es un libro de gramática del zapoteco colonial del valle que fue "
+"publicado en 1578, una década antes que fuera publicado el primer libro de "
+"gramática del inglés. Fue escrito por Juan de Córdova, un fraile de la orden "
+"de Santo Domingo, Domingo. Como otros frailes españoles que trabajaron con "
+"lenguas indígenas, Córdova empleó la ayuda de nativo hablantes del zapoteco. "
+"Desgraciadamente, sabemos poco de sus ayudantes, lo que significa que no "
+"sabemos exactamente cual variante del zapoteco esta recopilado en el Arte. "
+"Córdova organizó su Arte como una gramática en latín, lo cual dificulta que "
+"los lectores modernos entiendan la estructura del texto. Para poder iluminar "
+"el contenido del texto, versiones modernas se han puesto al lado de las "
+"secciones originales de los títulos de Córdova. A pesar de las dificultades "
+"presentes en el Arte, aún sigue siendo una fuente importante para el "
+"conocimiento del zapoteco colonial del valle."
+
+#: zapotexts/templates/zapotexts/arte.html:29
+#: zapotexts/templates/zapotexts/outline.html:4
+msgid "Arte Outline"
+msgstr "Esquema del Arte"
+
+#: zapotexts/templates/zapotexts/arte.html:31
+#: zapotexts/templates/zapotexts/texts.html:19
+msgid ""
+"See how Friar Juan de Cordova organized his 16th century grammar of Colonial "
+"Valley Zapotec."
+msgstr ""
+"Véa como organizó su gramática del siglo 16 en zapoteco colonial del valle "
+"el fraile Juan de Córdoba."
+
+#: zapotexts/templates/zapotexts/arte.html:37
+msgid "Original Transcription"
+msgstr "Transcripción original"
+
+#: zapotexts/templates/zapotexts/arte.html:39
+msgid "Look at a full transcription of the Arte."
+msgstr "Revise una transcripción completa del Arte."
+
+#: zapotexts/templates/zapotexts/arte.html:45
+msgid "Sample Pages"
+msgstr "Muestras de páginas"
+
+#: zapotexts/templates/zapotexts/arte.html:47
+msgid ""
+"Examine pages from the Arte, complete with linguistic analysis and "
+"translations in English and modern Spanish."
+msgstr ""
+"Examine páginas del Arte, completa con análisis linguistico y traducciones "
+"al inglés y español moderno."
+
+#: zapotexts/templates/zapotexts/arte_original.html:18
+msgid "Original Transcription of the"
+msgstr "Transcripción original del"
+
+#: zapotexts/templates/zapotexts/bibliography.html:14
+msgid "Published Colonial Valley Zapotec texts"
+msgstr "Textos publicados en el zapoteco colonial del valle"
+
+#: zapotexts/templates/zapotexts/bibliography.html:30
+msgid ""
+"Publications that cite words or parts of texts in Colonial Valley Zapotec"
+msgstr ""
+"Publicaciones que citan palabras o partes de textos en el zapoteco colonial "
+"del Valle"
+
+#: zapotexts/templates/zapotexts/bibliography.html:101
+msgid ""
+"Unpublished manuscripts and conference presentations that cite words or "
+"parts of texts in Colonial Valley Zapotec"
+msgstr ""
+"Manuscritos no publicados y presentaciones de conferencias que citan "
+"palabras o partes de textos en el zapoteco colonial del Valle"
+
+#: zapotexts/templates/zapotexts/bibliography.html:120
+msgid "Contribute to our bibliography:"
+msgstr "Contribuye a nuestra bibliografía:"
+
+#: zapotexts/templates/zapotexts/bibliography.html:121
+msgid "Do you notice something missing from our list below?"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/bibliography.html:122
+#, fuzzy
+#| msgid ""
+#| "Do you notice something missing from our list below? <br>We aim to have "
+#| "our bibliography be as extensive as possible and would be happy to hear "
+#| "from you regarding any missing publication.<br> Please include a link to "
+#| "the text if one exists."
+msgid ""
+"We aim to have our bibliography be as extensive as possible and would be "
+"happy to hear from you regarding any missing publication."
+msgstr ""
+"¿Hace falta algo en esta lista? <br>Nuestra meta es que la bibliografía sea "
+"lo más completa posible y nos gustaría recibir sus sugerencias sobre "
+"publicaciones que debemos incluir. Por favor incluye un enlace al texto si "
+"este existe."
+
+#: zapotexts/templates/zapotexts/bibliography.html:123
+msgid ""
+"Please include a link to the text if one exists. Additions can be submitted"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/bibliography.html:123
+#, fuzzy
+#| msgid "click here"
+msgid " here"
+msgstr "clickea aquí"
+
+#: zapotexts/templates/zapotexts/context.html:17
+msgid ""
+"When the Spanish arrived on the coast of what they were to call New Spain—"
+"which included what is now modern-day Mexico—the Zapotec people had already "
+"been writing for some 2,000 years. It was therefore not surprising that they "
+"quickly adopted the alphabetic writing system. Such writing was introduced "
+"as part of an expansive undertaking that had as its objective the conversion "
+"of the indigenous population to Christianity. This project created the need "
+"for a learning process unprecedented in world history: describing and "
+"analyzing the multiple languages of Mesoamerica.  The results of this "
+"project were numerous dictionaries, grammars, and religious works created by "
+"Dominican friars relying heavily on the collaboration of Zapotec speakers."
+msgstr ""
+"Cuando los españoles llegaron a la costa de lo que iban a llamar la Nueva "
+"España - lo cual incluye el México actual - los zapotecas ya escribián desde "
+"hace más de 2000 años. Entonces, no es soprprendente que rápidamente "
+"adoptaron la escritura alfabética. Ésta escritura fue introducida como parte "
+"de una empresa expansiva que tenía como objetivo la conversión de la "
+"población indígena al cristianismo. Tal proyecto creó la necesidad de un "
+"proceso de aprendizaje sin precedente en la historia del mundo: describir y "
+"analizar las múltiples lenguas de Mesoamérica. Los resultados de este "
+"proyecto fueron numerosos diccionarios, gramáticas y obras religiosas "
+"creados por frailes dominicos que dependieron de gran manera la colaboración "
+"con hablantes del zapoteco."
+
+#: zapotexts/templates/zapotexts/context.html:18
+msgid ""
+"These indigenous communities began to utilize alphabetic writing to create "
+"documents in their own language for their own purposes, including wills, "
+"land titles, and songs. Researchers have identified colonial documents "
+"written in Central Zapotec, Cajonos Zapotec, Nexitzo Zapotec, and Sierra "
+"Juárez Zapotec. Today these texts are dispersed throughout local, state, "
+"national and international repositories and archives. Currently, Ticha "
+"provides access to colonial documents written in Central (Valley) Zapotec, "
+"such as the"
+msgstr ""
+"Estas comunidades indígenas comenzaron a utilizar el alfabeto castellano "
+"para escribir y crear documentos en su propio idioma para su propios "
+"propósitos, incluyendo testamentos, títulos, y cantos. Investigadores han "
+"identificado documentos coloniales escritos en el zapoteco Central, zapoteco "
+"Cajonos, zapoteco Nexitzo, y zapoteco de la Sierra Juarez. Hoy estos textos "
+"estan dispersados en archivos y repositorios municipales, estatales, "
+"nacionales e internacionales. Actualmente, Ticha provee acceso a documentos "
+"coloniales escritos en zapoteco central (del valle), como el"
+
+#: zapotexts/templates/zapotexts/context.html:18
+msgid ""
+"a book that seeks to describe the structure of the Zapotec language, and "
+"many wills."
+msgstr ""
+"un libro que intenta describir la estructura de la lengua zapoteca, y varios "
+"testamentos."
+
+#: zapotexts/templates/zapotexts/context.html:19
+msgid ""
+"The indigenous language documents are invaluable sources in understanding "
+"the historical and cultural developments of Mesoamerican peoples from the "
+"beginning of the colonial period until the present day. Unlike Spanish "
+"texts, these native language documents describe the world using their own "
+"cultural categories. For example, in Zapotec wills the testator might offer "
+"his soul to God to be eaten and his body to be consumed by the earth; clear "
+"continuities of indigenous perceptions related to death. These texts, and as "
+"such the Ticha portal, are a window for contemporary indigenous communities "
+"and scholars alike to explore Zapotec history, language, and culture."
+msgstr ""
+"Los documentos en lenguas indígenas son fuentes invaluables para entender "
+"los desarrollos históricos y culturales de los pueblos mesoamericanos desde "
+"el inicio delperiodo colonial al día de hoy. Contrario a textos españoles, "
+"estos documentos en lenguas vernáculas describen el mundo usando sus propias "
+"categorías culturales.Por ejemplo, en testamentos zapotecos el testador "
+"ofrece su alma a Dios para que la coma y su cuerpo para que lo consuma la "
+"tierra; claras continuidadesde percepciones indígenas relacionadas con la "
+"muerte. Estos textos, y como tal el portal Ticha, son una ventana para las "
+"comunidades indígenascontemporáneas e investigadores para que exploren la "
+"historia, lengua y cultura zapoteca."
+
+#: zapotexts/templates/zapotexts/dictionary.html:20
+msgid ""
+"This Zapotec to English Vocabulary contains over 500 words and morphemes "
+"commonly found in the documents and some of their variant spellings. There "
+"are two main parts: the main dictionary (Zapotec to English) and the English "
+"index to the main dictionary, which can be used to look up a word in the "
+"main section."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:21
+msgid ""
+"When headwords are homographs, they are numbered with subscripted numbers "
+"after the headword. In this sample the homographic numbering may be "
+"surprising as they take into consideration the entire working vocabulary, "
+"not just the sample posted here. Please disregard any apparent "
+"inconsistencies in the numbering of homographs."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:22
+msgid "Looking up a headword"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:23
+msgid ""
+"If you know what the word might mean, but do not know what the Zapotec word "
+"might look like, the index will likely be the most useful place for you to "
+"look. Be sure to try looking under synonyms, as well."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:24
+msgid ""
+"If you are trying to figure out what an unidentified Zapotec word might "
+"mean, recall that spelling can be quite variable. Here are some tips for "
+"finding a Zapotec word in the dictionary:"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:26
+msgid ""
+"Disregard any accent marks. For example, if you are looking for &lt;"
+"quéche&gt; try by looking under &lt;queche&gt;."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:27
+msgid ""
+"If you don’t find the word spelled exactly as you found it in the text, "
+"trying changing the spelling in ways listed below. For example, if you are "
+"looking for &lt;aanna&gt; and do not find it there, try looking under &lt;"
+"ana&gt;."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:30
+msgid "change"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:31
+msgid "to"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:34
+msgid "double consonants"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:35
+msgid "single consonants"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:38
+msgid "double vowels"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:39
+msgid "single vowels"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:47
+msgid ""
+"Disregard any &lt;h&gt; between two identical vowels. For example, if you "
+"are looking for &lt;anachihi&gt; and find nothing there, try looking under "
+"&lt;anachi&gt;."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:48
+msgid ""
+"Keep in mind that the following letter (sequences) may be used "
+"interchangeably. If you expect your word to have one of these letters, try "
+"replacing it with the one (or ones) in bold, e.g. if you are looking for &lt;"
+"veni&gt; you might also look under &lt;peni&gt; and &lt;beni&gt;."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:59
+msgid "Abbreviations used in this dictionary"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:60
+msgid "spelling variant"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:61
+msgid "The structure of entries"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:62
+msgid ""
+"There are two types of entries. Main entries, like <b>anachi</b> and "
+"<b>beni</b> below, and cross references for spelling variants, like "
+"<b>anachihi</b> below. Cross-references always contain the headword and the "
+"cross reference to the main entry. Main entries minimally contain the "
+"headword and the definition. They many optionally contain other elements, "
+"such as notes on the composition of the word, a list of spelling variants, "
+"and sub-entries of words related to that headword. Below, three entries are "
+"broken down and their component parts are numbered. A key to these numbered "
+"parts follows directly below the sample entries."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:64
+msgid "Key to identification of part of definitions"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:68
+msgid "headword"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:69
+msgid "Each definition starts with a headword."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:73
+msgid "definition"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:74
+msgid ""
+"The headword is followed by a definition. If there are multiple senses to a "
+"word, they are numbered."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:78
+msgid "notes on morphological composition"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:79
+msgid ""
+"The component parts of a word may be noted. For example <i>anachi</i> is "
+"made up of <i>ana</i> ‘now’ and <i>chi</i> ‘day’."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:83
+msgid "spelling variants"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:84
+msgid "Some possible spelling variants are listed."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:88
+msgid "cross-reference from a spelling variant"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:89
+msgid ""
+"Some spelling variants (sp. var.) are listed in the vocabulary with a cross "
+"reference to the main headword."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:93
+msgid "sub-entries"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/dictionary.html:94
+msgid ""
+"Some subentries are listed under headwords. These can also be found as "
+"headwords with more information."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/doctrina.html:11
+msgid "A religious text in Colonial Valley Zapotec."
+msgstr "Un texto religioso en Zapoteco colonial del valle."
+
+#: zapotexts/templates/zapotexts/doctrina.html:20
+msgid "About the Doctrina"
+msgstr "Sobre la Doctrina"
+
+#: zapotexts/templates/zapotexts/doctrina.html:21
+msgid ""
+"The Doctrina is a religious text published in 1567. It was written by Pedro "
+"de Feria, a Spanish friar in the Dominican order, but prepared with the help "
+"of native speakers of Zapotec. Unfortunately, little is known about these "
+"speakers, for instance, what variety of Zapotec they spoke or where they "
+"lived. The Doctrina is comprised of 233 pages, each with a column of Spanish "
+"text on the left and Zapotec on the right. The subject matter of the "
+"Doctrina is an explanation of Catholic doctrine. Because it contains long "
+"passages of text that span more topics than many of the handwritten "
+"documents, it is a valuable source for knowledge of Zapotec syntax and "
+"semantics. It also gives insight into Spanish religious beliefs at the time."
+msgstr ""
+"La Doctrina es un texto que fue publicado en 1567. Fue escrito por Pedro de "
+"Feria, un fraile de la orden de Santo Domingo, pero compilado con la ayuda "
+"de nativo hablantes del zapoteco. Desafortunadamente sabemos muy poco de "
+"estos hablantes, por ejemplo, ¿qué variante del zapoteco hablaban? o ¿donde "
+"vivían? La Doctrina está compuesta de 233 páginas, cada una con una columna "
+"de texto en español en la izquierda y zapoteco a la derecha. El tema de la "
+"Doctrina es la explicación de la religión católica. Por lo que contiene "
+"pasajes largos que cubren mayor cantidad de temas que muchos de los "
+"documentos escritos a mano, es una fuente valiosa para el conocimiento de la "
+"sintaxis y semántica zapoteca. También nos permite una vista de las "
+"creencias religiosas del momento."
+
+#: zapotexts/templates/zapotexts/feria.html:16
+msgid ""
+"Pedro de Feria was a Dominican priest and missionary to Mexico.  He was born "
+"in Spain around 1524.  He became a priest in 1545, and spent his life "
+"thereafter in study, writing, and church administration.  His primary "
+"mission was to the Zapotec, and he composed the longest early book in the "
+"Zapotec language, Doctrina Cristiana en lengua Castellana y çapoteca. "
+"(1567).  Feria also wrote a Nahuatl-language doctrina, and served as the "
+"Bishop of Chiapas before his death in 1588."
+msgstr ""
+"Pedro de Feria fue un fraile y misionero de la orden de Santo Domingo en "
+"México. Nació en España aproximadamente en 1524. Entró a la orden en 1545, y "
+"dedicó su vida desde ese punto a estudiar, escribir y en la administración "
+"de la iglesia. Su misión principal era con los zapotecos, y compuso el libro "
+"más extenso en la lengua zapoteca, Doctrina Cristiana en lengua castellana y "
+"çapoteca, (1567). Feria también escribió una doctrina en la lengua náhuatl, "
+"y sirvió como Obispo de Chiapas antes de su muerte en 1588."
+
+#: zapotexts/templates/zapotexts/form.html:4
+#: zapotexts/templates/zapotexts/form.html:45
+#: zapotexts/templates/zapotexts/form.html:123
+msgid "Contact Us"
+msgstr "Contacto"
+
+#: zapotexts/templates/zapotexts/form.html:48
+msgid ""
+"To receive email updates about Ticha, or to communicate a comment or "
+"suggestion, please use the form below."
+msgstr ""
+"Para recibir actualizaciones acerca de Ticha por e-mail, o para comunicar "
+"algún comentario o sugerencia, por favor usar el siguiente formulario."
+
+#: zapotexts/templates/zapotexts/form.html:54
+msgid "Name"
+msgstr "Nombre"
+
+#: zapotexts/templates/zapotexts/form.html:58
+msgid "First Name"
+msgstr "Nombre"
+
+#: zapotexts/templates/zapotexts/form.html:62
+msgid "Last Name"
+msgstr "Apellido"
+
+#: zapotexts/templates/zapotexts/form.html:67
+msgid "E-mail"
+msgstr "Correo Electrónico"
+
+#: zapotexts/templates/zapotexts/form.html:73
+msgid "Comments:"
+msgstr "Comentarios:"
+
+#: zapotexts/templates/zapotexts/form.html:80
+msgid "Type the characters you see here:"
+msgstr "Teclea los carácteres que ves aquí:"
+
+#: zapotexts/templates/zapotexts/form.html:152
+msgid "Follow us on Facebook"
+msgstr "Síguenos en Facebook"
+
+#: zapotexts/templates/zapotexts/handwritten.html:5
+#: zapotexts/templates/zapotexts/handwritten.html:16
+#: zapotexts/templates/zapotexts/index.html:77
+msgid "Handwritten Manuscripts"
+msgstr "Textos Originales Escritos a Mano"
+
+#: zapotexts/templates/zapotexts/handwritten.html:13
+msgid ""
+"Image published with permission from the Archivo General del Poder Ejecutivo "
+"de Oaxacan"
+msgstr ""
+"Imagen publicada con el permiso del Archivo General del Poder Ejecutivo de "
+"Oaxaca."
+
+#: zapotexts/templates/zapotexts/handwritten.html:17
+msgid ""
+"This area of the site is still in progress.  We have images of over 100 "
+"manuscripts of documents written in Colonial Valley Zapotec that we will be "
+"posting to this website over the next year.  For now, explore a"
+msgstr ""
+"Esta área del sitio aún sigue en construcción. Tenemos imágenes de más de "
+"100 manuscritos de documentos escritos en el zapoteco colonial del valle que "
+"subiremos al sitio durante el curso del próximo año. Por ahora, explora"
+
+#: zapotexts/templates/zapotexts/handwritten.html:17
+msgid "sample manuscript from Tlacochahuaya"
+msgstr "un ejemplo de un manuscrito de Tlacochahuaya"
+
+#: zapotexts/templates/zapotexts/handwritten.html:17
+msgid ""
+"presented with images of the original manuscript, contemporaneous Spanish "
+"translation, and transcriptions of each.  The first 28"
+msgstr ""
+"presentado con imágenes del manuscrito original, con la traducción en "
+"español contemporánea y las transcripciones de cada una. También podrás ver "
+"algunos de los"
+
+#: zapotexts/templates/zapotexts/handwritten.html:17
+msgid "manuscripts"
+msgstr "manuscritos"
+
+#: zapotexts/templates/zapotexts/handwritten.html:17
+msgid ""
+"are available without transcriptions. As we transcribe and analyze these "
+"texts, they will be made available as well."
+msgstr "que están disponibles sin transcripciones."
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:20
+#: zapotexts/templates/zapotexts/sample_handwritten.html:13
+#: zapotexts/templates/zapotexts/sample_handwritten.html:121
+msgid "Metadata"
+msgstr "Metadatos"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:22
+msgid "Interlinear Analysis"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:29
+msgid "Title"
+msgstr "Título"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:35
+msgid "Percent Needs Review"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:41
+msgid "Scribe"
+msgstr "Escribano"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:47
+msgid "Document Type"
+msgstr "Tipo del Documento"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:53
+msgid "Material Type"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:59
+msgid "Requester/Project"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:65
+#: zapotexts/templates/zapotexts/handwritten_text_list.html:19
+msgid "Archive"
+msgstr "Archivo"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:71
+msgid "Collection"
+msgstr "Colección"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:77
+msgid "Call Number"
+msgstr "Número de Etiqueta"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:89
+msgid "Date Digitized"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:95
+#: zapotexts/templates/zapotexts/handwritten_text_list.html:17
+msgid "Year"
+msgstr "A&#241;o"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:101
+msgid "Date"
+msgstr "Fecha"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:107
+msgid "Town (Short)"
+msgstr "Pueblo"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:113
+msgid "Page"
+msgstr "Páginas"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:119
+msgid "Town (Modern Official)"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:125
+#: zapotexts/templates/zapotexts/sample_handwritten.html:48
+#: zapotexts/templates/zapotexts/sample_handwritten.html:157
+msgid "Primary Parties"
+msgstr "Personajes principales:"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:131
+msgid "Witnesses"
+msgstr "Testigos"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:137
+msgid "Permission File"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:143
+msgid "Translation"
+msgstr "Traducción"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:154
+msgid ""
+"This document is either not transcribed or the transcription is incomplete."
+msgstr ""
+"Este documento carece de transcripción o su transcripción está incompleta."
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:155
+msgid "To transcribe this document"
+msgstr "Para transcribirlo"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:155
+msgid "click here"
+msgstr "clickea aquí"
+
+#: zapotexts/templates/zapotexts/handwritten_text_detail.html:164
+msgid ""
+"This document does not currently have an interlinear analysis available."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/handwritten_text_list.html:5
+msgid "Available Manuscripts"
+msgstr "Manuscritos Disponibles"
+
+#: zapotexts/templates/zapotexts/handwritten_text_list.html:11
+msgid "Available Handwritten Manuscripts"
+msgstr "Textos originales disponibles escritos a mano"
+
+#: zapotexts/templates/zapotexts/handwritten_text_list.html:16
+msgid "Name of Document"
+msgstr "Nombre del documento"
+
+#: zapotexts/templates/zapotexts/handwritten_text_list.html:18
+msgid "Town"
+msgstr "Pueblo"
+
+#: zapotexts/templates/zapotexts/handwritten_text_list.html:20
+msgid "Type of Document"
+msgstr "Tipo del documento"
+
+#: zapotexts/templates/zapotexts/handwritten_text_list.html:21
+msgid "Language"
+msgstr "Idioma"
+
+#: zapotexts/templates/zapotexts/index.html:10
+msgid "TICHA"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/index.html:11
+msgid "a digital text explorer for Colonial Zapotec"
+msgstr "un explorador digital de texto para el zapoteco colonial"
+
+#: zapotexts/templates/zapotexts/index.html:22
+msgid ""
+"Broadwell uses Colonial Zapotec texts to provide evidence that the "
+"innovative progressive aspect prefix, characteristic of the Central Zapotec "
+"branch, must date to before 1300."
+msgstr ""
+"Broadwell uses Colonial Zapotec texts to provide evidence that the "
+"innovative progressive aspect prefix, characteristic of the Central Zapotec "
+"branch, must date to before 1300."
+
+#: zapotexts/templates/zapotexts/index.html:27
+msgid ""
+"Anderson & Lillehaugen explicate the morphosyntax of negation in Colonial "
+"Zapotec with many examples from Feria's <cite>Doctrina</cite> in"
+msgstr ""
+"Anderson & Lillehaugen explican el morfosintaxis de la negación en el "
+"zapoteco colonial, usando muchos ejemplos de la <cite>Doctrina</cite> de "
+"Feria en su artículo"
+
+#: zapotexts/templates/zapotexts/index.html:37
+msgid "Testament from Teotitlán del Valle"
+msgstr "Testamentos de Teotitlán del Valle"
+
+#: zapotexts/templates/zapotexts/index.html:37
+msgid ""
+"Image published with permission from the Archivo Histórico de Tlacolula de "
+"Matamoros, Oaxaca."
+msgstr ""
+"Imagen publicada con el permiso del Archivo Histórico de Tlacolula de "
+"Matamoros, Oaxaca."
+
+#: zapotexts/templates/zapotexts/index.html:42
+msgid "Michele Berger's article"
+msgstr "Michele Berger's article"
+
+#: zapotexts/templates/zapotexts/index.html:42
+msgid "discusses Ticha in the context of language preservation."
+msgstr "discusses Ticha in the context of language preservation."
+
+#: zapotexts/templates/zapotexts/index.html:67
+msgid ""
+"Examine Friar Juan de Cordova's 16th century grammar of Colonial Valley "
+"Zapotec."
+msgstr "Examina la gramática del siglo 16 de Fray Juan de Córdova."
+
+#: zapotexts/templates/zapotexts/index.html:81
+msgid "Examine manuscripts in Colonial Valley Zapotec."
+msgstr "Examina los manuscritos en el zapoteco colonial del valle."
+
+#: zapotexts/templates/zapotexts/index.html:91
+msgid "Bibliographical Sources"
+msgstr "Fuentes bibliogr&aacute;ficas"
+
+#: zapotexts/templates/zapotexts/index.html:95
+msgid ""
+"Look for related works on Colonial Valley Zapotec and its cultural context."
+msgstr ""
+"Busca trabajo relacionado al zapoteco colonial del valle y su contexto "
+"cultural."
+
+#: zapotexts/templates/zapotexts/linguistic.html:5
+#, fuzzy
+#| msgid "Linguistic background"
+msgid "Linguistic Background"
+msgstr "Formación linguistica"
+
+#: zapotexts/templates/zapotexts/linguistic.html:16
+msgid ""
+"Zapotec is an extensive language family indigenous to southern Mexico, which "
+"belongs to the larger"
+msgstr ""
+"El zapoteco es una  familia extensa de lenguas propia del sur de México, que "
+"forma parte de la más amplia"
+
+#: zapotexts/templates/zapotexts/linguistic.html:16
+msgid "Otomanguean family"
+msgstr "familia del otomangue"
+
+#: zapotexts/templates/zapotexts/linguistic.html:16
+msgid "Today, there are over 50 different Zapotec languages"
+msgstr "Actualmente, existen más de cincuenta idiomas zapotecas"
+
+#: zapotexts/templates/zapotexts/linguistic.html:16
+msgid "iso code"
+msgstr "código iso"
+
+#: zapotexts/templates/zapotexts/linguistic.html:16
+msgid ""
+"most of which are endangered.  They are spoken primarily in the state of "
+"Oaxaca, Mexico, by a total of approximately 425,000 people"
+msgstr ""
+"la mayoría de ellas en peligro de desaparición.  Como parte del pueblo "
+"zapoteco hay aproximadamente 425,000 personas"
+
+#: zapotexts/templates/zapotexts/linguistic.html:16
+msgid ""
+"within a much larger Zapotec ethnic community.   Due to immigration, there "
+"are now Zapotec speakers in many other parts of Mexico and the United "
+"States. Dialectal divergence between Zapotec-speaking communities is "
+"extensive and complicated. Many varieties of Zapotec are"
+msgstr ""
+"que hablan el zapoteco, principalmente en el estado de Oaxaca, México.  "
+"Debido a la migración, actualmente existen zapoteco-hablantes en varias "
+"regiones de México y los Estados Unidos.  La variedad dialéctica entre los "
+"pueblos zapoteco-hablantes es extensiva y complicada.  Muchas variantes del "
+"zapoteco no son"
+
+#: zapotexts/templates/zapotexts/linguistic.html:16
+msgid "mutually unintelligible"
+msgstr "intelígible mutuamente"
+
+#: zapotexts/templates/zapotexts/linguistic.html:16
+msgid "with one another. The"
+msgstr "En términos de profundidad temporal y diversidad lingüística, la"
+
+#: zapotexts/templates/zapotexts/linguistic.html:16
+msgid "Zapotec language family"
+msgstr "familia de lenguas zapotecas"
+
+#: zapotexts/templates/zapotexts/linguistic.html:16
+msgid "is on par with the"
+msgstr "está en par con la"
+
+#: zapotexts/templates/zapotexts/linguistic.html:16
+msgid "Romance language family"
+msgstr "familia de lenguas romances"
+
+#: zapotexts/templates/zapotexts/linguistic.html:17
+msgid ""
+"The variety of Zapotec presented in Ticha represents the Zapotec of the "
+"colonial period of Mexico (1521-1821).  During this period, hundreds of "
+"documents were written in Zapotec, including religious materials, last wills "
+"and testaments, deeds, and letters.   Many of these documents were written "
+"by native speakers for use by native speakers, such as local administrative "
+"texts.  Other texts were written to be used by Spanish speaking priests and "
+"were likely created in collaboration with Spanish speakers."
+msgstr ""
+"La variedad en al zapoteco presentada en Ticha representa el zapoteco del "
+"periodo colonial (1521 a 1821). Durante este periodo, se escribieron cientos "
+"de documentos en zapoteco, lo que incluye materiales religiosos, "
+"testamentos, memorias y cartas. Muchos de estos documentos, como los textos "
+"administrativos locales,  fueron escritos por nativo hablantes para el uso "
+"de nativo hablantes. Otros textos fueron escritos para sacerdotes españoles "
+"y probablemente fueron creados a través de una colaboración entre "
+"hispanohablantes y nativo hablantes."
+
+#: zapotexts/templates/zapotexts/linguistic.html:18
+msgid ""
+"The texts currently available on Ticha are written in Zapotec from the "
+"Central branch, often referred to as Colonial Valley Zapotec.  The"
+msgstr ""
+"Los textos que están actualmente disponibles en Ticha están en el zapoteco "
+"de la rama central, a menudo llamado el zapoteco colonial del valle."
+
+#: zapotexts/templates/zapotexts/linguistic.html:18
+msgid "Ticha Bibliography"
+msgstr "La bibliografía Ticha"
+
+#: zapotexts/templates/zapotexts/linguistic.html:18
+msgid "lists works written about Colonial Valley Zapotec."
+msgstr "contiene publicaciones sobre esta rama."
+
+#: zapotexts/templates/zapotexts/outline.html:9
+msgid "Outline of"
+msgstr "Esquema del"
+
+#: zapotexts/templates/zapotexts/page_detail.html:12
+#: zapotexts/templates/zapotexts/page_detail.html:55
+msgid "First"
+msgstr "Primera"
+
+#: zapotexts/templates/zapotexts/page_detail.html:13
+#: zapotexts/templates/zapotexts/page_detail.html:56
+msgid "Previous"
+msgstr "Anterior"
+
+#: zapotexts/templates/zapotexts/page_detail.html:14
+msgid "Download"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/page_detail.html:15
+#: zapotexts/templates/zapotexts/page_detail.html:57
+msgid "Next"
+msgstr "Siguiente"
+
+#: zapotexts/templates/zapotexts/page_detail.html:16
+#: zapotexts/templates/zapotexts/page_detail.html:58
+msgid "Last"
+msgstr "Última"
+
+#: zapotexts/templates/zapotexts/page_detail.html:30
+#: zapotexts/templates/zapotexts/sample_arte.html:18
+msgid "Modern Spanish"
+msgstr "Español moderno"
+
+#: zapotexts/templates/zapotexts/page_detail.html:34
+#: zapotexts/templates/zapotexts/sample_arte.html:19
+msgid "English"
+msgstr "Inglés"
+
+#: zapotexts/templates/zapotexts/reg_spanish.html:4
+msgid "Regularized Spanish Arte"
+msgstr "Español regularizado"
+
+#: zapotexts/templates/zapotexts/reg_spanish.html:8
+msgid ""
+"Below is an excerpt from in-progress work: a modern Spanish version of "
+"Cordova's <em>Arte en lengua zapoteca</em>.  The Spanish modernization is "
+"intended to make the original text more accessible to readers by modernizing "
+"spelling, word boundaries, and capitalization choices.  Words are not "
+"modernized beyond spelling—so uncommon, archaic words or forms of words may "
+"be found.  Word order is also not changed. Latin words are in italics and "
+"are currently untranslated. Zapotec words are in red, which links to "
+"morphological analysis where available. Feel free to offer suggestions via "
+"the"
+msgstr ""
+"Abajo encontrarás un extracto de un trabajo en curso: una versión de español "
+"moderno del <em>Arte en lengua zapoteca</em> de Córdova. La modernización "
+"del español tiene el propósito de hacer el texto más accesible a los "
+"lectores a través de la actualización de la ortografía, separación de "
+"palabras, y las opciones en mayusculización. Las palabras no están "
+"modernizadas más allá de la ortografía—así que es posible que encuentren "
+"palabras antiguas o sus formas. No se ha cambiado el orden de las palabras. "
+"Las palabras en latín están en letras itálicas y no están traducidas. Las "
+"palabras zapotecas están en rojo, y se enlazan al análisis morfológico "
+"cuando este sea disponible. Agradecemos el envío de sugerencias a través del"
+
+#: zapotexts/templates/zapotexts/reg_spanish.html:8
+msgid "contact us link."
+msgstr "enlace de contacto."
+
+#: zapotexts/templates/zapotexts/sample_arte.html:5
+msgid "Sample Arte Pages"
+msgstr "Muestra de una página del Arte"
+
+#: zapotexts/templates/zapotexts/sample_arte.html:8
+msgid "Arte Sample Page"
+msgstr "Muestra de una página del Arte"
+
+#: zapotexts/templates/zapotexts/sample_doctrina.html:5
+msgid "Sample Doctrina Pages"
+msgstr "Muestra de una página de la Doctrina"
+
+#: zapotexts/templates/zapotexts/sample_doctrina.html:9
+msgid "Doctrina sample page"
+msgstr "Una muestra de una página de la doctrina"
+
+#: zapotexts/templates/zapotexts/sample_doctrina.html:11
+msgid "Document:"
+msgstr "Documento:"
+
+#: zapotexts/templates/zapotexts/sample_doctrina.html:11
+msgid "Page:"
+msgstr "Página:"
+
+#: zapotexts/templates/zapotexts/sample_doctrina.html:12
+msgid ""
+"Year: 1567.  Publication Information: Mexico City, En casa de Pedro Ocharte."
+msgstr ""
+"Año: 1567. Información de publicación: Ciudad de México, en casa de Pedro "
+"Ocharte."
+
+#: zapotexts/templates/zapotexts/sample_doctrina.html:23
+msgid "Transcription and Linguistic Analysis"
+msgstr "Transcripción y análisis lingüístico"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:5
+msgid "Sample Handwritten Manuscript"
+msgstr "Ejemplo del Texto Original"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:8
+msgid "Sample Manuscript"
+msgstr "Ejemplo del texto original"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:16
+#: zapotexts/templates/zapotexts/sample_handwritten.html:124
+msgid "Page Images"
+msgstr "Imágenes de páginas"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:19
+#: zapotexts/templates/zapotexts/sample_handwritten.html:127
+msgid "Zapotec Page Image"
+msgstr "Zapotec Page Image"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:20
+#: zapotexts/templates/zapotexts/sample_handwritten.html:128
+msgid "Spanish Page Image"
+msgstr "Spanish Page Image"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:25
+#: zapotexts/templates/zapotexts/sample_handwritten.html:134
+msgid "Transcriptions"
+msgstr "Transcripciónes"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:28
+#: zapotexts/templates/zapotexts/sample_handwritten.html:137
+msgid "Transcription of Zapotec"
+msgstr "Transcription of Zapotec"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:29
+#: zapotexts/templates/zapotexts/sample_handwritten.html:138
+msgid "Transcription of Spanish"
+msgstr "Transcription of Spanish"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:35
+#: zapotexts/templates/zapotexts/sample_handwritten.html:144
+msgid "Bill of sale from Tlacochahuaya"
+msgstr "Acta de venta de Tlacochahuaya"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:36
+#: zapotexts/templates/zapotexts/sample_handwritten.html:145
+msgid "Archive:"
+msgstr "Archivo:"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:38
+#: zapotexts/templates/zapotexts/sample_handwritten.html:147
+msgid "Collection:"
+msgstr "Colección:"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:40
+#: zapotexts/templates/zapotexts/sample_handwritten.html:149
+msgid "Call Number:"
+msgstr "Número de serie:"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:42
+#: zapotexts/templates/zapotexts/sample_handwritten.html:151
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:43
+#: zapotexts/templates/zapotexts/sample_handwritten.html:152
+msgid "4r (8r for Spanish Translation)"
+msgstr "4r (8r para la traducción al español)"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:44
+#: zapotexts/templates/zapotexts/sample_handwritten.html:153
+msgid "Year:"
+msgstr "Año:"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:46
+#: zapotexts/templates/zapotexts/sample_handwritten.html:155
+msgid "Date:"
+msgstr "Fecha:"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:47
+#: zapotexts/templates/zapotexts/sample_handwritten.html:156
+msgid "March 14"
+msgstr "14 de marzo"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:49
+#: zapotexts/templates/zapotexts/sample_handwritten.html:158
+msgid "seller"
+msgstr "vendedor"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:49
+#: zapotexts/templates/zapotexts/sample_handwritten.html:158
+msgid "buyer"
+msgstr "comprador"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:50
+#: zapotexts/templates/zapotexts/sample_handwritten.html:159
+msgid "Witnesses:"
+msgstr "Testigos:"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:52
+#: zapotexts/templates/zapotexts/sample_handwritten.html:161
+msgid "Scribe:"
+msgstr "Escribano:"
+
+#: zapotexts/templates/zapotexts/sample_handwritten.html:54
+#: zapotexts/templates/zapotexts/sample_handwritten.html:163
+msgid "Published with permission"
+msgstr "Publicado con permiso"
+
+#: zapotexts/templates/zapotexts/team.html:5
+msgid "About the Team"
+msgstr "El Equipo"
+
+#: zapotexts/templates/zapotexts/team.html:10
+msgid "The Team"
+msgstr "El Equipo"
+
+#: zapotexts/templates/zapotexts/team.html:11
+msgid ""
+"An interdisciplinary team brings their diverse skill set to an archival "
+"corpus"
+msgstr ""
+"Un equipo interdisciplinario trae su conjunto diverso de habilidades para un "
+"corpus de archivo."
+
+#: zapotexts/templates/zapotexts/team.html:17
+#: zapotexts/templates/zapotexts/team.html:29
+msgid "Linguist"
+msgstr "Lingüista"
+
+#: zapotexts/templates/zapotexts/team.html:17
+#: zapotexts/templates/zapotexts/team.html:29
+msgid "Assistant Professor, Haverford College"
+msgstr "Profesor Auxiliar, Haverford College"
+
+#: zapotexts/templates/zapotexts/team.html:22
+msgid ""
+"Brook Danielle Lillehaugen is Assistant Professor of linguistics at "
+"Haverford College, with joint appointments at Bryn Mawr and Swarthmore "
+"Colleges. She received her Ph.D. in linguistics from the University of "
+"California, Los Angeles in 2006 and has been working on colonial and modern "
+"Valley Zapotec since 1999. She is co-author of <em>Cali Chiu? A Course on "
+"Tlacolula Valley Zapotec</em> (Munro, Lillehaugen, and Lopez 2007) and "
+"publishes on the grammar of Zapotec in both its modern and colonial forms. "
+"In collaboration with other linguists, the Living Tongues Institute, and "
+"native Zapotec speakers, she is developing online"
+msgstr ""
+"Brook Danielle Lillehaugen es una Profesor Auxiliar de lingüística en "
+"Haverford College y desempeña su contrato conjuntamente en las universidades "
+"de Bryn Mawr y Swarthmore. Recibió su doctorado en lingüística de la "
+"Universidad de California, Los Ángeles en el 2006 y ha estado trabajando con "
+"el zapoteco colonial y moderno del valle desde 1999. Es co-autora de "
+"<em>Cali Chiu? Un Curso del Zapoteco del Valle de Tlacolula</em> (Munro, "
+"Lillehaugen y López 2007) y publica sobre la gramática del zapoteco colonial "
+"y moderno. En colaboracion con otros lingüístas, con el proyecto Living "
+"Tongues, y con hablantes nativos del idioma Zapoteca, Lillehaugen esta "
+"desarrollando un"
+
+#: zapotexts/templates/zapotexts/team.html:22
+msgid "Talking Dictionaries"
+msgstr "Diccionario Parlante"
+
+#: zapotexts/templates/zapotexts/team.html:22
+msgid ""
+"for Valley Zapotec language varieties.  She received a NEH Summer Stipend in "
+"2014 to translate the Zapotec language portions of"
+msgstr ""
+"de internet para las variedades de lenguages zapoteco del valle. Recibió una "
+"beca NEH en el verano del 2014 para traducir partes del"
+
+#: zapotexts/templates/zapotexts/team.html:22
+msgid "Cordova's Arte"
+msgstr "Arte de Córdova en zapoteco"
+
+#: zapotexts/templates/zapotexts/team.html:22
+msgid ""
+"and in August 2015 will begin a project translating a corpus of Colonial "
+"Valley Zapotec last wills and testaments supported by fellowships from the "
+"ACLS and the NEH."
+msgstr ""
+"y en agosto del 2015 con el apoyo de una beca NEH de un año, iniciará un "
+"proyecto para traducir un grupo de testamentos del zapoteco colonial del "
+"valle."
+
+#: zapotexts/templates/zapotexts/team.html:34
+msgid ""
+"George Aaron Broadwell is Professor in the Department of Anthropology and "
+"the Program in Linguistics and Cognitive Science at the University at "
+"Albany, State University of New York. His research focuses on the "
+"documentation of Native American languages, particularly in the southeastern "
+"United States and Oaxaca, Mexico. He has worked with Zapotec languages since "
+"1989, with research on three modern varieties (Santa Ana del Valle, San "
+"Dionisio Ocotepec, and Macuiltianguis) as well as Colonial Valley Zapotec "
+"materials. He is the author of numerous publications on Zapotec and also "
+"author/editor of <em>A Choctaw Reference Grammar; The origin of the sun and "
+"moon: A Copala Triqui legend; and Nana naguan&#8217; rihaan nij sii "
+"chihaan&#8217;: Words of counsel for the Triqui people."
+msgstr ""
+"George Aaron Broadwell es un profesor en el Departamento de Antropología y "
+"en el Programa de Lingüística y Ciencia Cognitiva en la Universidad en "
+"Albany, Universidad  Estatal de Nueva York. Su investigación se enfoca en la "
+"documentación de lenguas Nativo Americanas, particularmente en el Sureste de "
+"los Estados Unidos y en Oaxaca, México. Ha trabajado con las lenguas "
+"zapotecas desde 1989, investigando tres variantes modernas (Santa Ana del "
+"Valle, San Dionisio Ocotepec, y Macuiltianguis) así como materiales en "
+"zapoteco colonial del valle. Él es autor de numerosas publicaciones sobre el "
+"zapoteco y también es autor/editor de </em>una gramática de referencia para "
+"el choctaw; El origen del sol y la luna: Una leyenda en triqui de Copala; y "
+"Nana naguan&#8217; rihaan nij sii chihaan&#8217;: Palabras de consejos para "
+"los triquis."
+
+#: zapotexts/templates/zapotexts/team.html:41
+msgid "Ethnohistorian, Universidad Nacional Autónoma de México"
+msgstr "Etnohistoriador, Universidad Nacional Autónoma de México"
+
+#: zapotexts/templates/zapotexts/team.html:46
+msgid ""
+"Michel R. Oudijk is an historian/philologist whose main interest is Zapotec "
+"historiography and its relationship to present day communities. Since 1992 "
+"he has worked in three of the four main Zapotec regions and is renowned for "
+"his analysis of pictographic and alphabetic documents alike, relating "
+"historical information to present day landscapes and oral tradition. His "
+"work on the indigenous participation in the &#8220;Spanish&#8221; conquest "
+"of Mexico has opened up a whole new field of study called the <em> New "
+"Conquest History</em>. In 2000 he received his Ph.D. at Leiden University, "
+"after which he worked for a year in the National Archives of the Indies in "
+"Seville, Spain. From there he became full professor at the University of "
+"Copenhagen, Denmark, and since 2004 he is a researcher at the Institute of "
+"Philological Studies at the Universidad Nacional Autónoma de México (the "
+"National Autonomous University of Mexico). He has published seven books and "
+"over 40 articles and chapters in journals and volumes all over the world, "
+"and is a well-known speaker at international academic meetings and in local "
+"indigenous communities events."
+msgstr ""
+"Michel R. Oudijk es un historiador/filólogo cuyo interés principal es la "
+"historiografía zapoteca y su relación con las comunidades de hoy en día. "
+"Desde 1992 ha trabajado en tres de las cuatro regiones zapotecas y es "
+"conocido por su análisis pictográfico así como el de los documentos "
+"alfabéticos, en los cuales relaciona con información histórica con los "
+"paisajes de hoy en día y la tradición oral. Su trabajo sobre la "
+"participación indígena en la conquista española de México ha abierto un área "
+"completamente nueva de estudio llamada la<em> Nueva Historia de la "
+"Conquista</em>. En el 2000 recibió su doctorado en la Universidad de Leiden, "
+"después del cual trabajó por un año en el Archivo General de Indias en "
+"Sevilla, España. De ahí fue profesor en la universidad de Copenhague, "
+"Dinamarca y desde el 2004 ha sido investigador en el Instituto de "
+"Investigaciones Filológicas en la Universidad Nacional Autónoma de México. "
+"Ha publicado siete libros y más de 40 artículos y capítulos en revistas y "
+"colecciones por todo el mundo, y es  orador conocido en reuniones académicas "
+"internacionales y en eventos locales en comunidades indígenas."
+
+#: zapotexts/templates/zapotexts/team.html:53
+msgid ""
+"Assistant Director of Digital Scholarship, University of Pennsylvania "
+"Libraries"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/team.html:58
+msgid ""
+"Laurie Allen is Assitant Director of Digital Scholarship at the University "
+"of Pennsylvania. She earned a Bachelor&#8217;s Degree from Bard College and "
+"an MS in Library and Information Science from Simmons College. She worked "
+"for 6 years at the Social Science Data and Research &amp; Instructional "
+"Services Department at the University of Pennsylvania before joining the "
+"Haverford College Libraries in 2008.  Since 2011, Allen has led a team of "
+"students and staff within the Haverford Library as Coordinator for Digital "
+"Scholarship &amp; Research Services. The"
+msgstr ""
+"Laurie Allen es coordinadora de servicios académicos y digitales en "
+"Haverford College. Ella recibió su licenciatura de Bard College y una "
+"maestría en Ciencias Bibliotecarias e Informática de Simmons College. "
+"Trabajó 6 años en el Departamento de Servicios Instructivos y de Información "
+"en Ciencias Sociales en la Universidad de Pensilvania antes de unirse a las "
+"bibliotecas de Haverford en el 2008. Desde el 2011,  en su posición como "
+"Coordinadora de Investigación y Servicios Digitales, Allen ha dirigido a un "
+"equipo de estudiantes y empleados en la"
+
+#: zapotexts/templates/zapotexts/team.html:58
+msgid "Digital Scholarship Group"
+msgstr "Biblioteca de Haverford"
+
+#: zapotexts/templates/zapotexts/team.html:58
+msgid ""
+"supports faculty and student research projects with technical and "
+"infrastructural support. Allen and her team support several Drupal sites, "
+"databases, and mapping projects including The Global Terrorism Research "
+"Project and others. Allen has experience developing and training in Drupal, "
+"XML and TEI, and XSLT."
+msgstr ""
+"El grupo de servicios digitales brinda apoyo estructural  y técnico para los "
+"proyectos de investigación de los profesores así como de los estudiantes. "
+"Allen y su equipo mantienen varios sitios Drupal, bases de datos, y "
+"proyectos de mapas incluyendo el Proyecto Global de Investigación "
+"Terrorista, entre otros. Allen tiene experiencia programando y entrenando en "
+"Drupal, XML, TEI y XSLT."
+
+#: zapotexts/templates/zapotexts/team.html:65
+msgid ""
+"Coordinator for Digital Scholarship and Services at Magill Library, "
+"Haverford College"
+msgstr ""
+"Coordinadora de investigación y servicios digitales en la biblioteca Magill, "
+"Haverford College"
+
+#: zapotexts/templates/zapotexts/team.html:70
+msgid ""
+"Mike Zarafonetis is Coordinator for Digital Scholarship and Services for "
+"Haverford College Libraries. He earned a Bachelor's degree in Computer "
+"Science from Kalamazoo College and a PhD in History from Auburn University. "
+"He designed and developed web exhibits at the Hagley Museum and Library in "
+"Wilmington, Delaware before coming to Haverford. Since 2011, Mike has "
+"supported faculty, staff, and students in the planning, design, and "
+"development of digital scholarship projects. These projects incorporate "
+"techniques like GIS mapping, data visualization, and text encoding and "
+"analysis. In addition to course support and exhibit design, Mike has "
+"developed curriculum for the"
+msgstr ""
+
+#: zapotexts/templates/zapotexts/team.html:70
+msgid "Digital Scholarship Fellows"
+msgstr "Biblioteca de Haverford"
+
+#: zapotexts/templates/zapotexts/team.html:70
+msgid ""
+"program at Haverford, and teaches in the Museum Studies graduate program at "
+"the University of Delaware."
+msgstr ""
+
+#: zapotexts/templates/zapotexts/team.html:75
+msgid "Current Student Research Assistants"
+msgstr "Estudiantes actuales que fungen como asistentes de investigación"
+
+#: zapotexts/templates/zapotexts/team.html:79
+msgid "Summer 2013-Present."
+msgstr "El verano del 2013-presente"
+
+#: zapotexts/templates/zapotexts/team.html:84
+msgid ""
+"Plumb is a linguistics major and a math and Spanish minor at Haverford "
+"College. She works on transcribing and translating Cordova&#8217;s <em>Arte</"
+"em> and is currently writing her senior thesis on coordination in Colonial "
+"Valley Zapotec."
+msgstr ""
+"Plumb está cursando su licenciatura en lingüística con una especialización "
+"en matemáticas en Haverford College. Ella trabaja en la transcripción y "
+"traducción del <em>Arte</em> de Córdoba y está investigando la coordinación "
+"en el zapoteco colonial del valle (Plumb 2014)."
+
+#: zapotexts/templates/zapotexts/texts.html:5
+#: zapotexts/templates/zapotexts/texts.html:10
+msgid "Colonial Zapotec Texts"
+msgstr "Textos en Zapoteco Colonial"
+
+#: zapotexts/templates/zapotexts/texts.html:28
+msgid "Handwritten Texts"
+msgstr "Textos en manuscrito"
+
+#: zapotexts/templates/zapotexts/texts.html:29
+msgid "Explore handwritten texts by native Colonial Zapotec speakers."
+msgstr ""
+"Explore textos escritos a mano por hablantes nativos del zapoteco colonial."
+
+#: zapotexts/templates/zapotexts/texts.html:45
+msgid ""
+"Learn more about Pedro de Feria's 16th century bilingual doctrine of the "
+"Catholic Faith."
+msgstr ""
+"Aprende más acerca de la doctrina bilingüe de la fe católica del siglo 16 de "
+"Pedro de Feria."
+
+#: zapotexts/templates/zapotexts/timeline.html:6
+msgid "Timeline"
+msgstr "Cronología"
+
+#: zapotexts/templates/zapotexts/timeline.html:15
+msgid "Timeline of Colonial Valley Zapotec Documents"
+msgstr "Cronología de documentos de zapoteco colonial del valle"
+
+#: zapotexts/templates/zapotexts/timeline.html:28
+msgid "Zapotec Testament"
+msgstr "Testamento zapoteco"
+
+#: zapotexts/templates/zapotexts/timeline.html:29
+msgid "Zapotec Bill of Sale"
+msgstr "Escritura de venta en zapoteco"
+
+#: zapotexts/templates/zapotexts/timeline.html:30
+msgid "Contemporaneous Spanish Translation"
+msgstr "Traducción contemporánea al español"
+
+#: zapotexts/templates/zapotexts/timeline.html:31
+msgid "Other"
+msgstr "Otro"
+
+#~ msgid "Explore"
+#~ msgstr "Explora"
+
+#, fuzzy
+#~| msgid ""
+#~| "Do you notice something missing from our list below? <br>We aim to have "
+#~| "our bibliography be as extensive as possible and would be happy to hear "
+#~| "from you regarding any missing publication.<br> Please include a link to "
+#~| "the text if one exists."
+#~ msgid ""
+#~ "Do you notice something missing from our list below? </p><p>We aim to "
+#~ "have our bibliography be as extensive as possible and would be happy to "
+#~ "hear from you regarding any missing publication. </p><p>Please include a "
+#~ "link to the text if one exists."
+#~ msgstr ""
+#~ "¿Hace falta algo en esta lista? <br>Nuestra meta es que la bibliografía "
+#~ "sea lo más completa posible y nos gustaría recibir sus sugerencias sobre "
+#~ "publicaciones que debemos incluir. Por favor incluye un enlace al texto "
+#~ "si este existe."
+
+#~ msgid "Additions can be submitted <a href=\"form.html\">here</a>"
+#~ msgstr "<a href=\"form.html\">Aquí</a> puedes agregar a la lista"
+
+#~ msgid ""
+#~ "A collection of Colonial Zapotec resources including transcribed texts, "
+#~ "translations, and linguistic analyses."
+#~ msgstr ""
+#~ "Una colección de recursos del zapoteco colonial incluyendo textos "
+#~ "transcritos, traducciones, y análisis lingüístico."
+
+#~ msgid ""
+#~ "An interdisciplinary team brings their diverse skill set to an archival "
+#~ "corpus."
+#~ msgstr ""
+#~ "Un equipo interdisciplinario trae su conjunto diverso de habilidades para "
+#~ "un corpus de archivo."
+
+#~ msgid "webpage"
+#~ msgstr "Página web"
+
+#~ msgid "Professor, University at Albany, SUNY"
+#~ msgstr "Profesor, University at Albany, SUNY"
+
+#~ msgid ""
+#~ "George Aaron Broadwell is Professor in the Department of Anthropology and "
+#~ "the Program in Linguistics and Cognitive Science at the University at "
+#~ "Albany, State University of New York. His research focuses on the "
+#~ "documentation of Native American languages, particularly in the "
+#~ "southeastern United States and Oaxaca, Mexico. He has worked with Zapotec "
+#~ "languages since 1989, with research on three modern varieties (Santa Ana "
+#~ "del Valle, San Dionisio Ocotepec, and Macuiltianguis) as well as Colonial "
+#~ "Valley Zapotec materials. He is the author of numerous publications on "
+#~ "Zapotec and also author/editor of A Choctaw Reference Grammar; The origin "
+#~ "of the sun and moon: A Copala Triqui legend; and Nana naguan&#8217; "
+#~ "rihaan nij sii chihaan&#8217;: Words of counsel for the Triqui people."
+#~ msgstr ""
+#~ "George Aaron Broadwell es un profesor en el Departamento de Antropología "
+#~ "y en el Programa de Lingüística y Ciencia Cognitiva en la Universidad en "
+#~ "Albany, Universidad  Estatal de Nueva York. Su investigación se enfoca en "
+#~ "la documentación de lenguas Nativo Americanas, particularmente en el "
+#~ "Sureste de los Estados Unidos y en Oaxaca, México. Ha trabajado con las "
+#~ "lenguas zapotecas desde 1989, investigando tres variantes modernas (Santa "
+#~ "Ana del Valle, San Dionisio Ocotepec, y Macuiltianguis) así como "
+#~ "materiales en zapoteco colonial del valle. Él es autor de numerosas "
+#~ "publicaciones sobre el zapoteco y también es autor/editor de </em>una "
+#~ "gramática de referencia para el choctaw; El origen del sol y la luna: Una "
+#~ "leyenda en triqui de Copala; y Nana naguan&#8217; rihaan nij sii "
+#~ "chihaan&#8217;: Palabras de consejos para los triquis."
+
+#~ msgid ""
+#~ "Laurie Allen is Coordinator for Digital Scholarship &amp; Services at "
+#~ "Haverford College. She earned a Bachelor&#8217;s Degree from Bard College "
+#~ "and an MS in Library and Information Science from Simmons College. She "
+#~ "worked for 6 years at the Social Science Data and Research &amp; "
+#~ "Instructional Services Department at the University of Pennsylvania "
+#~ "before joining the Haverford College Libraries in 2008.  Since 2011, "
+#~ "Allen has led a team of students and staff within the Haverford Library "
+#~ "as Coordinator for Digital Scholarship &amp; Research Services. The"
+#~ msgstr ""
+#~ "Laurie Allen es coordinadora de servicios académicos y digitales en "
+#~ "Haverford College. Ella recibió su licenciatura de Bard College y una "
+#~ "maestría en Ciencias Bibliotecarias e Informática de Simmons College. "
+#~ "Trabajó 6 años en el Departamento de Servicios Instructivos y de "
+#~ "Información en Ciencias Sociales en la Universidad de Pensilvania antes "
+#~ "de unirse a las bibliotecas de Haverford en el 2008. Desde el 2011,  en "
+#~ "su posición como Coordinadora de Investigación y Servicios Digitales, "
+#~ "Allen ha dirigido a un equipo de estudiantes y empleados en la"

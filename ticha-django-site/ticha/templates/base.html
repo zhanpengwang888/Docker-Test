@@ -1,0 +1,205 @@
+<!-- This is the base template for the whole site. It comprises the header, footer, and several empty blocks that can be overrided by child templates. These blocks are title, extra-css, content, and extra-js -->
+{% load staticfiles %}
+{% load i18n %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block title %}{% trans "Ticha" %}{% endblock %}</title>
+    <!-- font-awesome core CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'zapotexts/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'zapotexts/css/bootstrap_journal.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/dt-1.10.9/datatables.min.css"/>
+    <link href="{% static 'zapotexts/css/custom.css' %}" rel="stylesheet">
+    <link href="{% static 'zapotexts/css/small_nav.css' %}" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Tangerine|Shadows+Into+Light|Special+Elite|Poiret+One|Libre+Baskerville|EB+Garamond|Petit+Formal+Script|Rock+Salt|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    {% block extra-css %}{% endblock %}
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <p>
+          <h2 style="margin-top:0"><a href="{% url 'index' %}">TICHA</a></h2>
+          </p>
+        </div>
+        <div class="navbar-collapse collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right" style="margin-right:2em">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "About" %}<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'about' %}">{% trans "The project" %}</a></li>
+                <li><a href="{% url 'team' %}">{% trans "The team" %}</a></li>
+                <li><a href="{% url 'acknowledgements' %}">{% trans "Acknowledgements" %}</a></li>
+                <li><a href="{% url 'form' %}">{% trans "Contact us" %}</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Colonial Zapotec" %}<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'context' %}">{% trans "Cultural context" %}</a></li>
+                <li><a href="{% url 'linguistic' %}">{% trans "Linguistic background" %}</a></li>
+                <li><a href="{% url 'vocabulary:index' %}">{% trans "Vocabulary" %}</a></li>
+                <li><a href="{% url 'bibliography' %}">{% trans "Bibliography" %}</a></li>
+                <li><a href="{% url 'resources' %}">{% trans "Resources" %}</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Manuscripts" %}<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'handwritten' %}">{% trans "Overview" %}</a></li>
+                <li><a href="{% url 'handwritten_texts:list' %}">{% trans "Available manuscripts" %}</a></li>
+                <li><a href="{% url 'sample_handwritten' %}">{% trans "Sample manuscript" %}</a></li>
+                <li><a href="{% url 'timeline' %}">{% trans "Timeline" %}</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Printed Texts" %}<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="{% url 'zapotexts:landing' %}">All Printed Texts</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header"><a href="{% url 'arte' %}">Cordova, Arte en lengua zapoteca</a></li>
+                <li><a href="{% url 'arte_outline' %}">{% trans "Outline" %}</a></li>
+                <li><a href="{% url 'arte_pdf' %}">PDF</a></li>
+                <li><a href="{% url 'sample_arte' %}">{% trans "Sample page" %}</a></li>
+                <li><a href="{% url 'arte_original' %}">{% trans "Transcription" %}</a></li>
+                <li><a href="{% url 'reg_spanish' %}">{% trans "Regularized Spanish" %}</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header"><a href="{% url 'doctrina' %}">Feria, Doctrina christiana en lengua castellana y çapoteca</a></li>
+                <li><a href="{% url 'feria' %}">{% trans "About Pedro de Feria" %}</a></li>
+                <li><a href="{% url 'doctrina_pdf' %}">PDF</a></li>
+                <li><a href="{% url 'sample_doctrina' %}">{% trans "Sample page" %}</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header"><a href="{% url 'zapotexts:page_detail' 'levanto-arte' 0 'original' %}">Levanto, Arte</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header"><a href="{% url 'zapotexts:page_detail' 'levanto' 0 'original' %}">Levanto, Cathecismo de la lengua zaapoteca</a></li>
+                <li><a href="{% url 'levanto_outline' %}">{% trans "Outline" %}</a></li>
+              </ul>
+            </li>
+	    <li>
+              <a href="https://www.facebook.com/TichaColonialZapotecTextExplorer" target="blank" class="btn btn-social-icon btn-facebook">
+              <i class="fa fa-facebook fb-follow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/intent/tweet?button_hashtag=ticha&text=http://ticha.haverford.edu" class="btn btn-social-icon btn-twitter" data-url="http://ticha.haverford.edu">
+              <i class="fa fa-twitter"></i>
+              </a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+            <li>
+              <!-- Search bar form -->
+              <form style="margin-top:10px;" action="{% url 'zapotexts:search' %}" method="get">
+                <input style="margin:0px; width:150px; height:30px;" type="text" name="q">
+                <input class="button" type="submit" value="{% trans "Search" %}">
+              </form>
+            </li>
+          </ul>
+          <!-- language button -->
+          <form action="{% url 'set_language' %}" method="post">
+            {% get_current_language as LANG %}
+            {% csrf_token %}
+            <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}">
+            <input name="language" type="hidden" value="{% if LANG == 'en' %}es{% else %}en{% endif %}">
+            <input id="language-button" class="btn btn-default" type="submit" value="{% if LANG == 'en' %}Español{% else %}English{% endif %}">
+          </form>
+        </div>
+      </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <footer>
+      <div class="row full-width">
+        <div class="footer1">
+          {% trans "How to cite" %}: 
+          Lillehaugen, Brook Danielle, George Aaron Broadwell, Michel R. Oudijk, Laurie Allen, May Plumb, and Mike Zarafonetis. 2016. Ticha: a digital text explorer for Colonial Zapotec, first edition. Online: <a href="{% url 'index' %}">http://ticha.haverford.edu/</a>
+        </div>
+        <div class="row full-width footer2">
+        </div>
+      </div>
+      <div class="footer-outer">
+        <a href="#">
+          <span class="footer-arrow"></span> <!-- This is for the top part of the background -->
+          <span class="footer-circle"></span> <!-- This is for the circle -->
+        </a>
+        <div class="footer-inner">
+        </div>
+        <div class="col-xs-12">
+          <div class = "col-lg-1 col-md-4 col-sm-6 col-xs-12 text-center">
+            <p class = "text-center">
+              <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+              <img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" class="img-responsive" alt="This works is licensed under a Creative Commons Attribution-ShareAlike (CC BY-SA) license."/>
+              </a>
+            </p>
+          </div>
+          <div class = "col-lg-1 col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="http://www.haverford.edu/" target="_blank">
+            <img src="{% static 'zapotexts/img/Haverford_Wordmark_Red_for_web.jpg' %}" class="img-responsive" alt="" width="170" height="42" />
+            </a>
+          </div>
+          <div class = "col-lg-1">
+          </div>
+          <div class = "col-lg-1 col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="http://tdh.brynmawr.edu/" target="_blank">
+            <img src="{% static 'zapotexts/img/TricoDH-logo.jpg' %}" class="img-responsive" alt="This project generously supported with funding from the Tri-Co Digital Humanities." width="150" height="79" />
+            </a>
+          </div>
+          <div class = "col-lg-1">
+          </div>
+          <div class = "col-lg-1 col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="http://www.neh.gov/" target="_blank">
+            <img src="{% static 'zapotexts/img/neh_at_logo.png' %}" style="margin-right: 50px" class="img-responsive" alt="All opinions, findings, conclusions, or recommendations expressed in this project do not necessarily represent those of the National Endowment for the Humanities." height="60" />
+            </a>
+          </div>
+          <div class = "col-lg-1">
+          </div>
+          <div class = "col-lg-1 col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="http://www.haverford.edu/HCAH/" target="_blank">
+            <img src="{% static 'zapotexts/img/hcahlogo.jpg' %}" class = "img-responsive" width="65"  height="65" />
+            </a>
+          </div>
+          <div class = "col-lg-1">
+          </div>
+          <div class = "col-lg-1 col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="http://www.acls.org/" target="_blank">
+            <img src="{% static 'zapotexts/img/acls-logo.gif' %}" class = "img-responsive" height="65">
+            </a>
+          </div>
+          <div class = "col-lg-1">
+          </div>
+          <div class = "col-lg-1 col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="https://www.amphilsoc.org/" target="_blank">
+            <img src="{% static 'zapotexts/img/APS.png' %}" class = "img-responsive" width = "100" height="65">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- JavaScript -->
+  <script src="{% static 'zapotexts/js/jquery-1.10.2.js' %}"></script>
+  <script src="{% static 'zapotexts/js/bootstrap.js' %}"></script>
+  <script src="{% static 'zapotexts/js/footer_arrow.js' %}"></script>
+  {% block extra-js %}{% endblock%}
+  <!-- Google analytics function  -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-45185227-4', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

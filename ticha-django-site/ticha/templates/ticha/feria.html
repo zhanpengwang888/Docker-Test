@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "About Pedro de Feria" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-11 col-centered">
+      <div style="width: 100%; height: 400px; overflow: hidden; position: relative;">
+        <img src="{% static 'zapotexts/img/doctrina_images/doctrina_example.png' %}" style="position: absolute; width:100%">
+      </div>
+    </div>
+    <div class="col-lg-10 col-centered">
+      <h1 class="text-center">{% trans "About Pedro de Feria" %}</h1>
+      <p>{% trans "Pedro de Feria was a Dominican priest and missionary to Mexico.  He was born in Spain around 1524.  He became a priest in 1545, and spent his life thereafter in study, writing, and church administration.  His primary mission was to the Zapotec, and he composed the longest early book in the Zapotec language, Doctrina Cristiana en lengua Castellana y çapoteca. (1567).  Feria also wrote a Nahuatl-language doctrina, and served as the Bishop of Chiapas before his death in 1588." %}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

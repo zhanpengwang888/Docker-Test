@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% load i18n %}
+
+{% block title %}Cultural Context{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-11 col-centered">
+      <!--<div class="flex-rectangle"> </div>-->
+      <div style="width: 100%; height: 400px; overflow: hidden; position: relative;">
+        <img src="{% static 'zapotexts/img/cultural-context_MEXICO-183.jpg' %}" style="position: absolute; width:100%">
+      </div>
+    </div>
+    <div class="col-lg-10 col-centered">
+      <h1 class="text-center">{% trans "Cultural context" %}</h1>
+      <p>{% trans "When the Spanish arrived on the coast of what they were to call New Spain—which included what is now modern-day Mexico—the Zapotec people had already been writing for some 2,000 years. It was therefore not surprising that they quickly adopted the alphabetic writing system. Such writing was introduced as part of an expansive undertaking that had as its objective the conversion of the indigenous population to Christianity. This project created the need for a learning process unprecedented in world history: describing and analyzing the multiple languages of Mesoamerica.  The results of this project were numerous dictionaries, grammars, and religious works created by Dominican friars relying heavily on the collaboration of Zapotec speakers." %}</p>
+      <p>{% trans "These indigenous communities began to utilize alphabetic writing to create documents in their own language for their own purposes, including wills, land titles, and songs. Researchers have identified colonial documents written in Central Zapotec, Cajonos Zapotec, Nexitzo Zapotec, and Sierra Juárez Zapotec. Today these texts are dispersed throughout local, state, national and international repositories and archives. Currently, Ticha provides access to colonial documents written in Central (Valley) Zapotec, such as the" %} <em><a href="{% url 'arte' %}">Arte</a></em>, {% trans "a book that seeks to describe the structure of the Zapotec language, and many wills." %}</p>
+      <p>{% trans "The indigenous language documents are invaluable sources in understanding the historical and cultural developments of Mesoamerican peoples from the beginning of the colonial period until the present day. Unlike Spanish texts, these native language documents describe the world using their own cultural categories. For example, in Zapotec wills the testator might offer his soul to God to be eaten and his body to be consumed by the earth; clear continuities of indigenous perceptions related to death. These texts, and as such the Ticha portal, are a window for contemporary indigenous communities and scholars alike to explore Zapotec history, language, and culture." %}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+django_manage () {
+  /usr/local/lib/python-virtualenv/ticha-django/bin/python3 manage.py "$@"
+}
+
+echo -e "=== Pulling latest commits ==="
+git pull origin master
+echo -e "\n\n=== Applying database migrations ==="
+django_manage migrate
+echo -e "\n\n=== Collecting the static files ==="
+django_manage collectstatic
+echo -e "\n\n=== Restarting uWSGI ==="
+service uwsgi restart

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "Linguistic Background" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-11 col-centered">
+      <div style="width: 100%; height: 400px; overflow: hidden; position: relative;">
+        <img src="{% static 'zapotexts/img/linguistic-background_DSC_0245.jpg' %}" style="position: absolute; width:100%">
+      </div>
+    </div>
+    <div class="col-lg-10 col-centered">
+      <h1 class="text-center">{% trans "Linguistic background" %}</h1>
+      <p>{% trans "Zapotec is an extensive language family indigenous to southern Mexico, which belongs to the larger" %} <a href="http://en.wikipedia.org/wiki/Oto-Manguean_languages">{% trans "Otomanguean family" %}</a>. {% trans "Today, there are over 50 different Zapotec languages" %} ({% trans "iso code" %} <a href="http://www.ethnologue.com/language/zap">zap</a>), {% trans "most of which are endangered.  They are spoken primarily in the state of Oaxaca, Mexico, by a total of approximately 425,000 people" %} (<a href="http://cuentame.inegi.org.mx/hipertexto/todas_lenguas.htm">INEGI 2010</a>) {% trans "within a much larger Zapotec ethnic community.   Due to immigration, there are now Zapotec speakers in many other parts of Mexico and the United States. Dialectal divergence between Zapotec-speaking communities is extensive and complicated. Many varieties of Zapotec are" %} <a href="http://en.wikipedia.org/wiki/Mutual_intelligibility">{% trans "mutually unintelligible" %}</a> {% trans "with one another. The" %} <a href="http://en.wikipedia.org/wiki/Zapotec_languages">{% trans "Zapotec language family" %}</a> {% trans "is on par with the" %} <a href="http://en.wikipedia.org/wiki/Romance_languages">{% trans "Romance language family" %}</a> in terms of time depth and diversity of member languages.</p>
+      <p>{% trans "The variety of Zapotec presented in Ticha represents the Zapotec of the colonial period of Mexico (1521-1821).  During this period, hundreds of documents were written in Zapotec, including religious materials, last wills and testaments, deeds, and letters.   Many of these documents were written by native speakers for use by native speakers, such as local administrative texts.  Other texts were written to be used by Spanish speaking priests and were likely created in collaboration with Spanish speakers." %}</p>
+      <p>{% trans "The texts currently available on Ticha are written in Zapotec from the Central branch, often referred to as Colonial Valley Zapotec.  The" %} <a href="{% url 'bibliography' %}">{% trans "Ticha Bibliography" %}</a> {% trans "lists works written about Colonial Valley Zapotec." %}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

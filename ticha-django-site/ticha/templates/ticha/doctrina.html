@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}Doctrina christiana en lengua castellana y çapoteca{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-9 col-centered" style="margin-bottom: 4em">
+      <h1 class="text-center" style="margin-bottom: 0">Doctrina christiana en lengua castellana y çapoteca</h1>
+      <p class="pageDesc">{% trans "A religious text in Colonial Valley Zapotec." %}</p>
+    </div>
+    <div class="col-lg-11 col-centered">
+      <div style="width: 100%; height: 400px; overflow: hidden; position: relative;">
+        <img src="{% static 'zapotexts/img/doctrina_images/doctrina_example.png' %}" style="position: absolute; width:100%">
+      </div>
+    </div>
+    <div class="col-lg-10 col-centered">
+      <h1 class="text-center">{% trans "About the Doctrina" %}</h1>
+      <p>{% trans "The Doctrina is a religious text published in 1567. It was written by Pedro de Feria, a Spanish friar in the Dominican order, but prepared with the help of native speakers of Zapotec. Unfortunately, little is known about these speakers, for instance, what variety of Zapotec they spoke or where they lived. The Doctrina is comprised of 233 pages, each with a column of Spanish text on the left and Zapotec on the right. The subject matter of the Doctrina is an explanation of Catholic doctrine. Because it contains long passages of text that span more topics than many of the handwritten documents, it is a valuable source for knowledge of Zapotec syntax and semantics. It also gives insight into Spanish religious beliefs at the time." %}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

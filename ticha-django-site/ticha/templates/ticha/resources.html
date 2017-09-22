@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "Resources" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-11 col-centered">
+      <h3>Additional Resources</h3>
+      <p>{% trans "The following links point to additional resources on the Zapotec language." %}</p>
+      <ul>
+        <li><a href="http://dle.rae.es/?id=DglqVCc">Dicconario de la lengua española</a></li>
+        <li><a href="http://web.frl.es/DA.html">Dicconario de Autoridades</a></li>
+        <li><a href="http://www.iifilologicas.unam.mx/wikfil/index.php/Zapoteco_(ticha_zaa)">Zapoteco (ticha zaa)</a></li>
+        <li><a href="http://www.iifilologicas.unam.mx/cordova/">Vocabulario en lengua zapoteca</a></li>
+        <li><a href="https://www.powerofattorneynative.com/maps-and-visualizations/">Power of Attorney in Oaxaca, Mexico</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

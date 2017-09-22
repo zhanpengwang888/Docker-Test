@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div class="container">
+  <h2>Internal server error</h2>
+  <p>{% trans "Sorry, we experienced an internal server error (HTTP 500)." %}</p>
+</div>
+{% endblock %}

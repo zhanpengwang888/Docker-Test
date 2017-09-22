@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block title %}{% trans "About the Project" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-11 col-centered">
+      <div style="width: 100%; height: 400px; overflow: hidden; position: relative;">
+        <img src="{% static 'zapotexts/img/flowers_copy.jpg' %}" style="position: absolute; width:100%">
+      </div>
+    </div>
+    <div class="col-lg-10 col-centered">
+      <h1 class="text-center">{% trans "The Project" %}</h1>
+      <p>{% trans "<b>Ticha</b> is an online, digital explorer for a corpus of Colonial Zapotec texts. (The name <i>ticha</i> comes from the Colonial Valley Zapotec word for ‘word’, which also means ‘language’.) Zapotec is an indigenous language family of Mexico, has a long record of alphabetic texts, the earliest dated 1565 (Oudijk 2008:230). Reading and interpreting these colonial documents can be extremely difficult because of the challenges of early Zapotec orthography, vocabulary, grammar, and printing conventions, yet the documents contain rich linguistic, historical, and anthropological information." %}</p>
+      <p>{% trans "While currently in a mock-up stage, Ticha will eventually allow a user to access and explore many interlinked layers of these texts, including images of the original documents, transcriptions, translations into English and modern Spanish, linguistic analysis (including morphological interlinearization), and commentary. Ticha is innovative in bringing together data analyzed in FLEx (Fieldworks Language Explorer, fieldworks.sil.org) a system for lexical and grammatical analysis, with current TEI standards (Text Encoding Initiative, tei-c.org) for paleographic and translational representations of texts.  This tool will make Colonial Zapotec texts accessible to scholars in diverse fields (including linguistics, anthropology, and history),  Zapotec community members, and the general public." %}</p>
+      <hr class="fancy">
+    </div>
+    <div class="col-lg-11 col-centered">
+      <h1 class="text-center">Videos</h1>
+      <div class="row text-center">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <iframe src="//player.vimeo.com/video/108398801?byline=0&amp;portrait=0&amp;color=4682b4" width="325" height="187" class="embed-responsive embed-responsive-16by9" style = "margin:10px;" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p class="videoSub"><a href="http://vimeo.com/108398801">{% trans "Professor" %} Brook Lillehaugen {% trans "on the Ticha Project" %}</a> {% trans "from" %} <a href="http://vimeo.com/hclibraries">{% trans "Haverford College Libraries" %}</a> {% trans "on" %} <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <iframe src="//player.vimeo.com/video/104647362?byline=0&amp;portrait=0&amp;color=4682b4" width="325" height="187" class="embed-responsive embed-responsive-16by9" style = "margin:10px;" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p class="videoSub"><a href="http://vimeo.com/104647362">Carolyn Anderson, {% trans "Swarthmore Class of 2014 on the Ticha Project" %}</a> {% trans "on" %} <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <iframe src="//player.vimeo.com/video/114353842?byline=0&amp;portrait=0&amp;color=4682b4" width="325" height="187" class="embed-responsive embed-responsive-16by9" style = "margin:10px;" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p class="videoSub"><a href="http://vimeo.com/114353842">Janet Chávez Santiago {% trans "on the Educational Value of Ticha" %}</a> {% trans "from" %} <a href="http://vimeo.com/hclibraries">{% trans "Haverford College Libraries" %}</a> {% trans "on" %} <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <iframe src="https://player.vimeo.com/video/126306814?byline=0&amp;portrait=0&amp;color=4682b4" width="325" height="187" class="embed-responsive embed-responsive-16by9" style = "margin:10px;" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+          <p class="videoSub">May Plumb {% trans "on the Ticha Project from" %} <a href="https://vimeo.com/hclibraries">{% trans "Haverford College Libraries" %}</a> {% trans "on" %} <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <iframe src="https://player.vimeo.com/video/127641700?byline=0&amp;portrait=0&amp;color=4682b4" width="325" height="187" class="embed-responsive embed-responsive-16by9" style = "margin:10px;" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+          <p class="videoSub">Michel R. Oudijk {% trans "on the Ticha Project from" %} <a href="https://vimeo.com/hclibraries">{% trans "Haverford College Libraries" %}</a> {% trans "on" %} <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <iframe src="https://player.vimeo.com/video/127638864?byline=0&amp;portrait=0&amp;color=4682b4" width="325" height="187" class="embed-responsive embed-responsive-16by9" style = "margin:10px;" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+          <p class="videoSub">George Aaron Broadwell {% trans "on the Ticha Project from" %} <a href="https://vimeo.com/hclibraries">{% trans "Haverford College Libraries" %}</a> {% trans "on" %} <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-10 col-centered">
+      <hr class="fancy">
+      <div class="row text-center">
+        <h1 class="text-center">Presentations</h1>
+        <img src="{% static 'zapotexts/img/slides-1-thumbnail.png' %}" alt="screenshot of first slide of the PDF" width=325 height=187>
+        <p>Lillehaugen, Brook Danielle, George Aaron Broadwell, Laurie Allen, and Michel R. Oudijk. 2015. Archives, morphological analysis, and XML encoding: interdisciplinary methods in the creation of a digital text explorer for Colonial Zapotec manuscripts. Presented at <i>Humanidades Digitales Hispánicas II: Congreso Internacional. Innovación, globalización e impacto,</i> Madrid. [<a href="https://ds-omeka.haverford.edu/tichadocpics/pdfs/Madrid-talk.pdf">Slides PDF</a>]</p>
+        <br>
+        <img src="{% static 'zapotexts/img/slides-2-thumbnail.png' %}" alt="thumbnail of first slide of the PDF" width=325 height=187>
+        <p>Allen, Laurie, Brook Danielle Lillehaugen, George Aaron Broadwell, Michel R. Oudijk, &amp; Mike Zarafonetis. 2016. Ticha: The Story of an International, Community Engaged, Digital Humanities Project. Keystone DH, Pittsburgh. [<a href="{% static 'zapotexts/ticha-slides.pdf' %}">Slides PDF</a>]</p>
+        <br>
+        <img src="{% static 'zapotexts/img/slides-3-thumbnail.png' %}" alt="screenshot of first slide of the PDF" width=325 height=187>
+        <p>Lillehaugen, Brook Danielle, George Aaron Broadwell, Michel R. Oudijk, Laurie Allen, Michael Zarafonetis &amp; May Helena Plumb. 2016. <i>Humanidades digitales multilingual y multicultural: el caso de Ticha, un explorador digital de texto para el zapoteco colonial. 3er Encuentro de Humanistas Digitales</i>, Mexico City. Online: <a href="http://bit.ly/3EHDTicha">http://bit.ly/3EHDTicha</a> [<a href="{% static 'zapotexts/ticha-slides-2.pdf' %}">Slides PDF</a>]</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

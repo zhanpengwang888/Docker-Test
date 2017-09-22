@@ -1,0 +1,95 @@
+﻿
+.letHead{
+	-moz-column-count:1;
+	-webkit-column-count:1;
+	column-count:1;
+	clear:both;
+	text-align:center;
+	width:100%;
+}
+
+.letter{
+	line-height:12pt;
+	padding-bottom:3pt;
+	padding-top:12pt;
+	font-size:16pt;
+	font-weight:bold;
+}
+span{
+		font-size:16pt;
+	}
+span[lang|="en"]{
+		font-family:'Times New Roman',serif;
+		font-size:16pt;
+		font-weight:normal;
+	}
+span[lang|="es"]{
+		font-family:'Times New Roman',serif;
+		font-size:16pt;
+		color:#800000;
+	}
+span[lang|="zab-x-colon"]{
+		font-family:'Charis SIL',serif;
+		font-size:16pt;
+		font-weight:bold;
+		color:#339;
+	}
+div.entry{
+		text-indent:-36pt;
+		margin-left:45pt;
+		line-height:12pt;
+		padding-bottom:2pt;
+		padding-top:1pt;
+	}
+a{
+		text-decoration:inherit;
+		color:inherit;
+	}
+.reversalindexentry{
+		clear:both;
+		white-space:pre-wrap;
+	}
+.reversalindexentry{
+		text-indent:-36pt;
+		margin-left:45pt;
+		line-height:12pt;
+		padding-bottom:2pt;
+		padding-top:1pt;
+		font-size:16pt;
+	}
+.reversalindexentry> .reversalform> span[lang|="en"]{
+		font-weight:normal;
+		color:#000;
+	}
+.reversalindexentry .reversalform> .reversalfor+ .reversalfor:before{
+		content:' ';
+	}
+.reversalindexentry> .reversalform> span:last-child:after{
+		content:' ';
+	}
+.reversalindexentry> .reversalform> span{
+		font-weight:bold;
+	}
+.reversalindexentry> .referringsenses> span+ span:before{
+		content:'; ';
+	}
+.reversalindexentry> .referringsenses:before{
+		content:' ';
+	}
+.reversalindexentry> .referringsenses > .sensecontent > .referringsense> .headword[lang|="zab-x-colon"]{
+		font-weight:bold;
+		color:#339;
+	}
+.reversalindexentry> .referringsenses > .sensecontent > .referringsense .headword> .headwor+ .headwor:before{
+		content:' ';
+	}
+.reversalindexentry> .referringsenses > .sensecontent > .referringsense> .headword:before{
+		content:' ';
+	}
+.reversalindexentry> .referringsenses > .sensecontent > .referringsense> .headword{
+		font-weight:bold;
+	}
+.allreversalsubentries .allreversalsubentry{
+		clear:both;
+		white-space:pre-wrap;
+	}

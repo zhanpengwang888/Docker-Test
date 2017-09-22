@@ -1,0 +1,3214 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Regularized Spanish Arte" %}{% endblock %}
+
+{% block content %}
+<!-- This page includes the regularized Arte in Spanish Use the reg_spanish.xsl--> 
+<div class="container">
+  <div class="bibFoot">{% trans "Below is an excerpt from in-progress work: a modern Spanish version of Cordova's <em>Arte en lengua zapoteca</em>.  The Spanish modernization is intended to make the original text more accessible to readers by modernizing spelling, word boundaries, and capitalization choices.  Words are not modernized beyond spelling—so uncommon, archaic words or forms of words may be found.  Word order is also not changed. Latin words are in italics and are currently untranslated. Zapotec words are in red, which links to morphological analysis where available. Feel free to offer suggestions via the" %} <a href="{% url 'form' %}">{% trans "contact us link." %}</a></div>
+  <div class="row row-centered">
+    <div class="col-lg-9 col-centered">
+      <?xml version="1.0" encoding="UTF-8"?>
+      <!--This version of the arte was transformed using reg_spanish.xsl. This version of the arte is normalized for spacing, line breaks and includes
+        normalized spanish spelling.-->
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">1 [Front matter]</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">1.1 [Cover of book and preliminary pages]</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n4/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 4</a></div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">1.2 [Title Page]</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">ARTE 
+        EN 
+        LENGUA 
+        ZAPOTECA, 
+        Compuesto 
+        por el muy 
+        reverendo padre
+        Fray 
+        Juan 
+        de 
+        Córdoba, 
+        de la
+        orden de los Predicadores 
+        de esta 
+        nueva 
+        España.
+      </h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">
+        EN 
+        MÉXICO.
+        ¶En 
+        casa de Pedro Balli.
+        Año de. 1578.
+      </h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">1.3 [Licencias]</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n6/mode/1up http://archive.org/stream/arteenlenguazapo00juan#page/n8/mode/1up http://archive.org/stream/arteenlenguazapo00juan#page/n9/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 6</a></div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">1.3.1  Licencia del muy 
+        excelente señor 
+        Virrey [Don Martín Enriquez].
+      </h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">LICENCIA 
+        DEL
+        muy 
+        excelente 
+        señor  
+        Virrey.
+      </h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        DON 
+        MARTÍN 
+        Enriquez, 
+        Virrey, 
+        Governador 
+        y
+        Capitán 
+        General por 
+        su 
+        Majestad
+        en 
+        esta 
+        nueva 
+        España, 
+        y 
+        presidente 
+        de la 
+        audiencia 
+        real que en ella
+        reside. 
+        &amp;c. Por 
+        cuanto 
+        por 
+        parte del 
+        reverendo 
+        padre fray 
+        Juan
+        de 
+        Córdoba, 
+        de la orden de los
+        predicadores, me 
+        ha 
+        sido 
+        hecha 
+        relación, 
+        que con mucho
+        trabajo de 
+        su puño, 
+        y con 
+        deseo 
+        de 
+        aprovechar 
+        a los 
+        naturales, de la 
+        nación 
+        zapoteca, 
+        y que los 
+        religiosos
+        que 
+        se 
+        pusieren 
+        a aprender 
+        la dicha lengua en 
+        su
+        modo de hablar, tengan la 
+        pudicia
+        que 
+        conviene. 
+        Ha
+        compuesto 
+        en la dicha lengua 
+        un 
+        Arte para bien hablar. El 
+        cual 
+        para 
+        conseguir 
+        el 
+        fruto 
+        de 
+        su 
+        deseo,
+        quería se 
+        imprimiese, 
+        y me 
+        pidió 
+        le 
+        diese 
+        licencia 
+        para ello. Y por mi 
+        visto 
+        y atento que 
+        esta 
+        visto y 
+        examinado, por 
+        personas 
+        doctas 
+        a quien 
+        lo 
+        cometió 
+        el
+        provincial 
+        de la dicha orden, y lo 
+        aprueban 
+        por 
+        bueno. Y que el 
+        reverendísimo 
+        obispo 
+        de la ciudad de
+        Antequera 
+        está 
+        de 
+        parecer se 
+        imprima. Por la 
+        presente 
+        doy licencia, a 
+        cualquier 
+        impresor 
+        que el 
+        dicho fray 
+        Juan de 
+        Córdoba 
+        señalare, 
+        para que 
+        libremente pueda imprimir 
+        el dicho 
+        Arte, de lengua 
+        za
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n7/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 7</a></div>
+        poteca, 
+        conforme al original 
+        que 
+        se 
+        le 
+        entregare 
+        por
+        el autor, y mando que en ello no 
+        se 
+        le 
+        ponga
+        embargo 
+        ni impedimento alguno. 
+        Hecho 
+        en 
+        México 
+        a
+        primero de 
+        julio 
+        de mil y quinientos y 
+        setenta 
+        y 
+        ocho años.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        Don Martín 
+        Enriquez.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Por mandando de 
+        su 
+        Excelencia,
+        Juan de 
+        Cueva.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n8/mode/1up http://archive.org/stream/arteenlenguazapo00juan#page/n9/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 8</a></div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">1.3.2 Licencia del señor Obispo 
+        de Antequera [Don Fray Bernardo de Alburquerque]
+      </h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">LICENCIA DEL Se
+        ñor Obispo de Antequera.
+      </h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        NOS 
+        DON 
+        FRAY 
+        Bernardo 
+        de Alburquerque, por la 
+        miseración 
+        divina, 
+        Obispo 
+        de Antequera
+        y del 
+        consejo 
+        de 
+        su 
+        Majestad. &amp;c. A
+        vos el 
+        reverendo 
+        padre fray 
+        Juan 
+        de
+        Córdoba, 
+        Religioso 
+        de la orden de 
+        nuestro 
+        padre
+        Santo 
+        Domingo. 
+        Salud en 
+        nuestro 
+        señor. Por 
+        cuanto por 
+        vuestra parte 
+        se 
+        nos 
+        ha
+        hecho 
+        relación, que 
+        queréis
+        imprimir 
+        un 
+        Arte de lengua 
+        zapoteca 
+        de este
+        nuestro 
+        obispado. 
+        Y porque allende de la buena 
+        diligencia 
+        y cuidado 
+        que en ello 
+        habéis 
+        puesto. Ha 
+        sido
+        la dicha Arte examinada y 
+        aprobada, 
+        por los 
+        reverendos 
+        padres fray 
+        Juan 
+        Berrez, vicario de 
+        Tlacochahuaya, 
+        y fray 
+        Juan 
+        de Villalobos, Vicario de 
+        Yzquintepec, 
+        religiosos 
+        de la dicha orden, que 
+        saben 
+        bien
+        la dicha lengua 
+        zapoteca. 
+        Por la 
+        presente damos
+        licencia para que 
+        podáis 
+        hacer imprimir la dicha
+        Arte 
+        zapoteca, 
+        porque juntamente con el 
+        vocabulario que 
+        ahora 
+        estáis 
+        imprimiendo de la dicha 
+        lengua, 
+        será 
+        cosa muy 
+        util y 
+        provechosa 
+        para los que la
+        quisieren 
+        aprender, 
+        para ayudar 
+        a esta 
+        pobre gente
+        zapoteca 
+        de este 
+        obispado. 
+        Que es fecha en 
+        Antequera en diez y ocho de 
+        junio de mil y quinientos
+        y setenta y ocho 
+        años.
+        Fr. B. 
+        Episcopus 
+        Antequerensis.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n9/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 9</a></div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">1.3.3 Licencia del señor Obispo de Antequera [Don Fray Bernardo de Alburquerque]</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">
+        LICENCIA DEL padre Provincial
+      </h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        YO 
+        FRAY 
+        GABRIEL 
+        DE
+        San 
+        Joseph, prior 
+        provincial de esta
+        provincia 
+        de 
+        Santiago de la 
+        nueva 
+        España, 
+        de la orden de los Pre
+        dicadores. Por la 
+        presente 
+        doy li
+        cencia al padre fray 
+        Juan 
+        de 
+        Córdoba, 
+        religioso 
+        de la dicha orden, y vicario 
+        provincial 
+        de la 
+        nación 
+        Mixteca, para que pueda imprimir
+        un Arte para 
+        bien 
+        hablar en la lengua zapoteca que
+        tiene hecho, atento que yo tengo cometido el exa
+        men de él 
+        a los 
+        reverendos 
+        padres fray 
+        Juan 
+        de Mata,
+        vicario de 
+        Tezapotlan, 
+        y fray 
+        Juan 
+        Berriz, vicario
+        de Tlacuchabaya, 
+        lenguas de la dicha 
+        nación 
+        zapoteca. 
+        Los 
+        cuales 
+        aprueban 
+        y dan 
+        fe 
+        que 
+        está 
+        bue
+        no y 
+        se 
+        puede imprimir. 
+        <em>Ytem</em> le doy 
+        más 
+        la dicha
+        mi licencia para que pueda imprimir 
+        un 
+        Confesionario 
+        breve, 
+        o modo de 
+        confesarse 
+        en la dicha len
+        gua 
+        zapoteca, por 
+        ser 
+        util y 
+        provechoso 
+        para los
+        naturales de la dicha 
+        nación. En fe de lo 
+        cual lo 
+        fir
+        me de mi 
+        nombre 
+        hecho 
+        en 
+        Santo 
+        Domingo de 
+        México 
+        a seis 
+        días 
+        del mes de Abril de mil y 
+        quinientos
+        y 
+        setenta 
+        y ocho años.
+        Fray Gabriel de 
+        San 
+        Joseph.
+        Provincial.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n10/mode/1up http://archive.org/stream/arteenlenguazapo00juan#page/n11/mode/1up http://archive.org/stream/arteenlenguazapo00juan#page/n14/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 10</a></div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">1.4 Aprovacion de los examinadores [Fray Juan Berriz y Fray Juan de Villalobos]</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">APROBACIÓN DE
+        los examinadores.
+      </h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        NOS 
+        FRAY 
+        IVAN 
+        BEerriz 
+        Vicario de 
+        Tlacuchauaya,    
+        y
+        fray 
+        Juan 
+        de Villalobos, Vicario
+        de 
+        Yſcuintepec. 
+        Vimos y exami
+        namos 
+        un 
+        Arte 
+        de la 
+        lengua 
+        zapoteca, 
+        compuesto 
+        por el muy Re
+        uerendo padre fray 
+        Juan 
+        de Cordoua 
+        Vicario de la orden de 
+        Santo 
+        Domingo, por
+        mandado de 
+        nuestro  
+        muy 
+        reverendo 
+        padre fray Gabriel de ſant Ioſeph, prouincial 
+        de esta 
+        prouincia de 
+        Santiago 
+        de esta 
+        nueva 
+        España. 
+        Y nos parece que es
+        muy 
+        util 
+        y provechoso 
+        para los que quieren 
+        aprender 
+        esta 
+        lengua peregrina, y no contiene 
+        cosa 
+        alguna 
+        contraria 
+        a 
+        nuestra 
+        santa 
+        fe 
+        católica. 
+        Por lo 
+        cual 
+        nos parece 
+        ser 
+        cosa 
+        conveniente 
+        que 
+        se 
+        imprima, en
+        fe de lo 
+        cual 
+        dimos 
+        esta 
+        firmada de nuetros 
+        nombres
+        que es fecha en Etla a diez y ocho 
+        días del mes de
+        junio 
+        de mil y quinentos y ſetenta y ocho años.
+        Fray Juan Berriz. 
+        Fray Juan de Villalobos.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n11/mode/1up http://archive.org/stream/arteenlenguazapo00juan#page/n14/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 11</a></div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">1.5 [Dedicacion]</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">
+        AL MUY REVERENDO
+        Padre nuestro, 
+        Fray Gabriel de 
+        sant
+        José, 
+        Prior 
+        Provincial 
+        de
+        esta 
+        Provincia 
+        de 
+        Santiago 
+        de la 
+        orden 
+        de los
+        Predicadores
+        de esta 
+        España.
+        Fray Juan 
+        de 
+        Córdova. &amp;c.
+        S. P. Opt.
+        (?)
+      </h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        COMUN 
+        Opiniones. 
+        (Y no 
+        sin 
+        justa 
+        entre
+        los hombres celebrada). El
+        atribuir la gloria 
+        de una 
+        notable 
+        hazaña 
+        al principal 
+        autor 
+        de ella. Y 
+        esto porque 
+        sin
+        el tal, no 
+        podía 
+        aquella obra
+        conseguir 
+        su 
+        fin, ni 
+        alcanzar
+        su 
+        devida 
+        perfección. 
+        Y 
+        así 
+        a este 
+        propósito 
+        decía. 
+        S.
+        Pablo. 
+        <em>Ego plãtaui, apollo rigauit, empero Deus in
+        crementum dedit</em>. 
+        Atribuyendo 
+        a Dios como a prin
+        cipal 
+        actor, 
+        el 
+        aprovechamiento 
+        de 
+        sus 
+        trabajos. Sin
+        cuya ayuda 
+        sabía 
+        que 
+        ningún 
+        fruto 
+        había 
+        de 
+        sacar 
+        deellos.
+        Pues 
+        siendo 
+        esto 
+        como es 
+        así 
+        (muy 
+        reverendo
+        padre 
+        nuestro) 
+        y 
+        habiendo 
+        yo 
+        en mi pecho
+        un 
+        enajenamiento 
+        de voluntad, para querer comu
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n12/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 12</a></div>
+        nicar el 
+        fruto 
+        de mis trabajos, con mis 
+        próximos 
+        y
+        hermanos, de donde 
+        algún 
+        provecho 
+        se 
+        les 
+        podía 
+        seguir. 
+        Y 
+        habiendo 
+        sido 
+        vuestra 
+        Reverencia 
+        el 
+        actor,
+        de que 
+        se 
+        abriesen 
+        las puertas de mi cerrada volun
+        tad, y 
+        se 
+        despertase 
+        el 
+        pesado 
+        sueño 
+        de mi  
+        negligencia, 
+        mediante el 
+        haberme 
+        mandado por obediencia,
+        que los 
+        sacase 
+        a luz. 
+        Paréceme 
+        cierto que a 
+        vuestra
+        Reverencia 
+        en la tierra como a 
+        causa 
+        principal, le
+        es 
+        devido 
+        el honor y agradecimiento de tan buena
+        obra, y lo 
+        mismo 
+        diran todos los que 
+        tuvieren 
+        claro
+        juicio, 
+        y 
+        sintieren 
+        de ello 
+        lo que es 
+        razón. 
+        Y por tanto
+        yo por la parte que 
+        de ello
+        me toca, y en nombre de
+        todos aquellos que 
+        algún 
+        provecho 
+        de esto 
+        pueden sacar,
+        lo agradezco y agradecemos a 
+        vuestra 
+        Reverencia, 
+        suplicando 
+        a 
+        nuestro 
+        señor 
+        que fue el que a ello
+        le 
+        despertó 
+        y 
+        movió, 
+        le 
+        dé 
+        el galardon (que si 
+        dará)
+        y a mi me 
+        dé 
+        lo que 
+        su 
+        diuina 
+        Majestad 
+        fuere 
+        servido. 
+        Si quiera por el 
+        haber 
+        con 
+        sencilla 
+        voluntad 
+        obe
+        decido. 
+        y 
+        servido 
+        en 
+        este 
+        caso 
+        de lo que 
+        sirve 
+        el 
+        peón
+        a el 
+        albañil, 
+        que es no 
+        más 
+        de 
+        administrarse 
+        mate
+        riales para el edificio.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Después 
+        que 
+        vuestra 
+        Reverencia 
+        (padre 
+        nuestro)
+        me 
+        mandó 
+        que 
+        el Vocabulario de len
+        gua 
+        zapoteca, 
+        me 
+        mandó 
+        así 
+        mismo 
+        hiciese 
+        un 
+        Arte 
+        de ella, 
+        como 
+        su 
+        coautor 
+        para que 
+        declarase 
+        las 
+        dudas 
+        que en el 
+        se 
+        ofreciesen, y 
+        fuese 
+        como
+        puerta y entrada para los principiantes. El 
+        cual 
+        hice 
+        lo mejor que pude y 
+        supe. 
+        Que es 
+        este 
+        que 
+        aquí 
+        se 
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n13/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 13</a></div>
+        sigue, 
+        y 
+        aunque 
+        la perfecta paga y galardon de 
+        nue
+        stras 
+        buenas obras 
+        sea 
+        en el cielo, 
+        todavia 
+        acordán
+        dome 
+        de que 
+        nuestro 
+        señor 
+        no 
+        solo 
+        en 
+        su 
+        gloria, pe
+        ro 
+        aún 
+        en 
+        esta 
+        vida gratifica 
+        nuestras 
+        buenas obras
+        como por añadidura como 
+        él 
+        lo dize cuando 
+        dice.
+        <em>Hec omnia adijcientur vobis</em>. 
+        Pareciéndome 
+        ser 
+        co
+        ſa 
+        justa 
+        y digna que 
+        vuestra 
+        reverencia 
+        reciba 
+        aquí 
+        también el 
+        <em>centumplum</em> 
+        de esta, 
+        determine dirigirle
+        este 
+        mi pequeño 
+        servicio 
+        y trabajo que por 
+        su 
+        man
+        dado 
+        tomé, 
+        teniendo 
+        también 
+        atención 
+        a el amor 
+        que
+        a 
+        vuestra 
+        reverencia 
+        siempre 
+        tuve 
+        y tengo, y a 
+        su 
+        me
+        recimiento 
+        que 
+        no es menor. Por 
+        tanto 
+        vuestra 
+        reverencia 
+        le acepte con la voluntad que yo 
+        se 
+        le 
+        ofresco.
+        Y pues es del 
+        número 
+        de los obreros 
+        a quién 
+        alguna 
+        vez puede 
+        servir, 
+        como 
+        persona 
+        que le vaſu parte
+        le fauorezca y ampare. Y los que en parte, o en todo
+        le tacharen, 
+        si 
+        dieren razones más 
+        bastantes 
+        que las
+        que aqui van 
+        puestas, 
+        yo huelgo que 
+        sean 
+        admitidas,
+        y las 
+        mías 
+        no aceptadas, porque pues ya tengo el
+        pie en el 
+        estribo 
+        para mi 
+        última 
+        jornada, que mis o
+        bras no 
+        sean 
+        reputadas de los hombres poco impor
+        ta, mayormente no 
+        siendo 
+        ellos los 
+        que perfectamen
+        te las pueden 
+        adjudicar. 
+        <em>Quia ſolus Deus eſt quire
+        cte iudicat et ſic bene vale admodum. R. Pater</em>.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n14/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 14</a></div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">Prologo al lector</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">PROLOGO 
+        AL
+        lector.
+      </h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        DEL 
+        GLORIOSO 
+        SAN
+        Jerónimo leemos(. 
+        Estudiosísimo 
+        lector) Que para 
+        aprender la
+        lengua 
+        Hebrea 
+        que 
+        él mucho 
+        deseaba 
+        saber 
+        pasó 
+        muy muchos trabajos
+        y con grande 
+        cuidado y 
+        solicitud 
+        procuró 
+        de 
+        ayudarse
+        de preceptores 
+        doctísimos 
+        de los Hebreos.
+        Y 
+        así 
+        con 
+        esta 
+        diligencia, 
+        venció 
+        todas las
+        difficultades 
+        de ella, 
+        y la 
+        alcanzó 
+        en 
+        tanto 
+        grado, que
+        hablándola 
+        le 
+        dava 
+        particular 
+        modulación 
+        y 
+        dulzor
+        en el 
+        sonido. 
+        Fue le 
+        necesario 
+        poner y 
+        hacer de 
+        su
+        parte todo aquello, 
+        supuesto 
+        que con 
+        su 
+        sudor 
+        y trabajo la 
+        había de 
+        alcanzar, y la 
+        pretendía 
+        saber 
+        no como quiera. Porque para 
+        aprenderse y 
+        hablarse 
+        bien
+        una lengua peregrina, no 
+        sólo es 
+        necesario 
+        saber 
+        cantidad 
+        de vocablos 
+        de ella, 
+        sino 
+        juntamente con 
+        esto
+        saberlos 
+        bien pronunciar, aplicar y poner cada 
+        uno
+        en 
+        su 
+        asiento 
+        y lugar, de la manera que ella lo pide
+        para de los oyentes 
+        ser 
+        bien entendida. Porque 
+        si 
+        de esta 
+        manera no 
+        se 
+        usase 
+        de los 
+        vocablos que 
+        se 
+        aprendiesen 
+        parecería 
+        el que de otra manera 
+        hablase, a el
+        niño que 
+        comienza 
+        a hablar, que 
+        sabe 
+        decir 
+        tata, 
+        mamá, y 
+        papá, y otros vocablos 
+        así 
+        mudos, y para 
+        haber
+        de entender, lo que quiere 
+        decir 
+        es 
+        necesario 
+        imaginarlo o 
+        sacarlo por 
+        discreción. Y 
+        por eso el que 
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n15/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 15</a></div>
+        ſeare 
+        alcanzarla 
+        con las condiciones que hemos dicho, es 
+        razón que tenga en mucho los 
+        instrumentos 
+        y medios que le 
+        enderezan 
+        a aquel fin, porque le 
+        servirán de lo que 
+        sirve 
+        la 
+        guía al ciego, el 
+        cual aunque
+        alguna vez a tiento ande 
+        algún pequeño 
+        espacio 
+        de
+        camino, 
+        sin 
+        ella no puede durar mucho 
+        sin 
+        o caer. Y por 
+        esto 
+        yo 
+        movido del bien que 
+        de este
+        trabajo 
+        se 
+        me 
+        sigue, y 
+        esforzado con la obediencia 
+        que
+        tiene virtud de dar 
+        fuerzas 
+        a el que no las tiene, y de
+        fortificar las flacas a los que con fe la 
+        siguen. 
+        Puse 
+        mano en 
+        este Artezico 
+        de esta 
+        lengua 
+        zapoteca, 
+        para abrir camino o puerta por donde entren 
+        los principiantes que la 
+        quisieren 
+        aprender. 
+        Solas dos 
+        cosas 
+        pido a el que de 
+        estos 
+        mis trabajos 
+        se 
+        quisiere
+        aprouechar. La 
+        una 
+        que aceptando mi voluntad perdone los yerros y faltas. Y la otra que ruegue a 
+        nuestro 
+        señor 
+        por mi, cuya bondad 
+        providencia, 
+        sabiduría y 
+        santo nombre, 
+        sea 
+        siempre loado en los cielos
+        y en la tiera. Amen. Vale.    
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/1/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 1r</a></div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2 El Arte zapoteca</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">SIGUESSE EL ARTE 
+        ZAPOTECA.
+      </h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">
+        2.1 [Introducción]
+      </h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        COMENZANDO 
+        PUES
+        ahora 
+        a entrar en la materia de
+        que hemos de tratar, 
+        parecióme
+        para mayor claridad, 
+        ir
+        procediendo 
+        por las partes de la 
+        oración, 
+        y
+        declarar en cada 
+        una 
+        de ellas 
+        todo
+        lo que
+        conviniere, 
+        porque el Lector o 
+        estudiante, 
+        no
+        se 
+        turbe ni ande vagueando 
+        confusamente en 
+        busca 
+        de lo 
+        necesario, 
+        antes vaya procediendo en 
+        su
+        estudio 
+        por 
+        su 
+        orden y halle junto lo 
+        necesario 
+        para 
+        él, 
+        y 
+        después 
+        tocaremos algunas 
+        dificultades
+        extravagantes 
+        con que 
+        se 
+        dará fin a la obra.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Para tratar 
+        ahora 
+        del nombre, que es la primera
+        parte de la 
+        oración. 
+        Es de notar que en 
+        esta 
+        lengua
+        hay 
+        algunas reglas, 
+        así 
+        para los nombres, como para las 
+        demás 
+        partes de la 
+        oración. 
+        Pero muchas de ellas 
+        tienen 
+        muchas 
+        excepciones, 
+        por usar los 
+        indios
+        de los vocablos de 
+        diversos 
+        modos, de 
+        suerte 
+        que
+        no 
+        se 
+        les pueden dar reglas generales en muchas
+        cosas, 
+        como adelante 
+        se 
+        verá. 
+        Y 
+        por eso 
+        ponemos
+        las que 
+        pudiéremos 
+        más 
+        generales y con 
+        ejemplos
+        para ellas, 
+        dejando 
+        lo 
+        demás 
+        para la diligencia 
+        del
+        estudiante.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Cuanto 
+        a lo primero, en 
+        esta 
+        lengua 
+        hay 
+        muchas
+        especies 
+        de nombres 
+        sustantivos, 
+        y 
+        adjetivos. 
+        Y
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n19/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 1v</a></div>
+        ni tienen terminaciones ni 
+        artículos 
+        como los del
+        Latín, 
+        ni tampoco directamente tienen 
+        casos 
+        como los 
+        nuestros. 
+        Sino añadiéndoles 
+        algunas partículas, 
+        o anteponiendo o 
+        posponiendo 
+        el 
+        nombre o
+        por circunloquios 
+        pasan 
+        con ellos por los 
+        casos.
+        Para cuyo 
+        ejemplo 
+        nos 
+        pareció 
+        declinar 
+        aquí 
+        un 
+        nombre, como para modelo de los 
+        demás, 
+        porque todos
+        van por aquel camino.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        REGLA. 
+        ¶Decimos 
+        que no tienen 
+        artículos, 
+        y es, que para ninguna 
+        cosa inanimada le 
+        hay. Y para las criaturas animadas no tienen 
+        más 
+        que 
+        este.
+        <em>V.g.</em>
+        <div class="popover-markup">
+          <mark class="trigger">gönná</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_01">
+              <tr>
+                <td>
+                  gǒnnǎ
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  female
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'female'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        pospuesto 
+        para todas las hembras, y 
+        <div class="popover-markup">
+          <mark class="trigger">niguijo</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_02">
+              <tr>
+                <td>
+                  niguijo
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  male, man
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'male'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        para todos los machos. 
+        <em>Vt</em> 
+        <div class="popover-markup">
+          <mark class="trigger">pénigönná</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_03">
+              <tr>
+                <td>
+                  pěni
+                </td>
+                <td>
+                  gönnǎ
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  person
+                </td>
+                <td>
+                  female
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'woman'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        mujer, 
+        <div class="popover-markup">
+          <mark class="trigger">péniniguijo</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_04">
+              <tr>
+                <td>
+                  pěni
+                </td>
+                <td>
+                  niguijo
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  person
+                </td>
+                <td>
+                  male, man
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'man'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        hombre, 
+        <div class="popover-markup">
+          <mark class="trigger">mänigónná</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_05">
+              <tr>
+                <td>
+                  mäni
+                </td>
+                <td>
+                  gǒnnǎ
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  animal
+                </td>
+                <td>
+                  female
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'female
+                  animal'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        animal hembra, 
+        <div class="popover-markup">
+          <mark class="trigger">maniniguijo</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_06">
+              <tr>
+                <td>
+                  mani
+                </td>
+                <td>
+                  niguijo
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  animal
+                </td>
+                <td>
+                  male, man
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'male
+                  animal'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        animal macho.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">DECLINACIÓN.</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.2 Declinación</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.2.1 [Nominativo]</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        DEclinemos 
+        ahora 
+        este nombre, 
+        <div class="popover-markup">
+          <mark class="trigger">pichína</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.2.1_1">
+              <tr>
+                <td>
+                  pichïna
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  deer
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'deer'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        que 
+        quiere 
+        decir 
+        Venado o 
+        Ciervo, 
+        pues 
+        dice 
+        así. 
+        Nominativo 
+        <div class="popover-markup">
+          <mark class="trigger">pichina</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.2.1_2">
+              <tr>
+                <td>
+                  pichina
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  deer
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'deer'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        en este 
+        caso no 
+        hay 
+        dificultad, 
+        porque es regular y va 
+        así en todos los nombres.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">GENITIVO.</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.2.2 Genitivo</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Genitivo del 
+        ciervo. 
+        A este le 
+        anteponen 
+        un 
+        pronombre para le 
+        hacer 
+        genitivo. 
+        Que es, 
+        <div class="popover-markup">
+          <mark class="trigger">xi</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_09">
+              <tr>
+                <td>
+                  xi-
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  POSS-
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  ‎‎(prefix to
+                  mark nouns as possessed)
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        . 
+        <em>l</em>. 
+        <div class="popover-markup">
+          <mark class="trigger">xiténi</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_010">
+              <tr>
+                <td>
+                  xi-téni
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  POSS-GEN
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'of'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        . 
+        <em>l</em>. 
+        <div class="popover-markup">
+          <mark class="trigger">xitíni</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_011">
+              <tr>
+                <td>
+                  xi-tíni
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  POSS-GEN
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'of'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        que quiere 
+        decir, 
+        la parte o lo que pertenece, y 
+        así 
+        dicen, 
+        <div class="popover-markup">
+          <mark class="trigger">xiténi</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_012">
+              <tr>
+                <td>
+                  xi-téni
+                </td>
+                <td>
+                  pichina
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  POSS-GEN
+                </td>
+                <td>
+                  deer
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'of the
+                  deer'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        <em>l</em>.
+        <div class="popover-markup">
+          <mark class="trigger">xitínipichina</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_013">
+              <tr>
+                <td>
+                  xi-tíni
+                </td>
+                <td>
+                  pichina
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  POSS-GEN
+                </td>
+                <td>
+                  deer
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'of the
+                  deer'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        <em>l</em>.
+        <div class="popover-markup">
+          <mark class="trigger">xiquítipichina</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_014">
+              <tr>
+                <td>
+                  xi-quíti
+                </td>
+                <td>
+                  pichina
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  POSS-skin
+                </td>
+                <td>
+                  deer
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'the skin of the
+                  deer'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        el cuero de venado. 
+        Dicen 
+        también 
+        <div class="popover-markup">
+          <mark class="trigger">xäbaya</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_015">
+              <tr>
+                <td>
+                  xába=ya
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  clothes=1s
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'my cloak, my
+                  clothes'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        . 
+        <em>l</em>, 
+        <div class="popover-markup">
+          <mark class="trigger">xixabaya</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_016">
+              <tr>
+                <td>
+                  xi-xaba=ya
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  POSS-clothes=1s
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'my cloak, my
+                  clothes'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , mi 
+        manta, 
+        <div class="popover-markup">
+          <mark class="trigger">xabalo</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_017">
+              <tr>
+                <td>
+                  xaba=lo
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  clothes=2s
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'your cloak,
+                  your clothes'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        <div class="popover-markup">
+          <mark class="trigger">xábani</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_018">
+              <tr>
+                <td>
+                  xába=ni
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  clothes=3
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  '‎‎his cloak,
+                  his clothes (or her, its, their cloak or
+                  clothes)'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        tu manta, la de 
+        aquel.
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/2/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 2r</a></div>
+        También
+        dicen, 
+        <mark>pénihuaxábanj</mark>, 
+        el hombre cuya es
+        la manta, todos 
+        son romances de 
+        genitivo. 
+        También
+        este 
+        <mark>xábaya</mark>, 
+        <mark>xábalo</mark>, 
+        es nombre 
+        posesivo, 
+        <em>vide</em> los
+        nombres posesivos. 
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">DATIVO.</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.2.3 Dativo</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Dativo al 
+        ciervo, para 
+        usar 
+        este no 
+        hacen más
+        que posponer el 
+        dativo. 
+        <em>vt</em>. 
+        Dile a Pedro los tomines, 
+        <mark>péea tomines Pedro</mark>, 
+        dile del pan al ciervo, <mark>péeaqueta pichína</mark>. 
+        Dicen 
+        también, 
+        apiádate de
+        mí, 
+        <div class="popover-markup">
+          <mark class="trigger">pechijcícaláchinaa</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_021">
+              <tr>
+                <td>
+                  pe-chij=cí=ca-láchi
+                </td>
+                <td>
+                  naa
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  PERF:CAUS-love(w/CAUS)=only=EMPH-heart
+                </td>
+                <td>
+                  1s.fp
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'Be gentle with
+                  me!'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        o sé manso para 
+        conmigo.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">ACUSATIVO.</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.2.4 Acusativo</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Acusativo, 
+        al ciervo. 
+        A este 
+        cuando 
+        es la persona 
+        que padece, no hacen 
+        más que 
+        posponerla, 
+        <em>vt</em>
+        para decir 
+        maté el Ciervo 
+        dicen, 
+        <div class="popover-markup">
+          <mark class="trigger">pétiapichina</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_022">
+              <tr>
+                <td>
+                  pé-ti=a
+                </td>
+                <td>
+                  pichina
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  PERF:CAUS-die(PERF)=1s
+                </td>
+                <td>
+                  deer
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'I killed the
+                  deer.'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        . 
+        Y cuando 
+        significa 
+        <em>locum adquem</em> 
+        también
+        le posponen 
+        anteponiéndole 
+        una 
+        preposición. 
+        <em>ſ</em>. 
+        <div class="popover-markup">
+          <mark class="trigger">Láo</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_023">
+              <tr>
+                <td>
+                  láo
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  face/to:through:from;
+                  to
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'to'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        <em>vt</em> vamos al ciervo, 
+        <div class="popover-markup">
+          <mark class="trigger">cháonoláopichína</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_024">
+              <tr>
+                <td>
+                  chá=ono
+                </td>
+                <td>
+                  láo
+                </td>
+                <td>
+                  pichína
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  IRR.go=1pl
+                </td>
+                <td>
+                  face/to:through:from;
+                  to
+                </td>
+                <td>
+                  deer
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'We will go to
+                  the deer.'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        . 
+        También otras 
+        veces 
+        se 
+        dice 
+        sin 
+        preposición. 
+        <em>vt</em> 
+        vamos
+        a la 
+        iglesia, 
+        <div class="popover-markup">
+          <mark class="trigger">cháonoyóhotáo</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_025">
+              <tr>
+                <td>
+                  chá=ono
+                </td>
+                <td>
+                  yóhotáo
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  IRR.go=1pl
+                </td>
+                <td>
+                  church(house-great)
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'We will go to
+                  the church.'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        vamos al río, 
+        <div class="popover-markup">
+          <mark class="trigger">cháonoquígo</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_026">
+              <tr>
+                <td>
+                  chá=ono
+                </td>
+                <td>
+                  quígo
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  IRR.go=1pl
+                </td>
+                <td>
+                  river
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'We will go to
+                  the river.'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        .
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">VOCATIVO</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.2.5 Vocativo</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Vocativo o 
+        ciervo. 
+        Este es el 
+        nominativo 
+        antepuesto. 
+        <div class="popover-markup">
+          <mark class="trigger">ha</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_027">
+              <tr>
+                <td>
+                  ha
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  VOC(pre-N)
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'Oh!'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        <em>vt</em> 
+        <div class="popover-markup">
+          <mark class="trigger">ha, pichína</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_028">
+              <tr>
+                <td>
+                  ha
+                </td>
+                <td>
+                  pichína
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  VOC(pre-N)
+                </td>
+                <td>
+                  deer
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'Oh,
+                  deer!'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        , 
+        o ciervo, 
+        o pospuesto, 
+        <div class="popover-markup">
+          <mark class="trigger">he</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_029">
+              <tr>
+                <td>
+                  =he
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  =VOC(post-N)
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  (suffix used
+                  for vocative forms)
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        .
+        <em>vt</em> 
+        <div class="popover-markup">
+          <mark class="trigger">pichínahe</mark>
+          <div class="head hide">Morphological Analysis<button type="button" id="close" class="close"> X </button></div>
+          <div class="content hide">
+            <table xmlns="http://ds.haverford.edu/linp" class="table table-hover" id="arte2.01_030">
+              <tr>
+                <td>
+                  pichína=he
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  deer=VOC(post-N)
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  'Oh,
+                  deer!'
+                </td>
+              </tr>
+              <tr/>
+            </table>
+          </div>
+        </div>
+        .
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">ABLATIVO.</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.2.6 Ablativo</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Ablativo del 
+        ciervo. 
+        También carece 
+        esta lengua 
+        de este 
+        caso, 
+        pero sirvense los 
+        indios 
+        de él, 
+        de esta
+        manera. O 
+        posponiéndole a la 
+        oración como el
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n21/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 2v</a></div>
+        acusativo. 
+        <em>vt</em> 
+        para 
+        decir 
+        apártate del 
+        ciervo 
+        dicen,
+        <mark>cijto çóolopichîna</mark>. 
+        <em>l</em>. 
+        <mark>cijtoquizóolo pichîna</mark>. Huyes de la 
+        iglesia, 
+        <mark>toxóñelo yóhotáo</mark>. 
+        O hablando
+        por el genitivo. 
+        <em>vt</em> 
+        tomé el 
+        tomín a Pedro, 
+        <mark>coxijaxi
+        tomin Pedro</mark>. 
+        O diciéndolo 
+        por circunloquio. 
+        <em>vt</em>
+        <mark>coxija tomin penîcheni pedro</mark>. 
+        Que es decir 
+        tomé
+        el tomín 
+        diómele 
+        Pedro. 
+        <em>l</em>. 
+        <mark>coxija tomin nipenecheni pedro</mark>, 
+        aunque este tercero modo no es tan
+        propio.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">EFECTIVO.</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.2.7 Efectivo</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">¶Efectivo con el 
+        ciervo, 
+        este tiempo es la 
+        misma 
+        voz o 
+        terminación del 
+        nominativo 
+        porque como ya hemos dicho, no 
+        se 
+        varían las 
+        terminaciones de los 
+        casos. Y 
+        así para 
+        decir 
+        dio le con el 
+        ciervo, o 
+        con el palo, 
+        dicen 
+        <mark>cotiñani pichina</mark>, 
+        <mark>cotiñaniyága</mark>, 
+        <em>vel</em> 
+        <mark>yága cotiñeni</mark>, 
+        pospuesto o 
+        antepuesto el 
+        instrumento. 
+        Sirve 
+        también para 
+        esto 
+        esta 
+        silaba, 
+        <mark>ni</mark>. 
+        <em>l</em>.
+        <mark>xij</mark>, 
+        que son como 
+        <em>quis vel qui</em>, 
+        y así para preguntar
+        con que le dio, o hirió? 
+        <mark>xij cotiñani</mark>¿ Y 
+        responden, 
+        <mark>aláatijni cotiñani</mark>. 
+        Ves aquí con que le dio: 
+        <mark>ni</mark>. 
+        <em>l</em>. 
+        <mark>nij cotiñeni</mark>, con 
+        esto le dio? Dicen 
+        también 
+        <mark>xixa
+        ni cotiñani</mark>? qué es lo con que le dio? 
+        Dicen también
+        no hay con que le dar, 
+        <mark>yáca niquiñani</mark>. 
+        No tengo con
+        que le dar, 
+        <mark>yácani caquiñea</mark>. 
+        Y así el <mark>ni</mark> es el 
+        instrumento.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.2.8 Plural</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">PLURAL.</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.2.8.1 Nominativo</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">Nominativo.</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Nominativo del plural. Los 
+        ciervos. De este 
+        carece 
+        totaliter 
+        esta lengua. Pero para 
+        servirse del
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/3/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 3r</a></div>
+        toman el 
+        nominativo del singular, 
+        y anteponen o
+        posponen al un nombre 
+        numeral, o 
+        un nombre 
+        colectivo 
+        y 
+        dicen 
+        así, 
+        ciervos 
+        muchos, o muchos 
+        ciervos, o todos los 
+        ciervos, dicen 
+        <mark>pìchînaciáni</mark>, 
+        <mark>ciánipichîna</mark>, 
+        <mark>quitàa</mark>. 
+        <em>l</em>. 
+        <mark>quitälij pichîna</mark>. 
+        Dicen también 
+        para decir hombres o 
+        ciervos, 
+        <mark>péni</mark>,  
+        <mark>peniäti</mark>, 
+        <mark>máni</mark>, 
+        pero 
+        dan les un cierto sonido que se distingue bien de 
+        <mark>péni</mark>, y 
+        <mark>máni</mark> 
+        cuando
+        lo 
+        dicen 
+        por 
+        uno 
+        solo. 
+        Y si es
+        que vienen muchos, 
+        dicen, 
+        <mark>péni cétayácani</mark>.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.2.8.2 Genitivo</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">GENITIVO.</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶El genitivo del plural es como el del 
+        singular,
+        añadiéndole el nombre 
+        numeral o colectivo 
+        como al plural.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.2.9 Ablativo Absoluto</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">ABLATIVO. Absoluto.</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶El ablativo 
+        absoluto se 
+        dice por circunloquio,
+        de esta manera. 
+        Para decir 
+        <em>vidētibus illis eleuatus eſt</em>.
+        Tomase la primera 
+        persona del 
+        presente del 
+        indicativo, 
+        y anteponese 
+        un, 
+        <mark>huá</mark>, y posponese un, 
+        <mark>ca</mark>, y
+        así dicen.
+        <mark>Huatiñäacayóbicáni peyápini quîepaa</mark>.
+        <em>ſ</em>. 
+        estándolo mirando ellos se 
+        subió al 
+        cielo. 
+        También se hace con el 
+        adjetivo. 
+        <em>vt</em>  
+        <mark>naçóbannáani yóbicani peyápini quîepaa</mark>, aquel 
+        <mark>naçóba</mark> es el 
+        adjetivo de 
+        <mark>tiçóbaya</mark> que es estar en pie. 
+        También 
+        parece 
+        esta oración 
+        tener la voz del gerundio de 
+        ablativo. Y 
+        también del participio de 
+        presente. 
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">2.3. Nombres</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">SIGUESE LA MATERIA  de los 
+        nombres.
+      </h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n23/mode/1up http://archive.org/stream/arteenlenguazapo00juan#page/n25/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 3v</a></div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.3.1 [Nombres proprios]</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        COMENZANDO AHORA A
+        tratar de los nombres y de sus especies,
+        es de notar, que en 
+        esta 
+        lengua 
+        hay nombres
+        proprios para los hombres, y nombres comunes o 
+        apelativos, y también sus 
+        nombres proprios para las 
+        demás cosas. Los nombres proprios
+        de los hombres, 
+        son unos que cada padre pone a 
+        su
+        hijo o hija 
+        cuando le nace, conforme 
+        al orden de
+        su nacimiento. 
+        <em>ſ</em>. 
+        Primero, o segundo, o tercero. &amp;c.
+        Y lo mismo es de las hijas. 
+        <em>ſ</em>. 
+        Primera, segunda, tercera. &amp;c. 
+        Y así al primero que nace llaman 
+        <mark>yóbi</mark>, 
+        <em>vel</em> 
+        <mark>piyóbi</mark>, 
+        al segundo, 
+        <mark>tinj</mark>, y al tercero llaman 
+        <mark>téxi</mark>, 
+        y pasan adelante con otros nombres que ellos tienen para los demás que nacieren. 
+        A las hijas a la primera llaman, 
+        <mark>Záa</mark>, y 
+        a la 
+        segunda 
+        <mark>xóni</mark>, y 
+        a la tercera 
+        <mark>nijo</mark> &amp;c. Como 
+        está 
+        dicho de los hombres (lo cual
+        hallarás 
+        en el vocabulario y 
+        también al fin de este.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.3.2 Nombres apelativo o comunes</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">
+        NOMBRES APELATIVOS
+        o comunes.
+      </h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        LOS NOMBRES APELATIVOS
+        o comunes 
+        de los hombres, no 
+        son impuestos
+        ni tomados de alcuñas, 
+        sino 
+        tómanlos del 
+        día
+        en que nacen. Y 
+        así parece que 
+        si usasen a nuestro
+        modo que ponemos por nombre a uno Juan, 
+        porque
+        nació el día de San Juan. 
+        Este había de ser el nombre
+        proprio. Pero los 
+        indios 
+        tomaban  
+        este 
+        segundo 
+        nombre
+        por 
+        apelativo, del planeta o 
+        signo que a 
+        su cuenta
+        reinaba aquel día, o de 
+        sus falsos dioses, de los 
+        cua
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/4/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 4r</a></div>
+        les 
+        decían 
+        que cada 
+        uno 
+        tenía 
+        su 
+        día, y días 
+        y tiempos en que 
+        reinaba y 
+        tenía 
+        por 
+        insignia 
+        una 
+        especie de animales 
+        sobre quien 
+        particularmente 
+        señoreaban. 
+        Unos sobre Culebras, otros 
+        sobre Venados,
+        otros 
+        Lagartos. &amp;c. Y 
+        así al indio que aquel
+        día nacía llamaban por sobre 
+        nombre Lagarto, o culebra. &amp;c. 
+        Y lo 
+        mismo de las 
+        mujeres. 
+        <em>V.g.</em> 
+        Si el primer hijo 
+        nacía en el día de 
+        <mark>Pilläala</mark>, 
+        llamabanle
+        <mark>yóbi pilläala</mark>, 
+        si el 
+        segundo en el día de 
+        <mark>tîni pilläche</mark>, 
+        llamabanle 
+        <mark>tîni pilläche</mark>. &amp;c. 
+        Lo mismo era de las hijas, 
+        conforme al orden que hemos dicho. 
+        Así 
+        que
+        estos 
+        parecían los sobre nombres, y 
+        esto 
+        hallarás 
+        más
+        copioso al cabo.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">
+        NOMBRES PATRONÍMICOS.
+      </h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.3.3 Nombres patronimicos</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Estos 
+        nombres 
+        patronímicos 
+        de alcuñas o lina
+        jes, no los 
+        tenían 
+        estos indios 
+        para 
+        llamarse por ellos
+        sino como hemos dicho.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">
+        NOMBRES POSESIVO.
+      </h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.3.4 Nombres posessivos</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Tiene también 
+        esta 
+        lengua 
+        nombres 
+        posesivos,
+        los 
+        cuales hablan los 
+        indios de esta manera. Toman
+        el nombre proprio de la 
+        cosa 
+        y anteponenle 
+        un. 
+        <mark>xí</mark>.
+        y posponenle 
+        el pronombre y dicen 
+        <mark>xixábaya</mark>, mi
+        manta, 
+        <mark>xixäbalo</mark>, 
+        <mark>xixäbani</mark>, 
+        también le dicen sin el
+        <mark>xi</mark>, 
+        con 
+        solo el pronombre. 
+        <em>vt</em>  
+        <mark>xábaya</mark>, 
+        <mark>xábalo</mark>, 
+        <mark>xábani</mark>. &amp;c. 
+        Mi hijo, <mark>xínia</mark>, 
+        tu hijo <mark>xínilo</mark>. 
+        También se 
+        hacen 
+        estos 
+        posesivos 
+        anteponiendo 
+        un, 
+        <mark>huá</mark>, y
+        así
+        dicen, 
+        <mark>huaxábani</mark>, 
+        <mark>huaxínini</mark>, 
+        <mark>hualíchini</mark>, 
+        cuya es lamanta, el hijo, la casa.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n25/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 4v</a></div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">
+        NOMBRES DE
+        nominativos.
+      </h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.3.5 Nombres de nominativos </h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Hay 
+        también en 
+        esta lengua nombres de 
+        nominativos, 
+        estos 
+        son por la mayor parte los 
+        adjetivos,
+        antepuesto un 
+        <mark>quéla</mark>. 
+        <em>V.g.</em> 
+        <mark>nacîña</mark>, 
+        hombre abil agudo
+        avisado, 
+        <mark>quelanacîña</mark> aquella abilidad. &amp;c. 
+        No se 
+        trata 
+        más 
+        sobre esto aquí, porque el pro y el contra 
+        se
+        trata 
+        más largo 
+        abajo en el capítulo de los verbales
+        de, 
+        <em>io</em>, y 
+        <em>vra</em>, 
+        allí se podrá ver.  
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.3.6. Nombres diminutivos </h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">
+        NOMBRES DIMINUTIVOS.
+      </h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Hay también en esta 
+        lengua nombres 
+        diminutivos, 
+        aunque no al modo de la 
+        nuestra, 
+        que decimos
+        reyezuelo, periquillo, mochachuelo. &amp;c. 
+        Sino tomase el nombre y 
+        posponenle un adverbio 
+        cantitativo, y 
+        así le forman. 
+        <em>v.g.</em> 
+        Para 
+        decir chiquitillo
+        dicen
+        <mark>nahuînitéte</mark>. 
+        mochachuelo <mark>pînihuînitéte</mark>, 
+        <em>vel</em> 
+        <mark>nahuînitóto</mark>, 
+        pedazuelo de pan, 
+        <mark>quétaquîciquîci</mark>. 
+        <em>l</em>. 
+        <mark>láciquéta</mark>, 
+        <mark>láciti</mark>, 
+        <mark>láciciquéta</mark>. 
+        También para decir por
+        vía de menosprecio a 
+        uno hombrecillo dicen, 
+        <mark>cáninäcacipéni</mark>, 
+        <mark>cáninácaci quîba</mark> 
+        herrezuelo que no
+        vale nada.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">
+        NOMBRES COMPARATIVOS.
+      </h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.3.7 Nombres comparativos</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Los nombres comparatios
+        de esta lengua 
+        se 
+        forman 
+        de esta manera. 
+        <em>v.g.</em> 
+        Toman el positivo, y añaden
+        le una sílaba ante o pos. 
+        Y 
+        así dicen, 
+        <mark>huazáca Pedro, huazácati 
+        Juan</mark>. 
+        Bueno es 
+        Pedro, pero un poco
+        mejor es Juan. 
+        <em>l</em>. 
+        <mark>céläci huazäca Iuan</mark>. 
+        <em>l</em>. 
+        <mark>tijca huazáca Iuan</mark>. 
+        <em>l</em>. 
+        <mark>tijca titéte Iuan</mark>, 
+        <mark>huagátici quîchitij</mark>, 
+        más
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/5/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 5r</a></div>
+        blanco es este papel. 
+        <em>l</em>. 
+        <mark>huagáticica quichitij</mark>. 
+        También
+        posponiendo un
+        un, 
+        <mark>la</mark>, 
+        es 
+        comparativo. 
+        <em>vt</em> 
+        <mark>huaxija 
+        la</mark>, 
+        <mark>cijtolanitij</mark>, 
+        <mark>ciólala</mark>, 
+        <mark>citáola</mark>, 
+        todos 
+        estos son 
+        comparativos. 
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">
+        NOMBRES 
+        superlativos.
+      </h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.3.8 Nombres superlativos</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Nombres superlatios también los 
+        hay, aunque
+        no al modo nuestro, 
+        sino 
+        añadiéndoles partículas
+        como a los 
+        comparativos. 
+        <em>v.g.</em> 
+        Para 
+        decir
+        grandíssimo
+        o muy grande dicen 
+        <mark>citáotéte</mark>. 
+        malíssimo, 
+        <mark>yáguizácatéte</mark>. 
+        El mayor de todos, 
+        <mark>nititéte quétaniquitáa</mark>. 
+        y este, 
+        <mark>téte</mark>, 
+        también se añade a los verbos. 
+        <mark>toxihuitétea</mark> 
+        en gran manera 
+        <mark>pecoyo</mark>.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶También se hace el superlativo duplicando 
+        la
+        dicción. 
+        <em>vt</em> 
+        <mark>tizóochi tizóochi</mark>, 
+        muy borracho 
+        estar.
+        <mark>Citáo táo</mark>, 
+        <mark>huazáca huazáca</mark>, muy muchos, 
+        <mark>ciániciáni</mark>, 
+        <mark>ciáni ciánitéte</mark>.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶También posponiendo este, 
+        <mark>táo</mark>, 
+        se hace superlativo. 
+        <em>V.g.</em> 
+        <mark>nijtotáo</mark> muy antes, 
+        <mark>tecillatáo</mark>, muy de
+        mañana. 
+        <mark>cozáanatáo</mark>, 
+        muy gran padre de compañas.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶
+        También hay otro término 
+        que anteponiendole 
+        hace superlativo que es 
+        <mark>cutûbi</mark>. 
+        <em>l</em>. 
+        <mark>cotǔbi</mark>. 
+        y así 
+        dicen 
+        <mark>cutǔbi huazáca</mark>. 
+        <em>l</em>. 
+        <mark>cotûbi huazáca</mark> muy bueno,
+        <mark>cotûbi huazácatéte</mark>.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.3.9 Nombres verbales <em>in bilis</em></h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Acerca 
+        de estos 
+        nombres verbales 
+        <em>in bilis</em>. 
+        Yo
+        he tenido 
+        duda 
+        si 
+        en
+        esta 
+        lengua directamente los
+        hay. 
+        Y la 
+        razón 
+        ha 
+        sido 
+        y es, porque los que algunos
+        Religiosos 
+        dicen 
+        que toman los 
+        indios 
+        para 
+        estos
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n27/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 5v</a></div>
+        verbales, 
+        tómanlos 
+        también por 
+        adjetivos. Pero
+        con todo 
+        eso 
+        condescendiendo 
+        con que 
+        sea 
+        así,
+        pues 
+        así 
+        les parece 
+        ponemos algunos 
+        ejemplos
+        para que los 
+        use 
+        el que 
+        quisiere. 
+        <em>V.g.</em> 
+        Dicen 
+        <mark>nina,
+        chija</mark>, 
+        mi amado, 
+        <mark>ninachijlo</mark>, 
+        el tuyo, 
+        <mark>ninachijni</mark>,
+        el de aquel. Y 
+        también 
+        los que 
+        dicen 
+        que los
+        hay
+        dicen, 
+        <mark>ninachijni</mark>, 
+        amable, y por 
+        esto 
+        me parece que
+        no quiere 
+        decir 
+        amable, 
+        sino 
+        que le aman todos, o
+        que es amado de todos. 
+        Dicen 
+        también 
+        <mark>nitágoni</mark>, 
+        lo 
+        comestible, 
+        pero
+        así 
+        mismo 
+        no me parece
+        que quiere 
+        decir 
+        sino 
+        lo que comen. 
+        Dicen 
+        también 
+        para
+        decir 
+        Dios es venerable, es 
+        espantable, 
+        <mark>ninacijnaachini</mark>. 
+        Esto 
+        es
+        espantable, 
+        o
+        espanto 
+        so, 
+        <mark>huáachi nácanitij</mark>. 
+        Dicen 
+        también 
+        <mark>ninagábani</mark>, 
+        <mark>huagábani</mark>, 
+        esto 
+        es contable. 
+        <mark>Yánagábani</mark>, 
+        <mark>yácanagábani</mark>, 
+        esto 
+        es innumerable. Y 
+        también 
+        para
+        decir 
+        ya
+        está 
+        contado 
+        dicen, 
+        <mark>huagábani</mark>, 
+        por 
+        estos 
+        ejemplos 
+        me parece que no 
+        hay estos 
+        nombres, o a
+        lo menos 
+        que no 
+        son estos 
+        pero 
+        pasar 
+        con ellos. Y
+        estos 
+        se 
+        forman del 
+        presente; 
+        antepuesto
+        al 
+        presente, 
+        el 
+        <mark>ni</mark>, 
+        o al 
+        adjetivo, 
+        <em>vt</em> 
+        <mark>nitágoni</mark>, 
+        <mark>ninagábani</mark>.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.3.10 Nombres verbales en or</h4>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="center">NOMBRES VERbales en or.</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Nombres verbales de los que en 
+        nuestra 
+        lengua 
+        se 
+        acaban en, or, 
+        hay 
+        muchos en 
+        esta, 
+        aunque
+        no 
+        se 
+        derivan
+        como los 
+        nuestros, 
+        sino 
+        de verbos 
+        activos. 
+        Los cuales 
+        se 
+        forman de la primera 
+        perso
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/6/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 6r</a></div>
+        na del 
+        presente 
+        del 
+        indicativo 
+        en
+        esta 
+        manera.
+        De los verbos 
+        activos 
+        de. 
+        <mark>Ta</mark>. 
+        <mark>tánaya</mark>, 
+        cavar o 
+        cultivar 
+        la tierra, 
+        vuelven el 
+        <mark>ta</mark>. en 
+        <mark>co</mark>, 
+        y quitan el pronombre y 
+        dicen, 
+        <mark>cóna</mark>, 
+        cavador.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Falta 
+        esta 
+        regla. en algunos. 
+        <em>V.g.</em> 
+        <mark>Tagoa</mark>, 
+        comer
+        vuelto, 
+        el, 
+        <mark>tá</mark>. en 
+        <mark>huá</mark>, 
+        dicen, 
+        <mark>huágo</mark>, comedor. 
+        También, 
+        <mark>tácoa</mark>, 
+        cubrirse, 
+        tómanle 
+        del 
+        pretérito, 
+        y 
+        dicen, 
+        <mark>cóto</mark>, 
+        cubridor 
+        que se cubre o tiene cubierta la
+        manta. Y 
+        <mark>tácia</mark> 
+        dormir 
+        hace, 
+        <mark>cótacáci</mark>. 
+        <em>l</em>. 
+        <mark>tácixáta</mark>
+        dormilón, pocos 
+        son 
+        los que 
+        salen 
+        fuera de la 
+        regla dicha.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶En los verbos que 
+        comienzan 
+        en, 
+        <mark>Te</mark>, 
+        se 
+        conierte 
+        el, 
+        <mark>te</mark>, 
+        en 
+        <mark>hué</mark>, 
+        (entiéndese 
+        en los que 
+        significan 
+        alguna 
+        acción.) 
+        <em>V.g.</em> 
+        <mark>Tezaaláchia</mark>, 
+        es 
+        haber 
+        misericordia 
+        socorriendo 
+        al pobre, el, 
+        <mark>te</mark>, 
+        en, 
+        <mark>hué</mark>. 
+        y
+        quitada la 
+        persona 
+        queda 
+        <mark>huezáaláchi</mark>, 
+        que es 
+        misericordiador, 
+        o 
+        misericordioso, 
+        en 
+        estos 
+        no 
+        hay dificultad. 
+        En los de, 
+        <mark>ti</mark>, 
+        activos 
+        se 
+        guarda la 
+        misma
+        regla. 
+        <em>V.g.</em> 
+        <mark>Tibánaya</mark>, 
+        hurtar. El, 
+        <mark>ti</mark>, 
+        en, 
+        <mark>co</mark>. 
+        Y quitada 
+        la 
+        persona 
+        queda en, 
+        <mark>cobána</mark>, 
+        que es hurtador o
+        ladrón. 
+        <mark>Ticóoa</mark>, 
+        meter, en 
+        este 
+        no
+        se
+        muda el, 
+        <mark>ty</mark>, 
+        si
+        no 
+        quitase 
+        y
+        dicen, 
+        <mark>cóo</mark>, 
+        <mark>cóolipáana</mark>, 
+        predicador, 
+        <mark>cóotícha</mark>, 
+        metedor de 
+        sermón o plática. 
+        En 
+        estos 
+        de
+        <mark>ty</mark>, 
+        algún 
+        otro 
+        habrá
+        que
+        salga
+        de la regla ya dicha,
+        pero 
+        será 
+        cual 
+        o
+        cual.
+      </div>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Y es 
+        aquí 
+        de notar, que con 
+        estos 
+        nombres 
+        a-sí 
+        tienen los 
+        indios 
+        un 
+        modo de hablar, que 
+        significa 
+        como el romance del 
+        gerúndio 
+        del
+        acusativo.
+        <div class="page"><a href="http://archive.org/stream/arteenlenguazapo00juan#page/n29/mode/1up" target="blank" data-toggle="tooltip" title="View Page Image">page 6v</a></div>
+        <em>V.g.</em>
+        Dicen
+        <mark>cónacélea</mark>, 
+        vengo
+        a cavar 
+        o por 
+        cavador.
+        <mark>coquíba célea</mark>. 
+        <em>l</em>. 
+        <mark>zélea</mark>, 
+        vengo a 
+        coser, 
+        o por
+        cosedor. 
+        &amp;c. Y otros muy muchos
+        así. 
+        En los 
+        verbos de
+        <mark>Tó</mark>, 
+        se 
+        hacen 
+        estos 
+        nombres verbales del 
+        presente
+        el, <mark>tó</mark>, 
+        vuelto 
+        en 
+        <mark>hué</mark>. 
+        <em>vt</em> 
+        <mark>tolóbaya</mark> 
+        barrer, 
+        <mark>huellóba</mark>
+        barredor o barrendero que lo tiene por 
+        oficio. &amp;c.
+      </div>
+      <h4 xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" align="left" class="outlinehead">2.3.11 Adverbiales Nombres</h4>
+      <div xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:linp="http://ds.haverford.edu/linp" class="paragraph">
+        ¶Hay también 
+        nombres adverbiales, 
+        que 
+        se hacen
+        de adverbios o de 
+        preposiciones. 
+        Aunque 
+        son 
+        pocos y 
+        estos 
+        se 
+        forman anteponiendo 
+        al 
+        adverbio
+        o 
+        a la preposición un, 
+        <mark>huá</mark> 
+        <em>V.g.</em> 
+        <mark>Huanijto</mark>. 
+        <mark>nijto</mark>, 
+        quiere 
+        decir 
+        antes o primero, 
+        antepuesto 
+        el 
+        <mark>huá</mark>, 
+        dicen
+        <mark>huanijto</mark>, 
+        <mark>pénihuanijto</mark>, 
+        el 
+        que 
+        es 
+        delantero 
+        o primero
+        de muchos. 
+        ¶ Así mismo 
+        con 
+        preposición, un
+        <mark>láo</mark>, 
+        quiere 
+        decir 
+        ante o adelante, 
+        <mark>hualáo</mark>, 
+        el que es
+        delantero o principal en el pueblo, porque 
+        comunmente 
+        estos 
+        tales van delante, por 
+        aquí 
+        van los 
+        de-más 
+        que hay.
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+</div>
+</div>
+</div>
+{% endblock %}
