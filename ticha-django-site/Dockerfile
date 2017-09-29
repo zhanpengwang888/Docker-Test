@@ -1,20 +1,13 @@
-# Use an official Python runtime as a parent image
-FROM python:2.7-slim
+FROM python:3
 
-# Set the working directory to /app
-WORKDIR /app
+ENV PYTHONUNBUFFERED 1
 
-# Copy the current directory contents into the container at /app
-ADD . /app
+RUN mkdir /code
 
-# Install any needed packages specified in requirements.txt
+WORKDIR /code
+
+ADD requirements.txt /code/
+
 RUN pip install -r requirements.txt
 
-# Make port 80 available to the world outside this container
-EXPOSE 80
-
-# Define environment variable
-ENV NAME World
-
-# Run app.py when the container launches
-CMD ["python", "app.py"]
+ADD . /code/
