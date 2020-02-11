@@ -1,4 +1,4 @@
-Django==1.9.6
+Django==1.11.28
 Whoosh==2.7.4
 beautifulsoup4==4.4.1
 certifi==2017.4.17
